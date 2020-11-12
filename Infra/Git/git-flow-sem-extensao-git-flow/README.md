@@ -18,7 +18,7 @@ Segue um passo a passo com uso do GitFlow
 - sEM uso da extensao inicio de uma feature
 
     ```sh
-        git checkout -b feature_branch
+        git checkout -b feature/feature_branch
     ```
 
 - Ao termino da feature, atualize a branch de develop e
