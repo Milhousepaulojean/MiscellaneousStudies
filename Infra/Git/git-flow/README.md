@@ -6,7 +6,7 @@
 
 # Step by Step Utilizando GitFlow com Extensao
 
-Segue um passo a passo com uso do GitFlow
+Siga um passo a passo com uso do GitFlow
 
 - Verifique antes se ja tem instalado o git flow em seu computador
     
