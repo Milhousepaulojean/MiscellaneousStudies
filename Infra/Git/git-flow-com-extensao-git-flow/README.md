@@ -6,14 +6,9 @@
 
 # Step by Step Utilizando GitFlow com Extensao
 
-Segue um passo a passo com uso do GitFlow
+Siga o passo a passo com uso do GitFlow
 
 - Verifique antes se ja tem instalado o git flow em seu computador
-    
-    ```sh
-        git branch develop git push -u origin develop
-    ```
-
 - Caso nao tenha um branch de developer e possivel criar com este commando: 
     
     ```sh
@@ -33,6 +28,14 @@ Segue um passo a passo com uso do GitFlow
 - Ao termino da feature
 
     ```sh
+        * Caso deseje atualizar a developer antes, siga os seguintes passos
+            * Faca os ajustes necessarios;
+            * Commit e efetue o Push.
+            * Apos isso mude de branch para devoleper;
+            * Atualize a branch de developer;
+            * Volte para a Branch com a feature e efetue o seguinte comando:
+                git rebase develop;
+            * Neste momento a branch da feature ja estara atualizada com os ajustes feito de developer;
         git flow feature finish feature_branch
     ```
 
