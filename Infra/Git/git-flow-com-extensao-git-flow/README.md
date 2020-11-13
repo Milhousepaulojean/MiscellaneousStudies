@@ -9,11 +9,6 @@
 Segue um passo a passo com uso do GitFlow
 
 - Verifique antes se ja tem instalado o git flow em seu computador
-    
-    ```sh
-        git branch develop git push -u origin develop
-    ```
-
 - Caso nao tenha um branch de developer e possivel criar com este commando: 
     
     ```sh
