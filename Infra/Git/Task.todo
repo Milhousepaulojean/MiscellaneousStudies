@@ -1,0 +1,33 @@
+Task:
+    ☐ Adicionar como Clonar;
+    ☐ Branch;
+        ☐ Create
+        ☐ Usage
+        ☐ Delete
+    ☐ Merge;
+    ☐ Rebase;
+    ☐ .gitIgnore
+    ☐ stash
+    ☐ Tags
+        ☐ Create
+        ☐ Usage
+        ☐ Delete
+    ☐ Git Revert
+    ☐ Git flow
+        ☐ Com extensao
+        ☐ Sem extensao
+   
+Melhoras Continuas:
+    ☐ Melhorar descricoes;
+    ☐ Melhorar Visual;
+    ☐ Montar pastas para cada Assunto;
+
+BackLog:
+    ☐ Mudar estrutura com criacao de pastas;
+    ☐ Quebrar os assuntas com navegabilidade por menu;
+    ☐ Share Content;
+        ☐ B;
+        ☐ P;
+        ☐ Y;
+        ☐ F;
+        ☐ L;
