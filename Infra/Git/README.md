@@ -36,7 +36,7 @@ Utilizando Git por:
     git log --author="Paulo"
     git shortlog: Mostra todos os logs no por usuario no formato curto;
     git shortlog  -sn: Mostra todos os logs por quantidade;
-    git log -graph: Mostra a rastreabilidade no formato de logs no Git;
+    git log --graph: Mostra a rastreabilidade no formato de logs no Git;
 ```
 
 # Show
