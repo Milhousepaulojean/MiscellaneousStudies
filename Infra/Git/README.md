@@ -104,3 +104,18 @@ Utilizando Git por:
 ```sh
     git push
 ```
+
+# Branch
+```sh
+    - Create Branch
+        git checkout -b nome_da_branch
+    - Delete Branch
+        git checkout -D nome_da_branch
+```
+
+# TAGS
+```sh
+    - Delete Tags
+        git tag -d value_da_tags
+        git push origin :value_da_tags
+```
