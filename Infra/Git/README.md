@@ -3,31 +3,52 @@
 Utilizando Git por:
 
 
-# Configuracao Local para Nome e email
+# 1.Inicializando um repositorio Git em uma pasta Local
+    
+```sh
+    git init
+```
+
+# 2.Configuracao Locais no Git Config
     
 ```sh
     git config --global user.name "Paulo Jean"
     git config --global user.email "paulo@.com.br"
-```
-
-# Visualizado da Configuracao Locais
-    
-```sh
     git config user.name 
     git config user.email 
     git config --list
-```
 
-# Removendo chaves da Configuracao Local
-    
-```sh
+
+    Removendo chaves no git Config
     git config --global --unset Key
 ```
 
-# Inicializando um repositorio Git
+# 4.Git Clone
     
 ```sh
-    git init
+    git clone URL_DO_GIT
+```
+
+# 5.Adicionando modificacao em Arquivos Locais
+```sh
+    git add . : Para todos os arquivos de umn determinado diretorio;
+    git add file : Para um unico arquivo;
+
+```
+
+# 6.Ciclo de Vida dos Arquivos
+```sh
+   Untracked: E o momento que o arquivo foi add no repositorio mas ainda nao foi Trackeado
+   UnModifed: Apos adicionar o arquivo ele passa para estapa de UnModifed;
+   Modifed: Etapa a qual o arquivo ja adicionado passaou por alguma modificacao
+   Stage: Area local com versao finalizada, retornando ao estado de Unmodified.
+
+```
+
+# 7.Visualizar modificacao do Arquivo
+```sh
+    git status
+    - Todos arquivos que foram criado ou passado por alguma modificacao.
 ```
 
 # Log
@@ -78,18 +99,6 @@ Utilizando Git por:
     Apos hard git push --force
 ```
 
-# Visualizar modificacao do Arquivo
-```sh
-    git status
-    - Todos arquivos que ainda nao foram commitados passar a ter seu estado modificado.
-```
-
-# Adicionando modificacao em Stage
-```sh
-    git add . : Para todos os arquivos de umn determinado diretorio;
-    git add file : Para um unico arquivo;
-
-```
 
 # Commit modificacao em Stage
 ```sh
