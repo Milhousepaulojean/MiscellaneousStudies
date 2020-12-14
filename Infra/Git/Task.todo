@@ -1,5 +1,5 @@
 Task:
-    ☐ Adicionar como Clonar;
+    ✔ Adicionar como Clonar; @done (14/12/2020 09:25:47)
     ☐ Branch;
         ☐ Create
         ☐ Usage
@@ -16,6 +16,7 @@ Task:
     ☐ Git flow
         ☐ Com extensao
         ☐ Sem extensao
+    ☐ Create Readme with Alias zsh 
    
 Melhoras Continuas:
     ☐ Melhorar descricoes;
