@@ -9,7 +9,20 @@ Utilizando Git por:
     git init
 ```
 
-# 2.Configuracao Locais no Git Config
+
+# 2.Branch
+    
+```sh
+    - Create Branch
+        git checkout -b nome_da_branch
+    - Delete Branch
+        git checkout -D nome_da_branch
+```
+
+fonte: https://git-scm.com/docs/git-branch/pt_BR
+
+
+# 3.Configuracao Locais no Git Config
     
 ```sh
     git config --global user.name "Paulo Jean"
@@ -112,14 +125,6 @@ Utilizando Git por:
 # Push das modificacao do ambiente Local para Remoto
 ```sh
     git push
-```
-
-# Branch
-```sh
-    - Create Branch
-        git checkout -b nome_da_branch
-    - Delete Branch
-        git checkout -D nome_da_branch
 ```
 
 # TAGS
