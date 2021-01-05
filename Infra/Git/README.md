@@ -9,7 +9,6 @@ Utilizando Git por:
     git init
 ```
 
-
 # 2.Branch
     
 ```sh

@@ -6,7 +6,7 @@ Task:
         ☐ Delete
         ☐ verbose
         ☐ Usage
-        ☐ Delete
+        ✔ Delete @done (1/5/2021, 11:32:08 AM)
     ☐ Merge;
     ☐ Rebase;
     ☐ .gitIgnore
