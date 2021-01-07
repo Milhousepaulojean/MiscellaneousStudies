@@ -16,6 +16,12 @@ Utilizando Git por:
         git checkout -b nome_da_branch
     - Delete Branch
         git checkout -D nome_da_branch
+    - List Branch
+        git branch -l 
+    - Branchs Remotes
+        git branch -r  
+    - Lista de logs com mais detalhes
+        git branch -v 
 ```
 
 fonte: https://git-scm.com/docs/git-branch/pt_BR
