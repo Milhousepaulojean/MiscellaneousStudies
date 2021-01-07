@@ -24,7 +24,7 @@ Utilizando Git por:
         git branch -v 
 ```
 
-fonte: https://git-scm.com/docs/git-branch/pt_BR
+fonte: https://git-scm.com/docs/git-branch/pt_BR 
 
 
 # 3.Configuracao Locais no Git Config
@@ -132,17 +132,6 @@ fonte: https://git-scm.com/docs/git-branch/pt_BR
     git push
 ```
 
-<<<<<<< Updated upstream
-=======
-# Branch
-```sh
-    - Create Branch
-        git checkout -b nome_da_branch
-    - Delete Branch
-        git checkout -D nome_da_branch
-```
-
->>>>>>> Stashed changes
 # TAGS
 ```sh
     - Delete Tags
