@@ -1,0 +1,57 @@
+Task:
+    ✔ Criar Folder GoLang @done (12/10/2020, 11:05:27 PM)
+    ✔ Criar Readme @done (12/10/2020, 11:05:15 PM)
+    ✔ Configurando o Go Path @done (12/10/2020, 11:05:31 PM)
+    ✔ Hello World @done (14/12/2020 09:14:42)
+    ☐ Variavel
+        ☐ Basico
+        ☐ Avancado
+    ☐ Pacotes
+    ☐ Funcoes
+        ☐ Basico
+        ☐ Avancado
+    ☐ Struct
+        ☐ Basico
+        ☐ Avancado
+    ☐ IF
+    ☐ Folder
+    ☐ Switch
+    ☐ Mapas
+    ☐ Tratamento de Erros
+    ☐ Go Build
+    ☐ Arrays
+    ☐ Slices
+        ☐ Basicos
+        ☐ Avancado
+    ☐ Interfaces
+    ☐ Ler Arquivos
+    ☐ Escrever Arquivos
+    ☐ Defer
+    ☐ Go Routines
+    ☐ Canais
+    ☐ Select
+    ☐ Consumindo Servicos Web
+        ☐ Get
+        ☐ Post 
+    ☐ Tratamento Json
+    ☐ Criando Servidor
+    ☐ Importando Pacotes
+    ☐ Conetando Banco de Dados
+        ☐ MongoDb
+    ☐ Usando Mercurios
+
+   
+Melhoras Continuas:
+    ☐ Melhorar descricoes;
+    ☐ Melhorar Visual;
+    ☐ Montar pastas para cada Assunto;
+
+BackLog:
+    ☐ Mudar estrutura com criacao de pastas;
+    ☐ Quebrar os assuntas com navegabilidade por menu;
+    ☐ Share Content;
+        ☐ B;
+        ☐ P;
+        ☐ Y;
+        ☐ F;
+        ☐ L;
