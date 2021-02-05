@@ -1,37 +1,18 @@
-Task:
-    ✔ Adicionar como Clonar; @done (14/12/2020 09:25:47)
-    ☐ Branch;
-        ✔ Create @done (1/5/2021, 11:21:03 AM)
-        ✔ list @done (1/6/2021, 10:44:12 PM)
-        ✔ Delete @done (1/6/2021, 10:47:29 PM)
-        ✔ verbose @done (1/6/2021, 10:51:29 PM)
-        ✔ Delete @done (1/5/2021, 11:32:08 AM)
-        ✔ remotes @done (1/6/2021, 10:49:31 PM)
-    ☐ Merge;
-    ☐ Rebase;
-    ☐ .gitIgnore
-    ☐ stash
-    ✔ Tags @done (12/10/2020, 10:27:53 PM)
-        ☐ Create
-        ☐ Usage
-        ☐ Delete
-    ☐ Git Revert
-    ☐ Git flow
-        ☐ Com extensao
-        ☐ Sem extensao
-    ☐ Create Readme with Alias zsh 
-   
+Task Basics:
+    ☐ Init;
+    ☐ Clone;
+    ☐ Branch
+    ☐ Add;
+    ☐ Stash;
+    ☐ Commit;
+    ☐ Push;
+    ☐ Logs
+    ☐ Rebase
+    ☐ Revert
+    ☐ Issues
+    ☐ Pull-Request
+    ☐ WorkFlow
+    
 Melhoras Continuas:
-    ☐ Melhorar descricoes;
-    ☐ Melhorar Visual;
-    ☐ Montar pastas para cada Assunto;
 
 BackLog:
-    ☐ Mudar estrutura com criacao de pastas;
-    ☐ Quebrar os assuntas com navegabilidade por menu;
-    ☐ Share Content;
-        ☐ B;
-        ☐ P;
-        ☐ Y;
-        ☐ F;
-        ☐ L;
