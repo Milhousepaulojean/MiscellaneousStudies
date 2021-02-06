@@ -79,7 +79,7 @@ Utilizando Git:
 # 14.Utilizando Pull
     
 ```sh
-    git pull: Busque a cópia do remoto especificado do branch atual e imediatamente mescle-a na cópia local.   
+    git pull: Busque a cópia do remoto especificado do branch atual e imediatamente mescle-a na cópia local. 
     git pull --no-commit: Semelhante à chamada padrão, busca o conteúdo remoto, mas não cria um novo commit de mesclagem.  
     git pull --rebase: Igual ao pull anterior Em vez de usar git mergepara integrar a ramificação remota com a local, use git rebase.  
     git pull --verbose: Fornece saída detalhada durante um pull que exibe o conteúdo sendo baixado e os detalhes da mesclagem.  
