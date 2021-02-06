@@ -17,23 +17,30 @@ Task Basics:
     ☐ Push;
         ✔ git push origin --delete; @done (2/6/2021, 7:36:02 PM)
     ☐ Logs
+<<<<<<< HEAD
         ✔ git log @done (2/6/2021, 9:20:49 PM)
         ✔ oneline @done (2/6/2021, 9:20:52 PM)
         ✔ decorate @done (2/6/2021, 9:20:56 PM)
     ☐ Logs com Diff
     ☐ Rebase
     ✔ Merge @done (2/8/2021, 10:46:32 PM)
+=======
+    ☐ Rebase
+>>>>>>> 840c8f1 (Commit aplicado para ajustar Readme.)
     ☐ Revert
     ☐ Issues
     ☐ Pull-Request
     ☐ Status
     ☐ WorkFlow
+<<<<<<< HEAD
     ☐ Pull
         ✔ git pull @done (2/6/2021, 8:38:47 PM)
         ✔ git pull --no-commit @done (2/6/2021, 8:38:43 PM)
         ✔ git pull --rebase @done (2/6/2021, 8:38:35 PM)
         ✔ git pull --verbose @done (2/6/2021, 8:38:29 PM)
     ✔ Fetch @done (2/8/2021, 10:46:48 PM)
+=======
+>>>>>>> 840c8f1 (Commit aplicado para ajustar Readme.)
     
 Melhoras Continuas:
 
