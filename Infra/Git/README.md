@@ -32,7 +32,7 @@ Utilizando Git:
 # 6.Utilizando Commit
     
 ```sh
-    
+     git commit: Abre um editor comum para digitar a mensagem.
 ```
 # 7.Utilizando Push
     
