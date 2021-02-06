@@ -3,7 +3,7 @@
 # 13.Git
     
 
-[1.Init](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/master/Infra/Git#1inicializando-um-repositorio-git)  
+[1.Init](https://github.com/Milhousepaulojean/MiscellaneousStudies/blob/Git/README.md#1inicializando-um-repositorio-git)  
 [2.Clone](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/master/Infra/Git#2clonando-um-repositorio-git)  
 [3.Branch](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/master/Infra/Git#3utilizando-diferentes-repositorio-git)  
 [4.Add](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/master/Infra/Git#4adicionando-mudancas-nos-arquivos)  
