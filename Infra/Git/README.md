@@ -33,6 +33,7 @@ Utilizando Git:
     
 ```sh
      git commit: Abre um editor comum para digitar a mensagem.
+     git commit -a: Adiciona automaticamente todas as alterações no diretório de trabalho, apenas com as modificações nos arquivos monitorados e abre o editor aguardando a mensagem.
 ```
 # 7.Utilizando Push
     
