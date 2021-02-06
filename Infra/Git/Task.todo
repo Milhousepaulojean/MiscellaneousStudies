@@ -4,18 +4,19 @@ Task Basics:
     ☐ Branch
     ☐ Add;
     ☐ Stash;
-    ☐ Commit;
-        ☐ Commit
-        ☐ commit -a
-        ☐ commit -M
-        ☐ commit -am
-        
+    ✔ Commit; @done (2/6/2021, 6:56:53 PM)
+        ✔ Commit @done (2/6/2021, 6:56:26 PM)
+        ✔ commit -a @done (2/6/2021, 6:57:11 PM)
+        ✔ commit -M @done (2/6/2021, 6:57:16 PM)
+        ✔ commit -am @done (2/6/2021, 6:57:23 PM)
+        ✔ commit --amend @done (2/6/2021, 6:57:29 PM)
     ☐ Push;
     ☐ Logs
     ☐ Rebase
     ☐ Revert
     ☐ Issues
     ☐ Pull-Request
+    ☐ Status
     ☐ WorkFlow
     
 Melhoras Continuas:

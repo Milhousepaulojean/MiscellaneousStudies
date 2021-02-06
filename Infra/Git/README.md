@@ -36,7 +36,8 @@ Utilizando Git:
      git commit -a: Adiciona automaticamente todas as alterações no diretório de trabalho, apenas com as modificações nos arquivos monitorados e abre o editor aguardando a mensagem.
      git commit -m: Adiciona uma mensagem sem precisar do editor.
      git commit -am: Adiciona uma mensagem e os arquivos sem precisar do editor
-
+     git commit --amend: A transmissão dessa opção modifica o último commit. Em vez de criar um novo commit, as mudanças preparadas são adicionadas ao commit anterior. Esse comando abre o editor de texto configurado no sistema e solicita a mudança da mensagem de commit especificada mais cedo. Mas lembrando nessa etapa ainda
+     sera preciso utilzar o git add antes de utilizar o git comit --amend.      
 ```
 # 7.Utilizando Push
     
@@ -64,6 +65,11 @@ Utilizando Git:
     
 ```
 # 12.Utilizando Pull-Request
+    
+```sh
+    
+```
+# 13.Utilizando WorkFlow
     
 ```sh
     
