@@ -19,8 +19,7 @@ Utilizando Git:
 ```sh
     git branch: lista todas as ramificacoes
     git branch -d: Excluir a ramificação especificada. Esta é uma operação “segura” em que o Git impede que você exclua a ramificação se tiver mudanças não mescladas.
-    git branch -D: Forçar a exclusão da ramificação especificada, mesmo que ela tenha mudanças não mescladas. Este é o comando a ser usado se você quiser excluir de modo permanente todas as confirmações associadas a uma linha particular de desenvolvimento.
-    
+    git branch -D: Forçar a exclusão da ramificação especificada, mesmo que ela tenha mudanças não mescladas. Este é o comando a ser usado se você quiser excluir de modo permanente todas as confirmações associadas a uma linha particular de desenvolvimento.   
 ```
 # 4.Adicionando Mudancas nos arquivos
     
@@ -45,7 +44,7 @@ Utilizando Git:
 # 7.Utilizando Push
     
 ```sh
-    
+    git push origin --delete crazy-experiment | git push origin :crazy-experiment: Isso vai enviar um sinal de exclusão para o repositório de origem remota que aciona uma exclusão da ramificação remota crazy-experiment.
 ```
 # 8.Utilizando Logs(Historico)
     
