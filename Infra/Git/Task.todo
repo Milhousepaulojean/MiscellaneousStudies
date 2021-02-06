@@ -5,6 +5,8 @@ Task Basics:
     ☐ Add;
     ☐ Stash;
     ☐ Commit;
+        ☐ Commit
+        ☐ commit -a
     ☐ Push;
     ☐ Logs
     ☐ Rebase
