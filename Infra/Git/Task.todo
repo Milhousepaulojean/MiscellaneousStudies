@@ -8,7 +8,8 @@ Task Basics:
         ☐ Commit
         ☐ commit -a
         ☐ commit -M
-        ☐ 
+        ☐ commit -am
+        
     ☐ Push;
     ☐ Logs
     ☐ Rebase

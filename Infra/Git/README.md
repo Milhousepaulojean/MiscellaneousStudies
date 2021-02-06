@@ -34,6 +34,9 @@ Utilizando Git:
 ```sh
      git commit: Abre um editor comum para digitar a mensagem.
      git commit -a: Adiciona automaticamente todas as alterações no diretório de trabalho, apenas com as modificações nos arquivos monitorados e abre o editor aguardando a mensagem.
+     git commit -m: Adiciona uma mensagem sem precisar do editor.
+     git commit -am: Adiciona uma mensagem e os arquivos sem precisar do editor
+
 ```
 # 7.Utilizando Push
     
