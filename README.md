@@ -50,34 +50,45 @@ Utilizando Git:
 # 8.Utilizando Logs(Historico)
     
 ```sh
+    git log: apresenta todos os logs;
+    --oneline: Visibilidade dos logs em uma unica linha;
+    --decorate: Destaca as informacoes por cores;
     
 ```
-# 9.Utilizando Rebase
+# 9.Utilizando Logs com Diff
+    
+```sh
+    git log: apresenta todos os logs;
+    --oneline: Visibilidade dos logs em uma unica linha;
+    --decorate: Destaca as informacoes por cores;
+    
+```
+# 10.Utilizando Rebase
     
 ```sh
     
 ```
-# 10.Utilizando Revert
+# 11.Utilizando Revert
     
 ```sh
     
 ```
-# 11.Utilizando Issues
+# 12.Utilizando Issues
     
 ```sh
     
 ```
-# 12.Utilizando Pull-Request
+# 13.Utilizando Pull-Request
     
 ```sh
     
 ```
-# 13.Utilizando WorkFlow
+# 14.Utilizando WorkFlow
     
 ```sh
     
 ```
-# 14.Utilizando Pull
+# 15.Utilizando Pull
     
 ```sh
     git pull: Busque a cópia do remoto especificado do branch atual e imediatamente mescle-a na cópia local. 
@@ -86,20 +97,9 @@ Utilizando Git:
     git pull --verbose: Fornece saída detalhada durante um pull que exibe o conteúdo sendo baixado e os detalhes da mesclagem.  
 ```
 
-# 15.Utilizando Merge
+# 16.Utilizando Merge
     
 ```sh
-    git pull: Busque a cópia do remoto especificado do branch atual e imediatamente mescle-a na cópia local. 
-    git pull --no-commit: Semelhante à chamada padrão, busca o conteúdo remoto, mas não cria um novo commit de mesclagem.  
-    git pull --rebase: Igual ao pull anterior Em vez de usar git mergepara integrar a ramificação remota com a local, use git rebase.  
-    git pull --verbose: Fornece saída detalhada durante um pull que exibe o conteúdo sendo baixado e os detalhes da mesclagem.  
+ 
 ```
 
-# 15.Utilizando Rebase
-    
-```sh
-    git pull: Busque a cópia do remoto especificado do branch atual e imediatamente mescle-a na cópia local. 
-    git pull --no-commit: Semelhante à chamada padrão, busca o conteúdo remoto, mas não cria um novo commit de mesclagem.  
-    git pull --rebase: Igual ao pull anterior Em vez de usar git mergepara integrar a ramificação remota com a local, use git rebase.  
-    git pull --verbose: Fornece saída detalhada durante um pull que exibe o conteúdo sendo baixado e os detalhes da mesclagem.  
-```
