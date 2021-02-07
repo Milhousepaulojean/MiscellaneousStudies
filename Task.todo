@@ -18,6 +18,7 @@ Task Basics:
         ✔ git push origin --delete; @done (2/6/2021, 7:36:02 PM)
     ☐ Logs
     ☐ Rebase
+    ☐ Merge
     ☐ Revert
     ☐ Issues
     ☐ Pull-Request

@@ -17,7 +17,8 @@ Utilizando Git:
 # 3.Utilizando diferentes repositorio Git
     
 ```sh
-    git branch: lista todas as ramificacoes  
+    git branch | git branch --list: lista todas as ramificacoes  
+    git branch nomedabranch: Cria uma branch local 
     git branch -d: Excluir a ramificação especificada. Esta é uma operação “segura” em que o Git impede que você exclua a ramificação se tiver mudanças não mescladas.  
     git branch -D: Forçar a exclusão da ramificação especificada, mesmo que ela tenha mudanças não mescladas.   Este é o comando a ser usado se você quiser excluir de modo permanente todas as confirmações associadas a uma linha particular de desenvolvimento.   
 ```
@@ -77,6 +78,24 @@ Utilizando Git:
     
 ```
 # 14.Utilizando Pull
+    
+```sh
+    git pull: Busque a cópia do remoto especificado do branch atual e imediatamente mescle-a na cópia local. 
+    git pull --no-commit: Semelhante à chamada padrão, busca o conteúdo remoto, mas não cria um novo commit de mesclagem.  
+    git pull --rebase: Igual ao pull anterior Em vez de usar git mergepara integrar a ramificação remota com a local, use git rebase.  
+    git pull --verbose: Fornece saída detalhada durante um pull que exibe o conteúdo sendo baixado e os detalhes da mesclagem.  
+```
+
+# 15.Utilizando Merge
+    
+```sh
+    git pull: Busque a cópia do remoto especificado do branch atual e imediatamente mescle-a na cópia local. 
+    git pull --no-commit: Semelhante à chamada padrão, busca o conteúdo remoto, mas não cria um novo commit de mesclagem.  
+    git pull --rebase: Igual ao pull anterior Em vez de usar git mergepara integrar a ramificação remota com a local, use git rebase.  
+    git pull --verbose: Fornece saída detalhada durante um pull que exibe o conteúdo sendo baixado e os detalhes da mesclagem.  
+```
+
+# 15.Utilizando Rebase
     
 ```sh
     git pull: Busque a cópia do remoto especificado do branch atual e imediatamente mescle-a na cópia local. 
