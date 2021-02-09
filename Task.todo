@@ -22,7 +22,7 @@ Task Basics:
         ✔ decorate @done (2/6/2021, 9:20:56 PM)
     ☐ Logs com Diff
     ☐ Rebase
-    ☐ Merge
+    ✔ Merge @done (2/8/2021, 10:46:32 PM)
     ☐ Revert
     ☐ Issues
     ☐ Pull-Request
@@ -33,6 +33,7 @@ Task Basics:
         ✔ git pull --no-commit @done (2/6/2021, 8:38:43 PM)
         ✔ git pull --rebase @done (2/6/2021, 8:38:35 PM)
         ✔ git pull --verbose @done (2/6/2021, 8:38:29 PM)
+    ✔ Fetch @done (2/8/2021, 10:46:48 PM)
     
 Melhoras Continuas:
 

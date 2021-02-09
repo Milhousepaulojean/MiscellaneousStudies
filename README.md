@@ -100,6 +100,12 @@ Utilizando Git:
 # 16.Utilizando Merge
     
 ```sh
- 
+Ex
+    git checkout branch_que_deseja_ser_mergiada
+    git merge branch_das_alteracoes
 ```
-
+# 16.Utilizando fetch
+    
+```sh
+    git fetch: Sincroniza o pull dos commits remotos mais recentes;
+```
