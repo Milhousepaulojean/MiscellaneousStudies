@@ -66,7 +66,10 @@ Utilizando Git:
 # 10.Utilizando Rebase
     
 ```sh
-    
+    git checkout feature
+    git rebase master
+
+    git rebase -i master
 ```
 # 11.Utilizando Revert
     
