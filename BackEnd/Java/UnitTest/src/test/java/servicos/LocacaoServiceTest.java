@@ -9,7 +9,12 @@ import utils.Usuario;
 
 import java.util.Date;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static entidades.DataUtils.isMesmaData;
+import static entidades.DataUtils.obterDataComDiferencaDias;
+import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.MatcherAssert.assertThat;
+
 
 class LocacaoServiceTest {
 
@@ -24,9 +29,9 @@ class LocacaoServiceTest {
         Locacao locacao  =  service.alugarFilme(usuario, filme);
 
         //Verificacao
-        Assert.assertEquals(2.1, locacao.getValor() , 0.01);
-        Assert.assertTrue(DataUtils.isMesmaData(locacao.getDataLocacao() , new Date()));
-        Assert.assertTrue(DataUtils.isMesmaData(locacao.getDataRetorno() , DataUtils.obterDataComDiferencaDias(1)));
+        assertThat(locacao.getValor(), is(equalTo(2.1)));
+        assertThat(isMesmaData(locacao.getDataLocacao() , new Date()) , is(true));
+        assertThat(isMesmaData(locacao.getDataRetorno() , obterDataComDiferencaDias(1)) , is(true));
     }
 
     @Test
