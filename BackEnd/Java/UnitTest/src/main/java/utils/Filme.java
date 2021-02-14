@@ -1,5 +1,7 @@
 package utils;
 
+import java.util.Objects;
+
 public class Filme {
 
 	private String nome;
@@ -31,5 +33,24 @@ public class Filme {
 	}
 	public void setPrecoLocacao(Double precoLocacao) {
 		this.precoLocacao = precoLocacao;
+	}
+
+	@Override
+	public String toString() {
+		return "Filme{" +
+				"nome='" + nome + '\'' +
+				", estoque=" + estoque +
+				", precoLocacao=" + precoLocacao +
+				'}';
+	}
+
+	@Override
+	public boolean equals(Object o) {
+		if (this == o) return true;
+		if (!(o instanceof Filme)) return false;
+		Filme filme = (Filme) o;
+		return getNome().equals(filme.getNome()) &&
+				getEstoque().equals(filme.getEstoque()) &&
+				getPrecoLocacao().equals(filme.getPrecoLocacao());
 	}
 }
