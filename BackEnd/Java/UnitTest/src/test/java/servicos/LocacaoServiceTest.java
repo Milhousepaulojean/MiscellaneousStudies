@@ -3,6 +3,7 @@ package servicos;
 import entidades.DataUtils;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
+import org.junit.rules.ErrorCollector;
 import utils.Filme;
 import utils.Locacao;
 import utils.Usuario;
@@ -18,8 +19,10 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 class LocacaoServiceTest {
 
+    public ErrorCollector error = new ErrorCollector();
+
     @Test
-    void main() {
+    void testeLocacao() {
         //Cenario
         LocacaoService service = new LocacaoService();
         Usuario usuario = new Usuario("Usuario 1");
@@ -29,9 +32,9 @@ class LocacaoServiceTest {
         Locacao locacao  =  service.alugarFilme(usuario, filme);
 
         //Verificacao
-        assertThat(locacao.getValor(), is(equalTo(2.1)));
-        assertThat(isMesmaData(locacao.getDataLocacao() , new Date()) , is(true));
-        assertThat(isMesmaData(locacao.getDataRetorno() , obterDataComDiferencaDias(1)) , is(true));
+        error.checkThat(locacao.getValor(), is(equalTo(2.1)));
+        error.checkThat((isMesmaData(locacao.getDataLocacao() , new Date())) , is(true));
+        error.checkThat((isMesmaData(locacao.getDataRetorno() , obterDataComDiferencaDias(1))) , is(true));
     }
 
     @Test
