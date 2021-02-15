@@ -27,12 +27,28 @@ public class LocacaoServiceTest {
 
     private  LocacaoService service;
 
+    static int counter;
+
     @Before
-    public void setupBefore(){ service = new LocacaoService();}
+    public void setupBefore(){
+        System.out.println("Antes do Metodo");
+        service = new LocacaoService();
+        System.out.println(counter++);
+    }
 
     @After
     public void setupAfter(){
-        System.out.println("depois");
+        System.out.println("depois do metodo");
+    }
+
+    @BeforeClass
+    public static void setupBeforeClass(){
+        System.out.println("Antes da Classe ser Instanciada.");
+    }
+
+    @AfterClass
+    public static void setupAfterClass(){
+        System.out.println("Depois da Classe ser Instanciada.");
     }
 
     @Test
