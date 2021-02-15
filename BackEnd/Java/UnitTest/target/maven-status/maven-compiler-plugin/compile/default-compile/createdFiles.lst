@@ -1,6 +1,7 @@
-utils/Filme.class
 entidades/DataUtils.class
-servicos/LocacaoService.class
+entidades/LocadoraException.class
 utils/Usuario.class
 utils/Locacao.class
 entidades/FilmeSemEstoqueException.class
+utils/Filme.class
+servicos/LocacaoService.class

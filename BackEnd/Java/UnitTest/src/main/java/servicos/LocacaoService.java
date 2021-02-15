@@ -8,31 +8,36 @@ import utils.Locacao;
 import utils.Usuario;
 import static entidades.DataUtils.adicionarDias;
 
+import java.util.ArrayList;
 import java.util.Date;
-
+import java.util.List;
 
 
 public class LocacaoService {
 	
-	public Locacao alugarFilme(Usuario usuario, Filme filme) throws Exception {
+	public Locacao alugarFilme(Usuario usuario, List<Filme> filmes) throws Exception {
+
+		Locacao locacao = new Locacao();
 
 		if (usuario == null){
 			throw new LocadoraException("Usuario sem nome");
 		}
 
-		if (filme == null){
+		if (filmes == null || filmes.isEmpty()) {
 			throw new LocadoraException("Nome do filme nao informado.");
 		}
 
-		if (filme.getEstoque() == 0){
-			throw new FilmeSemEstoqueException();
+		for(Filme filme : filmes){
+			if (filme.getEstoque() == 0){
+				throw new FilmeSemEstoqueException();
+			}
+			locacao.setValor(filme.getPrecoLocacao());
 		}
 
-		Locacao locacao = new Locacao();
-		locacao.setFilme(filme);
+		locacao.setFilme(filmes);
 		locacao.setUsuario(usuario);
 		locacao.setDataLocacao(new Date());
-		locacao.setValor(filme.getPrecoLocacao());
+
 
 		//Entrega no dia seguinte
 		Date dataEntrega = new Date();
@@ -49,10 +54,12 @@ public class LocacaoService {
 		//Cenario
 		LocacaoService service = new LocacaoService();
 		Usuario usuario = new Usuario("Usuario 1");
-		Filme filme = new Filme("Filme 1",15 , 2.1);
+		List<Filme> filmes = new ArrayList<Filme>();
+
+		filmes.add(new Filme("Filme 1",15 , 2.1));
 
 		//Acao
-		Locacao locacao  =  service.alugarFilme(usuario, filme);
+		Locacao locacao  =  service.alugarFilme(usuario, filmes);
 
 		//Verificacao
 		System.out.println(locacao.getValor() == 2.1);
