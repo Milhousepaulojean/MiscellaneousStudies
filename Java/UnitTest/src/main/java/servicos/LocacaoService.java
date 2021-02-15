@@ -1,6 +1,7 @@
 package servicos;
 
 import entidades.DataUtils;
+import entidades.FilmeSemEstoqueException;
 import utils.Filme;
 import utils.Locacao;
 import utils.Usuario;
