@@ -2,6 +2,7 @@ package servicos;
 
 import entidades.DataUtils;
 import entidades.FilmeSemEstoqueException;
+import entidades.LocadoraException;
 import utils.Filme;
 import utils.Locacao;
 import utils.Usuario;
@@ -14,8 +15,17 @@ import java.util.Date;
 public class LocacaoService {
 	
 	public Locacao alugarFilme(Usuario usuario, Filme filme) throws Exception {
+
+		if (usuario == null){
+			throw new LocadoraException("Usuario sem nome");
+		}
+
+		if (filme == null){
+			throw new LocadoraException("Nome do filme nao informado.");
+		}
+
 		if (filme.getEstoque() == 0){
-			throw new Exception("Nao esta no estoque.");
+			throw new FilmeSemEstoqueException();
 		}
 
 		Locacao locacao = new Locacao();
