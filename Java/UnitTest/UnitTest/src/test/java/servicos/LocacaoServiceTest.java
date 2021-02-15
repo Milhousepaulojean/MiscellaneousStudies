@@ -9,7 +9,7 @@ import utils.Filme;
 import utils.Locacao;
 import utils.Usuario;
 
-import java.util.Date;
+import java.util.*;
 
 import static entidades.DataUtils.isMesmaData;
 import static entidades.DataUtils.obterDataComDiferencaDias;
@@ -17,6 +17,7 @@ import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 import static org.junit.Assert.fail;
 
+@FixMethodOrder
 public class LocacaoServiceTest {
 
     @Rule
@@ -49,73 +50,6 @@ public class LocacaoServiceTest {
     @AfterClass
     public static void setupAfterClass(){
         System.out.println("Depois da Classe ser Instanciada.");
-    }
-
-    @Test
-    public void testeLocacao() throws Exception {
-        //Cenario
-        Usuario usuario = new Usuario("Usuario 1");
-        Filme filme = new Filme("Filme 1", 1, 2.1);
-
-        //Acao
-        Locacao locacao = service.alugarFilme(usuario, filme);
-
-        //Verificacao
-        assertThat(locacao.getValor(), is(2.1));
-        assertThat((isMesmaData(locacao.getDataLocacao(), new Date())), is(true));
-        assertThat((isMesmaData(locacao.getDataRetorno(), obterDataComDiferencaDias(1))), is(true));
-    }
-
-    @Test
-    public void testeLocacaoErrorCollector() throws Exception {
-        //Cenario
-        Usuario usuario = new Usuario("Usuario 1");
-        Filme filme = new Filme("Filme 1", 1, 2.1);
-
-        //Acao
-        Locacao locacao = service.alugarFilme(usuario, filme);
-
-        //Verificacao
-        errorCollector.checkThat(locacao.getValor(), is(2.1));
-        errorCollector.checkThat(((isMesmaData(locacao.getDataLocacao(), new Date()))), is(true));
-        errorCollector.checkThat(((isMesmaData(locacao.getDataRetorno(), obterDataComDiferencaDias(1)))), is(true));
-    }
-
-    @Test(expected = FilmeSemEstoqueException.class)
-    public void testeLocacaoSemEstoqueElegante() throws Exception {
-
-        //Cenario
-        Usuario usuario = new Usuario("Usuario 1");
-        Filme filme = new Filme("Filme 1", 0, 2.1);
-
-        //Acao
-        service.alugarFilme(usuario, filme);
-    }
-
-    @Test
-    public void testeLocacaoSemEstoqueRobustaSemNomeUsuario() throws Exception {
-
-        //Cenario
-        Filme filme = new Filme("Filme 1", 1, 2.1);
-
-        //Acao
-        try {
-            service.alugarFilme(null, filme);
-            fail();
-        } catch (LocadoraException e) {
-            assertThat(e.getMessage(), is("Usuario sem nome"));
-        }
-    }
-
-    @Test
-    public void testeLocacaoSemEstoqueNovaSemNomedoFilme() throws Exception {
-
-        //Cenario
-        Usuario usuario = new Usuario("Usuario 1");
-        expectedException.expect(LocadoraException.class);
-        expectedException.expectMessage("Nome do filme nao informado.");
-
-        service.alugarFilme(usuario, null);
     }
 
     @Test
@@ -153,6 +87,95 @@ public class LocacaoServiceTest {
         Assert.assertNotNull(u2);
 
     }
+
+    @Test
+    public void testeLocacao() throws Exception {
+        //Cenario
+        Usuario usuario = new Usuario("Usuario 1");
+        List<Filme> filmes = new ArrayList<Filme>();
+
+        filmes.add(new Filme("Filme 1", 1, 2.1));
+        filmes.add(new Filme("Filme 2", 1, 2.2));
+        filmes.add(new Filme("Filme 3", 10, 2.3));
+
+        //Acao
+        Locacao locacao = service.alugarFilme(usuario, filmes);
+
+        //Verificacao
+
+        for (Filme locacaofilme : locacao.getFilme()) {
+            if (locacaofilme.getPrecoLocacao() == 2.1) {
+                assertThat(locacaofilme.getPrecoLocacao(), is(2.1));
+            } else if (locacaofilme.getPrecoLocacao() == 2.2) {
+                assertThat(locacaofilme.getPrecoLocacao(), is(2.2));
+            } else if (locacaofilme.getPrecoLocacao() == 2.3) {
+                assertThat(locacaofilme.getPrecoLocacao(), is(2.3));
+            } else {
+                fail("Deveria retornar os valores, listados acima");
+            }
+
+        }
+
+        assertThat((isMesmaData(locacao.getDataLocacao(), new Date())), is(true));
+        assertThat((isMesmaData(locacao.getDataRetorno(), obterDataComDiferencaDias(1))), is(true));
+    }
+
+    @Test
+    public void testeLocacaoErrorCollector() throws Exception {
+        //Cenario
+        Usuario usuario = new Usuario("Usuario 1");
+        List<Filme> filmes = new ArrayList<Filme>();
+
+        filmes.add(new Filme("Filme 1", 1, 2.1));
+
+        //Acao
+        Locacao locacao = service.alugarFilme(usuario, filmes);
+
+        //Verificacao
+        errorCollector.checkThat(locacao.getValor(), is(2.1));
+        errorCollector.checkThat(((isMesmaData(locacao.getDataLocacao(), new Date()))), is(true));
+        errorCollector.checkThat(((isMesmaData(locacao.getDataRetorno(), obterDataComDiferencaDias(1)))), is(true));
+    }
+
+    @Test(expected = FilmeSemEstoqueException.class)
+    public void testeLocacaoSemEstoqueElegante() throws Exception {
+
+        //Cenario
+        Usuario usuario = new Usuario("Usuario 1");
+        List<Filme> filmes = new ArrayList<Filme>();
+
+        filmes.add(new Filme("Filme 1", 0, 2.1));
+
+        //Acao
+        service.alugarFilme(usuario, filmes);
+    }
+
+    @Test
+    public void testeLocacaoSemEstoqueRobustaSemNomeUsuario() throws Exception {
+
+        //Cenario
+        //Filme filme = new Filme("Filme 1", 1, 2.1);
+        List<Filme> filmes = new ArrayList<Filme>();
+        //Acao
+        try {
+            service.alugarFilme(null, filmes);
+            fail();
+        } catch (LocadoraException e) {
+            assertThat(e.getMessage(), is("Usuario sem nome"));
+        }
+    }
+
+    @Test
+    public void testeLocacaoSemEstoqueNovaSemNomedoFilme() throws Exception {
+
+        //Cenario
+        Usuario usuario = new Usuario("Usuario 1");
+        expectedException.expect(LocadoraException.class);
+        expectedException.expectMessage("Nome do filme nao informado.");
+
+        service.alugarFilme(usuario, null);
+    }
+
 }
 
 

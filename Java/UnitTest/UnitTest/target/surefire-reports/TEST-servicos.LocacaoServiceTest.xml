@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="servicos.LocacaoServiceTest" time="0.024" errors="1" skipped="0">
+<testsuite tests="6" failures="0" name="servicos.LocacaoServiceTest" time="0.063" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2020.2.3"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -58,40 +58,10 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
   </properties>
-  <testcase classname="servicos.LocacaoServiceTest" name="initializationError" time="0.024">
-    <error message="Invalid test class &apos;servicos.LocacaoServiceTest&apos;:
-  1. The class servicos.LocacaoServiceTest is not public.
-  2. Test class should have exactly one public constructor
-  3. Method testeLocacao() should be public
-  4. Method asserts() should be public
-  5. The @Rule &apos;exception&apos; must be public." type="org.junit.runners.model.InvalidTestClassError">org.junit.runners.model.InvalidTestClassError: Invalid test class &apos;servicos.LocacaoServiceTest&apos;:
-  1. The class servicos.LocacaoServiceTest is not public.
-  2. Test class should have exactly one public constructor
-  3. Method testeLocacao() should be public
-  4. Method asserts() should be public
-  5. The @Rule &apos;exception&apos; must be public.
-	at org.junit.runners.ParentRunner.validate(ParentRunner.java:525)
-	at org.junit.runners.ParentRunner.&lt;init&gt;(ParentRunner.java:102)
-	at org.junit.runners.BlockJUnit4ClassRunner.&lt;init&gt;(BlockJUnit4ClassRunner.java:84)
-	at org.junit.runners.JUnit4.&lt;init&gt;(JUnit4.java:23)
-	at org.junit.internal.builders.JUnit4Builder.runnerForClass(JUnit4Builder.java:10)
-	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:70)
-	at org.junit.internal.builders.AllDefaultPossibilitiesBuilder.runnerForClass(AllDefaultPossibilitiesBuilder.java:37)
-	at org.junit.runners.model.RunnerBuilder.safeRunnerForClass(RunnerBuilder.java:70)
-	at org.junit.internal.requests.ClassRequest.createRunner(ClassRequest.java:28)
-	at org.junit.internal.requests.MemoizingRequest.getRunner(MemoizingRequest.java:19)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:250)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
-	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
-	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
-	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
-</error>
-  </testcase>
+  <testcase classname="servicos.LocacaoServiceTest" name="testeLocacao" time="0.044"/>
+  <testcase classname="servicos.LocacaoServiceTest" name="asserts" time="0"/>
+  <testcase classname="servicos.LocacaoServiceTest" name="testeLocacaoSemEstoqueNovaSemNomedoFilme" time="0.012"/>
+  <testcase classname="servicos.LocacaoServiceTest" name="testeLocacaoSemEstoqueRobustaSemNomeUsuario" time="0.001"/>
+  <testcase classname="servicos.LocacaoServiceTest" name="testeLocacaoSemEstoqueElegante" time="0"/>
+  <testcase classname="servicos.LocacaoServiceTest" name="testeLocacaoErrorCollector" time="0.006"/>
 </testsuite>
