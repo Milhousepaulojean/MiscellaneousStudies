@@ -2,8 +2,10 @@ package servicos;
 
 import entidades.DataUtils;
 import org.junit.Assert;
+import org.junit.Rule;
 import org.junit.jupiter.api.Test;
 import org.junit.rules.ErrorCollector;
+import org.junit.rules.ExpectedException;
 import utils.Filme;
 import utils.Locacao;
 import utils.Usuario;
@@ -20,13 +22,15 @@ import static org.hamcrest.MatcherAssert.assertThat;
 class LocacaoServiceTest {
 
     public ErrorCollector error = new ErrorCollector();
+    @Rule
+    ExpectedException exception = ExpectedException.none();
 
     @Test
-    void testeLocacao() {
+    void testeLocacao() throws Exception {
         //Cenario
         LocacaoService service = new LocacaoService();
         Usuario usuario = new Usuario("Usuario 1");
-        Filme filme = new Filme("Filme 1",15 , 2.1);
+        Filme filme = new Filme("Filme 1",1 , 2.1);
 
         //Acao
         Locacao locacao  =  service.alugarFilme(usuario, filme);
@@ -37,6 +41,23 @@ class LocacaoServiceTest {
         error.checkThat((isMesmaData(locacao.getDataRetorno() , obterDataComDiferencaDias(1))) , is(true));
     }
 
+    @Test
+    public void testeLocacaoPorEstoque() throws Exception {
+        //Cenario
+        LocacaoService service = new LocacaoService();
+        Usuario usuario = new Usuario("Usuario 1");
+        Filme filme = new Filme("Filme 1",0 , 2.1);
+
+        //Acao
+        try{
+            Locacao locacao  =  service.alugarFilme(usuario, filme);
+            Assert.fail("Deveria ter lancado uma excessao.");
+        }
+        catch (Exception e){
+            assertThat(e.getMessage() , is("Nao esta no estoque."));
+        }
+    }
+    
     @Test
     void asserts(){
         Assert.assertTrue(true);
