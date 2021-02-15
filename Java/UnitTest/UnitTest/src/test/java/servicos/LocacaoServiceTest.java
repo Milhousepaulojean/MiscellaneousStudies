@@ -2,9 +2,7 @@ package servicos;
 
 import entidades.FilmeSemEstoqueException;
 import entidades.LocadoraException;
-import org.junit.Assert;
-import org.junit.Rule;
-import org.junit.Test;
+import org.junit.*;
 import org.junit.rules.ErrorCollector;
 import org.junit.rules.ExpectedException;
 import utils.Filme;
@@ -27,10 +25,19 @@ public class LocacaoServiceTest {
     @Rule
     public ExpectedException expectedException = ExpectedException.none();
 
+    private  LocacaoService service;
+
+    @Before
+    public void setupBefore(){ service = new LocacaoService();}
+
+    @After
+    public void setupAfter(){
+        System.out.println("depois");
+    }
+
     @Test
     public void testeLocacao() throws Exception {
         //Cenario
-        LocacaoService service = new LocacaoService();
         Usuario usuario = new Usuario("Usuario 1");
         Filme filme = new Filme("Filme 1", 1, 2.1);
 
@@ -46,7 +53,6 @@ public class LocacaoServiceTest {
     @Test
     public void testeLocacaoErrorCollector() throws Exception {
         //Cenario
-        LocacaoService service = new LocacaoService();
         Usuario usuario = new Usuario("Usuario 1");
         Filme filme = new Filme("Filme 1", 1, 2.1);
 
@@ -63,7 +69,6 @@ public class LocacaoServiceTest {
     public void testeLocacaoSemEstoqueElegante() throws Exception {
 
         //Cenario
-        LocacaoService service = new LocacaoService();
         Usuario usuario = new Usuario("Usuario 1");
         Filme filme = new Filme("Filme 1", 0, 2.1);
 
@@ -72,10 +77,9 @@ public class LocacaoServiceTest {
     }
 
     @Test
-    public void testeLocacaoSemEstoqueSemNomeUsuario() throws Exception {
+    public void testeLocacaoSemEstoqueRobustaSemNomeUsuario() throws Exception {
 
         //Cenario
-        LocacaoService service = new LocacaoService();
         Filme filme = new Filme("Filme 1", 1, 2.1);
 
         //Acao
@@ -88,17 +92,16 @@ public class LocacaoServiceTest {
     }
 
     @Test
-    public void testeLocacaoSemEstoqueSemNomedoFilme() throws Exception {
+    public void testeLocacaoSemEstoqueNovaSemNomedoFilme() throws Exception {
 
         //Cenario
-        LocacaoService service = new LocacaoService();
         Usuario usuario = new Usuario("Usuario 1");
         expectedException.expect(LocadoraException.class);
         expectedException.expectMessage("Nome do filme nao informado.");
 
         service.alugarFilme(usuario, null);
     }
-    
+
     @Test
     public void asserts() {
 
