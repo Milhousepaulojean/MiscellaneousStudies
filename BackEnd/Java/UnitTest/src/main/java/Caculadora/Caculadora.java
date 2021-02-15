@@ -1,4 +1,4 @@
-package CaculadoraTest;
+package Caculadora;
 
 public class Caculadora {
 

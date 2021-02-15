@@ -1,4 +1,4 @@
-package CaculadoraTest;
+package Caculadora;
 
 import org.junit.Assert;
 import org.junit.Test;
