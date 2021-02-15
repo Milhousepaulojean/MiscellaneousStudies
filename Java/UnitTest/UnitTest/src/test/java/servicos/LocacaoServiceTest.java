@@ -1,6 +1,7 @@
 package servicos;
 
 import entidades.FilmeSemEstoqueException;
+import entidades.LocadoraException;
 import org.junit.Assert;
 import org.junit.Rule;
 import org.junit.Test;
@@ -9,7 +10,9 @@ import org.junit.rules.ExpectedException;
 import utils.Filme;
 import utils.Locacao;
 import utils.Usuario;
+
 import java.util.Date;
+
 import static entidades.DataUtils.isMesmaData;
 import static entidades.DataUtils.obterDataComDiferencaDias;
 import static org.hamcrest.CoreMatchers.is;
@@ -56,7 +59,7 @@ public class LocacaoServiceTest {
         errorCollector.checkThat(((isMesmaData(locacao.getDataRetorno(), obterDataComDiferencaDias(1)))), is(true));
     }
 
-    @Test(expected = Exception.class)
+    @Test(expected = FilmeSemEstoqueException.class)
     public void testeLocacaoSemEstoqueElegante() throws Exception {
 
         //Cenario
@@ -69,39 +72,33 @@ public class LocacaoServiceTest {
     }
 
     @Test
-    public void testeLocacaoSemEstoqueRobusta() throws Exception {
+    public void testeLocacaoSemEstoqueSemNomeUsuario() throws Exception {
+
         //Cenario
         LocacaoService service = new LocacaoService();
-        Usuario usuario = new Usuario("Usuario 1");
-        Filme filme = new Filme("Filme 1", 0, 2.1);
+        Filme filme = new Filme("Filme 1", 1, 2.1);
 
         //Acao
         try {
-            Locacao locacao = service.alugarFilme(usuario, filme);
-            fail("Deveria ter lancado uma excessao.");
-        } catch (Exception e) {
-            //Verificacao
-            assertThat("Nao esta no estoque.", is(e.getMessage()));
+            service.alugarFilme(null, filme);
+            fail();
+        } catch (LocadoraException e) {
+            assertThat(e.getMessage(), is("Usuario sem nome"));
         }
     }
 
     @Test
-    public void testeLocacaoSemEstoqueNova() throws Exception {
+    public void testeLocacaoSemEstoqueSemNomedoFilme() throws Exception {
 
         //Cenario
         LocacaoService service = new LocacaoService();
         Usuario usuario = new Usuario("Usuario 1");
-        Filme filme = new Filme("Filme 1", 0, 2.1);
+        expectedException.expect(LocadoraException.class);
+        expectedException.expectMessage("Nome do filme nao informado.");
 
-        expectedException.expect(Exception.class);
-        expectedException.expectMessage("Nao esta no estoque.");
-
-        //Acao
-        service.alugarFilme(usuario, filme);
-
+        service.alugarFilme(usuario, null);
     }
-
-
+    
     @Test
     public void asserts() {
 
