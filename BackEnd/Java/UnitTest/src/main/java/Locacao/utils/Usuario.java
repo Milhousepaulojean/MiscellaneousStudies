@@ -1,4 +1,4 @@
-package utils;
+package Locacao.utils;
 
 public class Usuario {
 

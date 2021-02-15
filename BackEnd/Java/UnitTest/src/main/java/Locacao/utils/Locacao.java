@@ -1,4 +1,4 @@
-package utils;
+package Locacao.utils;
 
 import java.util.Date;
 import java.util.List;

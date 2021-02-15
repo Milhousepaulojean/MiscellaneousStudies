@@ -1,12 +1,11 @@
-package servicos;
+package LocacaoTest.servicosTest;
 
-import entidades.DataUtils;
-import entidades.FilmeSemEstoqueException;
-import entidades.LocadoraException;
-import utils.Filme;
-import utils.Locacao;
-import utils.Usuario;
-import static entidades.DataUtils.adicionarDias;
+import Locacao.entidades.DataUtils;
+import Locacao.entidades.LocadoraException;
+import Locacao.entidades.FilmeSemEstoqueException;
+import Locacao.utils.Filme;
+import Locacao.utils.Locacao;
+import Locacao.utils.Usuario;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -41,7 +40,7 @@ public class LocacaoService {
 
 		//Entrega no dia seguinte
 		Date dataEntrega = new Date();
-		dataEntrega = adicionarDias(dataEntrega, 1);
+		dataEntrega = DataUtils.adicionarDias(dataEntrega, 1);
 		locacao.setDataRetorno(dataEntrega);
 		
 		//Salvando a locacao...	
