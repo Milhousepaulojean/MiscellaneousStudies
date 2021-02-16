@@ -10,6 +10,7 @@ import org.junit.rules.ErrorCollector;
 import org.junit.rules.ExpectedException;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
+import org.mockito.Mockito;
 
 import java.util.*;
 
@@ -18,6 +19,7 @@ import static Locacao.entidades.DataUtils.obterDataComDiferencaDias;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.*;
 import static org.junit.runners.Parameterized.*;
+import static org.mockito.Mockito.when;
 
 @FixMethodOrder
 @RunWith(Parameterized.class)
@@ -33,6 +35,9 @@ public class LocacaoServiceTest {
     public String descripton;
 
     private LocacaoService service;
+    private LocacaoDao locacaoDao;
+
+    private SPCServices spcServices;
 
     //@Parameters(name="Teste: [JSON] {0} - [Valor] {1} - [Descricao] {2}")
     @Parameters(name = "Teste: [Descricao] {2}")
@@ -87,8 +92,12 @@ public class LocacaoServiceTest {
     public void setupBefore() {
         System.out.println("Antes do Metodo");
         service = new LocacaoService();
-        LocacaoDao dao = new LocacaoDaoFake();
-        service.setLocacaoDao(dao);
+        locacaoDao = Mockito.mock(LocacaoDao.class);
+        spcServices = Mockito.mock(SPCServices.class);
+
+        service.setSpcServices(spcServices);
+        service.setLocacaoDao(locacaoDao);
+
         System.out.println(counter++);
     }
 
@@ -277,5 +286,36 @@ public class LocacaoServiceTest {
         assertTrue(ehsegunda);
 
        assertThat(locacao.getDataRetorno(), new DiasdaSemana(Calendar.MONDAY));
+    }
+
+    @Test
+    public void naoDeveAlugarFilmeParaUsuariosNegativados() throws Exception {
+        //Cenario
+        Usuario usuario = new Usuario("Usuario 1");
+        List<Filme> filmes = new ArrayList<Filme>();
+        filmes.add(new Filme("Filme 1", 1, 2.1));
+
+        expectedException.expect(LocadoraException.class);
+        expectedException.expectMessage("User negativado");
+
+        when(spcServices.possuiNomeNegativo(usuario)).thenReturn(true);
+
+        //Acao
+        service.alugarFilme(usuario, filmes);
+    }
+
+    @Test
+    public void deveAlugarFilmeParaUsuariosNaoNegativados() throws Exception {
+        //Cenario
+        Usuario usuario = new Usuario("Usuario 1");
+        List<Filme> filmes = new ArrayList<Filme>();
+        filmes.add(new Filme("Filme 1", 1, 2.1));
+
+        when(spcServices.possuiNomeNegativo(usuario)).thenReturn(false);
+
+        //Acao
+        Locacao locacao = service.alugarFilme(usuario, filmes);
+
+        assertNotNull(locacao);
     }
 }

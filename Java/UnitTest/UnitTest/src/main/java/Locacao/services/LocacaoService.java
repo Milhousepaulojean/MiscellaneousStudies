@@ -12,6 +12,8 @@ public class LocacaoService {
 
     private LocacaoDao locacaoDao;
 
+    private SPCServices spcServices;
+
     public Locacao alugarFilme(Usuario usuario, List<Filme> filmes) throws Exception {
 
         Locacao locacao = new Locacao();
@@ -49,6 +51,10 @@ public class LocacaoService {
 
         }
 
+        if (spcServices.possuiNomeNegativo(usuario)){
+            throw new LocadoraException("User negativado");
+        }
+
         locacao.setFilme(filmes);
         locacao.setUsuario(usuario);
         locacao.setDataLocacao(new Date());
@@ -70,6 +76,10 @@ public class LocacaoService {
 
     public void setLocacaoDao(LocacaoDao locacaoDao) {
         this.locacaoDao = locacaoDao;
+    }
+
+    public void setSpcServices(SPCServices spcServices){
+        this.spcServices = spcServices;
     }
 
     public void main(String[] args) throws Exception {
