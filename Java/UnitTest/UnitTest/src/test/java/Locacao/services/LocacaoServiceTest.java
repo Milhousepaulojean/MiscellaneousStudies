@@ -5,6 +5,8 @@ import Locacao.utils.*;
 import org.junit.*;
 import org.junit.rules.ErrorCollector;
 import org.junit.rules.ExpectedException;
+import org.junit.runner.RunWith;
+import org.junit.runners.Parameterized;
 
 import java.util.*;
 
@@ -12,37 +14,91 @@ import static Locacao.entidades.DataUtils.isMesmaData;
 import static Locacao.entidades.DataUtils.obterDataComDiferencaDias;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.*;
+import static org.junit.runners.Parameterized.*;
 
 @FixMethodOrder
+@RunWith(Parameterized.class)
 public class LocacaoServiceTest {
+
+    @Parameter
+    public List<Filme> filmes;
+
+    @Parameter(value = 1)
+    public Double valorLocacao;
+
+    @Parameter(value = 2)
+    public String descripton;
+
+    private LocacaoService service;
+
+    //@Parameters(name="Teste: [JSON] {0} - [Valor] {1} - [Descricao] {2}")
+    @Parameters(name="Teste: [Descricao] {2}")
+    public static Collection<Object[]> getParametros() {
+        return Arrays.asList(new Object[][]{
+                {Arrays.asList(
+                        new Filme("Filme 1", 1, 2.1)
+                ), 2.1 , "Descricao 1"},
+                {Arrays.asList(
+                        new Filme("Filme 1", 1, 2.1),
+                        new Filme("Filme 2", 1, 2.2)
+                ), 4.3, "Descricao 2"},
+                {Arrays.asList(
+                        new Filme("Filme 1", 1, 2.1),
+                        new Filme("Filme 2", 1, 2.2),
+                        new Filme("Filme 3", 1, 2.3)
+                ), 6.02, "Descricao 3"},
+                {Arrays.asList(
+                        new Filme("Filme 1", 1, 2.1),
+                        new Filme("Filme 2", 1, 2.2),
+                        new Filme("Filme 3", 1, 2.3),
+                        new Filme("Filme 4", 1, 2.4)
+                ), 7.2, "Descricao 4"},
+                {Arrays.asList(
+                        new Filme("Filme 1", 1, 2.1),
+                        new Filme("Filme 2", 1, 2.2),
+                        new Filme("Filme 3", 1, 2.3),
+                        new Filme("Filme 4", 1, 2.4),
+                        new Filme("Filme 5", 1, 2.5)
+                ), 7.7, "Descricao 5"},
+                {Arrays.asList(
+                        new Filme("Filme 1", 1, 2.1),
+                        new Filme("Filme 2", 1, 2.2),
+                        new Filme("Filme 3", 1, 2.3),
+                        new Filme("Filme 4", 1, 2.4),
+                        new Filme("Filme 5", 1, 2.5),
+                        new Filme("Filme 6", 1, 2.6)
+                ), 10.3, "Descricao 6"}
+
+        });
+    }
 
     @Rule
     public ErrorCollector errorCollector = new ErrorCollector();
 
     @Rule
     public ExpectedException expectedException = ExpectedException.none();
-    private  LocacaoService service;
+
     static int counter;
 
     @Before
-    public void setupBefore(){
+    public void setupBefore() {
         System.out.println("Antes do Metodo");
         service = new LocacaoService();
         System.out.println(counter++);
     }
 
     @After
-    public void setupAfter(){
+    public void setupAfter() {
         System.out.println("depois do metodo");
     }
 
     @BeforeClass
-    public static void setupBeforeClass(){
+    public static void setupBeforeClass() {
         System.out.println("Antes da Classe ser Instanciada.");
     }
 
     @AfterClass
-    public static void setupAfterClass(){
+    public static void setupAfterClass() {
         System.out.println("Depois da Classe ser Instanciada.");
     }
 
@@ -83,46 +139,14 @@ public class LocacaoServiceTest {
     }
 
     @Test
-    public void deveAlugarFilme() throws Exception {
-        Assume.assumeFalse(DataUtils.verificarDiaSemana(new Date(), Calendar.SATURDAY));
-        //Cenario
-        Usuario usuario = new Usuario("Usuario 1");
-        List<Filme> filmes = new ArrayList<Filme>();
-
-        filmes.add(new Filme("Filme 1", 1, 2.1));
-        filmes.add(new Filme("Filme 2", 1, 2.2));
-
-        //Acao
-        Locacao locacao = service.alugarFilme(usuario, filmes);
-
-        //Verificacao
-        for (Filme locacaofilme : locacao.getFilme()) {
-            if (locacaofilme.getPrecoLocacao() == 2.1) {
-                assertThat(locacaofilme.getPrecoLocacao(), is(2.1));
-            } else if (locacaofilme.getPrecoLocacao() == 2.2) {
-                assertThat(locacaofilme.getPrecoLocacao(), is(2.2));
-            } else {
-                fail("Deveria retornar os valores, listados acima");
-            }
-
-        }
-
-
-        assertEquals(4.3 , locacao.getValor(),0.01);
-        assertThat((isMesmaData(locacao.getDataLocacao(), new Date())), is(true));
-        assertThat((isMesmaData(locacao.getDataRetorno(), obterDataComDiferencaDias(1))), is(true));
-    }
-
-    @Test
     public void testeLocacaoErrorCollector() throws Exception {
         //Cenario
-        Usuario usuario = new Usuario("Usuario 1");
-        List<Filme> filmes = new ArrayList<Filme>();
-
-        filmes.add(new Filme("Filme 1", 1, 2.1));
+        Usuario user = new Usuario("Usuario 1");
+        List<Filme> listFilme = new ArrayList<Filme>();
+        listFilme.add(new Filme("Filme 1", 1, 2.1));
 
         //Acao
-        Locacao locacao = service.alugarFilme(usuario, filmes);
+        Locacao locacao = service.alugarFilme(user, listFilme);
 
         //Verificacao
         errorCollector.checkThat(locacao.getValor(), is(2.1));
@@ -135,12 +159,12 @@ public class LocacaoServiceTest {
 
         //Cenario
         Usuario usuario = new Usuario("Usuario 1");
-        List<Filme> filmes = new ArrayList<Filme>();
+        List<Filme> listFilme = new ArrayList<Filme>();
 
-        filmes.add(new Filme("Filme 1", 0, 2.1));
+        listFilme.add(new Filme("Filme 1", 0, 2.1));
 
         //Acao
-        service.alugarFilme(usuario, filmes);
+        service.alugarFilme(usuario, listFilme);
     }
 
     @Test
@@ -168,69 +192,62 @@ public class LocacaoServiceTest {
     }
 
     @Test
+    public void deveLocarcomPromocaoPara2Filmes() throws Exception {
+        Assume.assumeFalse(DataUtils.verificarDiaSemana(new Date(), Calendar.SATURDAY));
+        //Cenario
+        Usuario usuario = new Usuario("Usuario 1");
+
+        //Acao
+        Locacao locacao = service.alugarFilme(usuario, filmes);
+
+        //Verificacao
+        assertEquals(valorLocacao, locacao.getValor(), 0.1);
+        assertThat((isMesmaData(locacao.getDataLocacao(), new Date())), is(true));
+        assertThat((isMesmaData(locacao.getDataRetorno(), obterDataComDiferencaDias(1))), is(true));
+    }
+
+    @Test
     public void deveLocarcomPromocaoPara3Filmes() throws Exception {
         //Cenario
         Usuario usuario = new Usuario("Usuario 1");
-        List<Filme> filmes = new ArrayList<Filme>();
 
-        filmes.add(new Filme("Filme 1", 1, 2.1));
-        filmes.add(new Filme("Filme 2", 1, 2.2));
-        filmes.add(new Filme("Filme 3", 10, 2.3));
-
+        //Acao
         Locacao locacao = service.alugarFilme(usuario, filmes);
 
-        assertEquals(6.02, locacao.getValor()  ,  0.01);
+        //Verificacao
+        assertEquals(valorLocacao, locacao.getValor(), 0.1);
     }
 
     @Test
     public void deveLocarcomPromocaoPara4Filmes() throws Exception {
         //Cenario
         Usuario usuario = new Usuario("Usuario 1");
-        List<Filme> filmes = new ArrayList<Filme>();
 
-        filmes.add(new Filme("Filme 1", 1, 2.1));
-        filmes.add(new Filme("Filme 2", 1, 2.2));
-        filmes.add(new Filme("Filme 3", 10, 2.3));
-        filmes.add(new Filme("Filme 4", 10, 2.4));
-
+        //Acao
         Locacao locacao = service.alugarFilme(usuario, filmes);
 
-        assertEquals(7.2 , locacao.getValor()  ,  0.1);
+        //Verificacao
+        assertEquals(valorLocacao, locacao.getValor(), 0.1);
     }
 
     @Test
     public void deveLocarcomPromocaoPara5Filmes() throws Exception {
         //Cenario
         Usuario usuario = new Usuario("Usuario 1");
-        List<Filme> filmes = new ArrayList<Filme>();
-
-        filmes.add(new Filme("Filme 1", 1, 2.1));
-        filmes.add(new Filme("Filme 2", 1, 2.2));
-        filmes.add(new Filme("Filme 3", 10, 2.3));
-        filmes.add(new Filme("Filme 4", 10, 2.4));
-        filmes.add(new Filme("Filme 5", 3, 2.5));
 
         Locacao locacao = service.alugarFilme(usuario, filmes);
 
-        assertEquals(7.7 , locacao.getValor()  ,  0.1);
+        assertEquals(valorLocacao, locacao.getValor(), 0.1);
     }
 
     @Test
     public void deveLocarcomPromocaoPara6Filmes() throws Exception {
         //Cenario
         Usuario usuario = new Usuario("Usuario 1");
-        List<Filme> filmes = new ArrayList<Filme>();
-
-        filmes.add(new Filme("Filme 1", 1, 2.1));
-        filmes.add(new Filme("Filme 2", 1, 2.2));
-        filmes.add(new Filme("Filme 3", 10, 2.3));
-        filmes.add(new Filme("Filme 4", 10, 2.4));
-        filmes.add(new Filme("Filme 5", 3, 2.5));
-        filmes.add(new Filme("Filme 6", 3, 2.6));
 
         Locacao locacao = service.alugarFilme(usuario, filmes);
 
-        assertEquals(10.3 , locacao.getValor()  ,  0.1);
+        assertEquals(valorLocacao, locacao.getValor(), 0.1);
     }
 
     @Test
@@ -247,7 +264,7 @@ public class LocacaoServiceTest {
         Locacao locacao = service.alugarFilme(usuario, filmes);
 
         //Verificaco
-        boolean ehsegunda =  DataUtils.verificarDiaSemana(locacao.getDataRetorno() , Calendar.MONDAY);
+        boolean ehsegunda = DataUtils.verificarDiaSemana(locacao.getDataRetorno(), Calendar.MONDAY);
         assertTrue(ehsegunda);
     }
 }
