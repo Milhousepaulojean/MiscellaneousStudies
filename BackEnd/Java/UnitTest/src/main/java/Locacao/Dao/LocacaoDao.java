@@ -4,5 +4,6 @@ import Locacao.utils.Locacao;
 
 public interface LocacaoDao {
 
-    public void salvar(Locacao locacao) ;
+    public void salvar(Locacao locacao);
+
 }
