@@ -1,4 +1,5 @@
 package Locacao.services;
+import Locacao.Dao.LocacaoDao;
 import Locacao.entidades.*;
 import Locacao.utils.*;
 import java.util.ArrayList;
@@ -8,6 +9,8 @@ import java.util.List;
 
 
 public class LocacaoService {
+
+    private LocacaoDao locacaoDao;
 
     public Locacao alugarFilme(Usuario usuario, List<Filme> filmes) throws Exception {
 
@@ -60,7 +63,13 @@ public class LocacaoService {
         locacao.setDataRetorno(dataEntrega);
         locacao.setValor(valorTotal);
 
+        locacaoDao.salvar(locacao);
+
         return locacao;
+    }
+
+    public void setLocacaoDao(LocacaoDao locacaoDao) {
+        this.locacaoDao = locacaoDao;
     }
 
     public void main(String[] args) throws Exception {
@@ -73,6 +82,7 @@ public class LocacaoService {
 
         //Acao
         Locacao locacao = service.alugarFilme(usuario, filmes);
+
 
         //Verificacao
         System.out.println(locacao.getValor() == 2.1);
