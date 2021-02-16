@@ -1,5 +1,7 @@
 package Locacao.services;
 
+import Locacao.Dao.LocacaoDao;
+import Locacao.Dao.LocacaoDaoFake;
 import Locacao.Matchers.DiasdaSemana;
 import Locacao.entidades.*;
 import Locacao.utils.*;
@@ -85,6 +87,8 @@ public class LocacaoServiceTest {
     public void setupBefore() {
         System.out.println("Antes do Metodo");
         service = new LocacaoService();
+        LocacaoDao dao = new LocacaoDaoFake();
+        service.setLocacaoDao(dao);
         System.out.println(counter++);
     }
 
