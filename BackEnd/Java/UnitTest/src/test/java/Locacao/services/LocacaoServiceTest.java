@@ -10,15 +10,16 @@ import org.junit.rules.ErrorCollector;
 import org.junit.rules.ExpectedException;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-import org.mockito.Mockito;
-
 import java.util.*;
 
+import static Locacao.entidades.DataUtils.*;
 import static Locacao.entidades.DataUtils.isMesmaData;
 import static Locacao.entidades.DataUtils.obterDataComDiferencaDias;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.*;
 import static org.junit.runners.Parameterized.*;
+import static org.mockito.Mockito.*;
+import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
 @FixMethodOrder
@@ -36,6 +37,7 @@ public class LocacaoServiceTest {
 
     private LocacaoService service;
     private LocacaoDao locacaoDao;
+    private EmailServices emailServices;
 
     private SPCServices spcServices;
 
@@ -92,11 +94,13 @@ public class LocacaoServiceTest {
     public void setupBefore() {
         System.out.println("Antes do Metodo");
         service = new LocacaoService();
-        locacaoDao = Mockito.mock(LocacaoDao.class);
-        spcServices = Mockito.mock(SPCServices.class);
+        locacaoDao = mock(LocacaoDao.class);
+        spcServices = mock(SPCServices.class);
+        emailServices = mock(EmailServices.class);
 
         service.setSpcServices(spcServices);
         service.setLocacaoDao(locacaoDao);
+        service.setSEmailServices(emailServices);
 
         System.out.println(counter++);
     }
@@ -207,7 +211,7 @@ public class LocacaoServiceTest {
 
     @Test
     public void deveLocarcomPromocaoPara2Filmes() throws Exception {
-        Assume.assumeFalse(DataUtils.verificarDiaSemana(new Date(), Calendar.SATURDAY));
+        Assume.assumeFalse(verificarDiaSemana(new Date(), Calendar.SATURDAY));
         //Cenario
         Usuario usuario = new Usuario("Usuario 1");
 
@@ -270,7 +274,7 @@ public class LocacaoServiceTest {
 
     @Test
     public void deveDevolvoerNaSegundaAlugarnoSabado() throws Exception {
-        Assume.assumeTrue(DataUtils.verificarDiaSemana(new Date(), Calendar.SUNDAY));
+        Assume.assumeTrue(verificarDiaSemana(new Date(), Calendar.SUNDAY));
 
         //Cenario
         Usuario usuario = new Usuario("Usuario 1");
@@ -282,7 +286,7 @@ public class LocacaoServiceTest {
         Locacao locacao = service.alugarFilme(usuario, filmes);
 
         //Verificaco
-        boolean ehsegunda = DataUtils.verificarDiaSemana(locacao.getDataRetorno(), Calendar.MONDAY);
+        boolean ehsegunda = verificarDiaSemana(locacao.getDataRetorno(), Calendar.MONDAY);
         assertTrue(ehsegunda);
 
        assertThat(locacao.getDataRetorno(), new DiasdaSemana(Calendar.MONDAY));
@@ -295,13 +299,19 @@ public class LocacaoServiceTest {
         List<Filme> filmes = new ArrayList<Filme>();
         filmes.add(new Filme("Filme 1", 1, 2.1));
 
-        expectedException.expect(LocadoraException.class);
-        expectedException.expectMessage("User negativado");
-
         when(spcServices.possuiNomeNegativo(usuario)).thenReturn(true);
 
-        //Acao
-        service.alugarFilme(usuario, filmes);
+
+        try{
+            //Acao
+            service.alugarFilme(usuario, filmes);
+            //Verificacao
+            fail();
+        }catch (LocadoraException e){
+            assertThat(e.getMessage(), is("User negativado"));
+        }
+
+        verify(spcServices).possuiNomeNegativo(usuario);
     }
 
     @Test
@@ -316,6 +326,23 @@ public class LocacaoServiceTest {
         //Acao
         Locacao locacao = service.alugarFilme(usuario, filmes);
 
-        assertNotNull(locacao);
+        verify(spcServices).possuiNomeNegativo(usuario);
+    }
+
+    @Test
+    public void deveEnviarEmailParaLocacoesAtrasadas() throws Exception {
+        //Cenario
+        Usuario usuario = new Usuario("Usuario 1");
+        List<Filme> filmes = new ArrayList<Filme>();
+        filmes.add(new Filme("Filme 1", 1, 2.1));
+
+        List<Locacao> locacoespendentes = Arrays.asList(new Locacao(usuario,filmes, obterDataComDiferencaDias(-3), obterDataComDiferencaDias(-1) ,2.1));
+        when(locacaoDao.obterLocacoesPendentes()).thenReturn(locacoespendentes);
+
+        //Acao
+        service.notificarAtraso();
+
+        verify(emailServices).notificarAtraso(usuario);
+
     }
 }

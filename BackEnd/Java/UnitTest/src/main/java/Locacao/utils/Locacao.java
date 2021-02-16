@@ -5,11 +5,22 @@ import java.util.List;
 
 public class Locacao {
 
+    public Locacao(){}
+    public Locacao(Usuario usuario, List<Filme> filme, Date dataLocacao, Date dataRetorno, Double valor) {
+        this.usuario = usuario;
+        this.filme = filme;
+        this.dataLocacao = dataLocacao;
+        this.dataRetorno = dataRetorno;
+        this.valor = valor;
+    }
+
     private Usuario usuario;
     private List<Filme> filme;
     private Date dataLocacao;
     private Date dataRetorno;
     private Double valor;
+
+
 
     public Usuario getUsuario() {
         return usuario;

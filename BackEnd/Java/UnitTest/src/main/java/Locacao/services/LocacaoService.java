@@ -14,6 +14,8 @@ public class LocacaoService {
 
     private SPCServices spcServices;
 
+    private EmailServices emailServices;
+
     public Locacao alugarFilme(Usuario usuario, List<Filme> filmes) throws Exception {
 
         Locacao locacao = new Locacao();
@@ -82,6 +84,10 @@ public class LocacaoService {
         this.spcServices = spcServices;
     }
 
+    public void setSEmailServices(EmailServices emailServices){
+        this.emailServices = emailServices;
+    }
+
     public void main(String[] args) throws Exception {
         //Cenario
         LocacaoService service = new LocacaoService();
@@ -98,5 +104,12 @@ public class LocacaoService {
         System.out.println(locacao.getValor() == 2.1);
         System.out.println(DataUtils.isMesmaData(locacao.getDataLocacao(), new Date()));
         System.out.println(DataUtils.isMesmaData(locacao.getDataRetorno(), DataUtils.obterDataComDiferencaDias(1)));
+    }
+
+    public void notificarAtraso(){
+        List<Locacao> locacaos = locacaoDao.obterLocacoesPendentes();
+        for (Locacao locacao: locacaos) {
+            emailServices.notificarAtraso(locacao.getUsuario());
+        }
     }
 }
