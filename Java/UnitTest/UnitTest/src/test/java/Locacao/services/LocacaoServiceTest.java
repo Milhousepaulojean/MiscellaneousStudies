@@ -1,5 +1,6 @@
 package Locacao.services;
 
+import Locacao.Matchers.DiasdaSemana;
 import Locacao.entidades.*;
 import Locacao.utils.*;
 import org.junit.*;
@@ -32,12 +33,12 @@ public class LocacaoServiceTest {
     private LocacaoService service;
 
     //@Parameters(name="Teste: [JSON] {0} - [Valor] {1} - [Descricao] {2}")
-    @Parameters(name="Teste: [Descricao] {2}")
+    @Parameters(name = "Teste: [Descricao] {2}")
     public static Collection<Object[]> getParametros() {
         return Arrays.asList(new Object[][]{
                 {Arrays.asList(
                         new Filme("Filme 1", 1, 2.1)
-                ), 2.1 , "Descricao 1"},
+                ), 2.1, "Descricao 1"},
                 {Arrays.asList(
                         new Filme("Filme 1", 1, 2.1),
                         new Filme("Filme 2", 1, 2.2)
@@ -235,8 +236,10 @@ public class LocacaoServiceTest {
         //Cenario
         Usuario usuario = new Usuario("Usuario 1");
 
+        //Acao
         Locacao locacao = service.alugarFilme(usuario, filmes);
 
+        //Verificacao
         assertEquals(valorLocacao, locacao.getValor(), 0.1);
     }
 
@@ -245,8 +248,10 @@ public class LocacaoServiceTest {
         //Cenario
         Usuario usuario = new Usuario("Usuario 1");
 
+        //Acao
         Locacao locacao = service.alugarFilme(usuario, filmes);
 
+        //Verificacao
         assertEquals(valorLocacao, locacao.getValor(), 0.1);
     }
 
@@ -266,5 +271,7 @@ public class LocacaoServiceTest {
         //Verificaco
         boolean ehsegunda = DataUtils.verificarDiaSemana(locacao.getDataRetorno(), Calendar.MONDAY);
         assertTrue(ehsegunda);
+
+       assertThat(locacao.getDataRetorno(), new DiasdaSemana(Calendar.MONDAY));
     }
 }
