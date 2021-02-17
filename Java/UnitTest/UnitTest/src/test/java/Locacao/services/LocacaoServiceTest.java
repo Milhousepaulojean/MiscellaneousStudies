@@ -10,6 +10,11 @@ import org.junit.rules.ErrorCollector;
 import org.junit.rules.ExpectedException;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.Mockito;
+import org.mockito.MockitoAnnotations;
+
 import java.util.*;
 
 import static Locacao.entidades.DataUtils.*;
@@ -35,10 +40,13 @@ public class LocacaoServiceTest {
     @Parameter(value = 2)
     public String descripton;
 
+    @InjectMocks
     private LocacaoService service;
+    @Mock
     private LocacaoDao locacaoDao;
+    @Mock
     private EmailServices emailServices;
-
+    @Mock
     private SPCServices spcServices;
 
     //@Parameters(name="Teste: [JSON] {0} - [Valor] {1} - [Descricao] {2}")
@@ -93,15 +101,7 @@ public class LocacaoServiceTest {
     @Before
     public void setupBefore() {
         System.out.println("Antes do Metodo");
-        service = new LocacaoService();
-        locacaoDao = mock(LocacaoDao.class);
-        spcServices = mock(SPCServices.class);
-        emailServices = mock(EmailServices.class);
-
-        service.setSpcServices(spcServices);
-        service.setLocacaoDao(locacaoDao);
-        service.setSEmailServices(emailServices);
-
+        MockitoAnnotations.initMocks(this);
         System.out.println(counter++);
     }
 
@@ -333,6 +333,7 @@ public class LocacaoServiceTest {
     public void deveEnviarEmailParaLocacoesAtrasadas() throws Exception {
         //Cenario
         Usuario usuario = new Usuario("Usuario 1");
+        Usuario usuario2 = new Usuario("Usuario 2");
         List<Filme> filmes = new ArrayList<Filme>();
         filmes.add(new Filme("Filme 1", 1, 2.1));
 
@@ -343,6 +344,9 @@ public class LocacaoServiceTest {
         service.notificarAtraso();
 
         verify(emailServices).notificarAtraso(usuario);
+        //verify(emailServices, times(2)).notificarAtraso(usuario);
+        verify(emailServices, never()).notificarAtraso(usuario2);
+        verifyNoMoreInteractions(emailServices);
 
     }
 }
