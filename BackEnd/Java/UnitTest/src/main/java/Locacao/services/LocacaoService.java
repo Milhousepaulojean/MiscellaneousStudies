@@ -76,18 +76,6 @@ public class LocacaoService {
         return locacao;
     }
 
-    public void setLocacaoDao(LocacaoDao locacaoDao) {
-        this.locacaoDao = locacaoDao;
-    }
-
-    public void setSpcServices(SPCServices spcServices){
-        this.spcServices = spcServices;
-    }
-
-    public void setSEmailServices(EmailServices emailServices){
-        this.emailServices = emailServices;
-    }
-
     public void main(String[] args) throws Exception {
         //Cenario
         LocacaoService service = new LocacaoService();
