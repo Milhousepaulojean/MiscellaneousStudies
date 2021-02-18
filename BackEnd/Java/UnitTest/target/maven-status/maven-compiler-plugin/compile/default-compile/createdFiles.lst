@@ -1,0 +1,14 @@
+Locacao/services/LocacaoService.class
+Locacao/utils/Locacao.class
+Locacao/entidades/DataUtils.class
+Caculadora/NumeroNaoEDivisivelPorZero.class
+Locacao/entidades/FilmeSemEstoqueException.class
+Locacao/utils/Filme.class
+Locacao/Dao/LocacaoDao.class
+Locacao/Matchers/DiasdaSemana.class
+Locacao/entidades/LocadoraException.class
+Locacao/services/EmailServices.class
+Locacao/Dao/LocacaoDaoFake.class
+Caculadora/Caculadora.class
+Locacao/utils/Usuario.class
+Locacao/services/SPCServices.class

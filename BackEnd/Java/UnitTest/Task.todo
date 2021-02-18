@@ -1,0 +1,26 @@
+Task:
+    ✔ Install Junit @done (2/17/2021, 11:50:40 PM)
+    ☐ Organizar os teste
+    ☐ Assertivas
+    ☐ AssertThat
+    ☐ Tratar Excessao
+    ☐ Before e After
+    ☐ Ordem de Execucao dos teste
+    ☐ TDD
+    ☐ Ignore e Assumptions
+    ☐ Teste Parametrizaveis
+    ☐ Matcher Proprios
+    ☐ Suites de testes
+    ☐ DataBuilders
+    ☐ Coverage
+    ☐ Dependencias Externas
+    ☐ Objetos Falsos
+    ☐ Mockito
+    ☐ Gravando Expectativas
+    ☐ Verificando Comportamentos
+    ☐ Anotacao
+    ☐ Lancando Excessao
+    ☐ Capturando Argumentos
+    ☐ Spy
+    ☐ PowerMock
+    ☐ Teste Paralelos

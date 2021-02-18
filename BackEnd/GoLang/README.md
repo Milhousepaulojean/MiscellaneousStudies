@@ -1,5 +1,0 @@
-# MiscellaneousStudies  
-
-Utilizando Go por:
-
-
