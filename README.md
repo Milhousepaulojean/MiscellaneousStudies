@@ -1,5 +1,6 @@
 # MiscellaneousStudies  
 
+<<<<<<< HEAD
 Utilizando Git:
 
 # 1.Inicializando um repositorio Git
@@ -96,6 +97,25 @@ Utilizando Git:
     git pull --rebase: Igual ao pull anterior Em vez de usar git mergepara integrar a ramificação remota com a local, use git rebase.  
     git pull --verbose: Fornece saída detalhada durante um pull que exibe o conteúdo sendo baixado e os detalhes da mesclagem.  
 ```
+=======
+# Git
+[1.Init](https://github.com/Milhousepaulojean/MiscellaneousStudies/blob/Git/README.md#1inicializando-um-repositorio-git)  
+[2.Clone](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/Git/README.md#2clonando-um-repositorio-git)  
+[3.Branch](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/Git/README.md#3utilizando-diferentes-repositorio-git)  
+[4.Add](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/Git/README.md#4adicionando-mudancas-nos-arquivos)  
+[5.Stash](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/Git/README.md#5utilizando-stash)  
+[6.Commit](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/Git/README.md#6utilizando-commit)  
+[7.Push](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/Git/README.md#7utilizando-push)  
+[8.Historicos](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/Git/README.md#8utilizando-logshistorico) 
+[9.Historicos](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/Git/README.md#8utilizando-logshistorico)  
+[10.Rebase](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/Git/README.md#9utilizando-rebase)  
+[11.Revert](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/Git/README.md#10utilizando-revert)  
+[12.Issues](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/Git/README.md#11utilizando-issues)  
+[13.Pull-Request](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/Git/README.md#12utilizando-pull-request)  
+[14.WorkFlow](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/Git/README.md#13utilizando-workflow)  
+[15.Pull](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/Git/README.md#13utilizando-workflow)
+[16.Merge](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/Git/README.md#13utilizando-workflow)
+>>>>>>> c7f90bcef114d1aea2a6f1b35c42c48371457537
 
 # 16.Utilizando Merge
     
