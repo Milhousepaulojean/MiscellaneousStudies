@@ -2,6 +2,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Utilizando Git:
 
 # 1.Inicializando um repositorio Git
@@ -121,12 +122,17 @@ Utilizando Git:
 # 13.Git
 [1.Init](https://github.com/Milhousepaulojean/MiscellaneousStudies/blob/Git/README.md#1inicializando-um-repositorio-git)  
 >>>>>>> a312fb6 (Commit aplicado para ajustar Readme.)
+=======
+# Git
+[1.Init](https://github.com/Milhousepaulojean/MiscellaneousStudies/blob/Git/README.md#1inicializando-um-repositorio-git)  
+>>>>>>> 48272edb2db6cc868f7335e036da31b4bd914b35
 [2.Clone](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/Git/README.md#2clonando-um-repositorio-git)  
 [3.Branch](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/Git/README.md#3utilizando-diferentes-repositorio-git)  
 [4.Add](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/Git/README.md#4adicionando-mudancas-nos-arquivos)  
 [5.Stash](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/Git/README.md#5utilizando-stash)  
 [6.Commit](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/Git/README.md#6utilizando-commit)  
 [7.Push](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/Git/README.md#7utilizando-push)  
+<<<<<<< HEAD
 <<<<<<< HEAD
 [8.Historicos](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/Git/README.md#8utilizando-logshistorico)  
 [9.Rebase](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/Git/README.md#9utilizando-rebase)  
@@ -139,6 +145,8 @@ Utilizando Git:
 =======
 >>>>>>> a312fb6 (Commit aplicado para ajustar Readme.)
 =======
+=======
+>>>>>>> 48272edb2db6cc868f7335e036da31b4bd914b35
 [8.Historicos](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/Git/README.md#8utilizando-logshistorico) 
 [9.Historicos](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/Git/README.md#8utilizando-logshistorico)  
 [10.Rebase](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/Git/README.md#9utilizando-rebase)  
@@ -148,7 +156,10 @@ Utilizando Git:
 [14.WorkFlow](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/Git/README.md#13utilizando-workflow)  
 [15.Pull](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/Git/README.md#13utilizando-workflow)
 [16.Merge](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/Git/README.md#13utilizando-workflow)
+<<<<<<< HEAD
 >>>>>>> 48272ed (Commit aplicado para ajuste do ReadMe com novas linhas.)
+=======
+>>>>>>> 48272edb2db6cc868f7335e036da31b4bd914b35
 
 # 16.Utilizando Merge
     
