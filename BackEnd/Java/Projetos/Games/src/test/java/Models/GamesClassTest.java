@@ -2,6 +2,7 @@ package Models;
 
 import org.junit.Test;
 import java.lang.reflect.Field;
+import java.util.Objects;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -28,7 +29,6 @@ public class GamesClassTest {
     public void TestGamesClassGettersAttributesExists() throws NoSuchFieldException {
         GamesClass gamesClass = new GamesClass();
         assertEquals(3 ,gamesClass.getClass().getDeclaredFields().length);
-
     }
 
     @Test
@@ -52,6 +52,46 @@ public class GamesClassTest {
         assertEquals("TesteGame1",gamesClass.getNomeJogo());
         assertEquals("CategoriaJogo1", gamesClass.getCategoriaJogo());
         assertEquals(false, gamesClass.isJogou());
+    }
+
+    @Test
+    public void TestGamesClassToStringAttributesExists()  {
+        GamesClass gamesClass = new GamesClass();
+        gamesClass.setNomeJogo("TesteGame1");
+        gamesClass.setCategoriaJogo("CategoriaJogo1");
+        gamesClass.setJogou(false);
+
+        assertEquals("GamesClass{nomeJogo='TesteGame1', categoriaJogo='CategoriaJogo1', isJogou=false}",gamesClass.toString());
+    }
+
+    @Test
+    public void TestGamesClassToEqualsWithInstancesEquals()  {
+        GamesClass gamesClass = new GamesClass();
+        gamesClass.setNomeJogo("TesteGame1");
+        gamesClass.setCategoriaJogo("CategoriaJogo1");
+        gamesClass.setJogou(false);
+
+        GamesClass gamesClass2 = new GamesClass();
+        gamesClass2.setNomeJogo("TesteGame1");
+        gamesClass2.setCategoriaJogo("CategoriaJogo1");
+        gamesClass2.setJogou(false);
+
+        assertEquals(true , Objects.equals(gamesClass, gamesClass2));
+    }
+
+    @Test
+    public void TestGamesClassToEqualsWithInstancesDiferents()  {
+        GamesClass gamesClass = new GamesClass();
+        gamesClass.setNomeJogo("TesteGame1");
+        gamesClass.setCategoriaJogo("CategoriaJogo1");
+        gamesClass.setJogou(false);
+
+        GamesClass gamesClass2 = new GamesClass();
+        gamesClass2.setNomeJogo("TesteGame2");
+        gamesClass2.setCategoriaJogo("CategoriaJogo2");
+        gamesClass2.setJogou(true);
+
+        assertEquals(false , Objects.equals(gamesClass, gamesClass2));
     }
 
 }
