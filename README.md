@@ -1,5 +1,6 @@
 # Nodejs
 
+<<<<<<< HEAD
   * [Hello World](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/nodejs/01.HelloWorld)
   * [Criando um servidor](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/nodejs/02.CriandoUmServidor)
   * [Verificando Rotas](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/nodejs/03.VerificandoRotas)
@@ -95,4 +96,12 @@ Término em Dez/2021;
 *  [Java](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/Java/BackEnd/Java)
 *  [Git](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/Git)
 >>>>>>> f625633 (nodejs: Se aplicado este commit ira ajustar outros pontos com br)
+=======
+  * Hello World;
+  * Criando um servidor;
+  * Verificando Rotas;
+  * Criando projeto com NPM;
+  * CommomJS;
+  * Construindo Modulos;
+>>>>>>> 18fa3c3 (nodejs: Estudos Iniciais)
 
