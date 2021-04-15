@@ -29,8 +29,7 @@ Término em Dez/2021;
 * 08/2019 - 09/2020 <br>
 **Cognizant Serviços de Tecnologia e Software do Brasil S/A**
 **Cargo:** Líder Técnico e Analista de Sistemas SR. <br>
-**Descrição do cargo:** Desenvolvimento de fluxos e rotinas em sistemas com banco de dados.
-<br>
+**Descrição do cargo:** Desenvolvimento de fluxos e rotinas em sistemas com banco de dados.<br>
 **Tecnologias e técnicas utilizadas:** C# ,ASP.NET / ASP.NET CORE, NoSQL (MongoDB, Cassandra), Windows Services e Web Api ,Angular, TypeScript, NodeJS, Teste Unitários(Nunit, MsTest, Jasmine),Cloud (AWS), Docker. 
 <br>
 
