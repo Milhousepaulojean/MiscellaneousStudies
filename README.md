@@ -5,13 +5,13 @@ Utilizando Git:
 # 1.Inicializando um repositorio Git
     
 ```sh
-   
+   git init
 ```
 
 # 2.Clonando um repositorio Git
     
 ```sh
-    
+    git clone url.git
 ```
 
 # 3.Utilizando diferentes repositorio Git
@@ -30,7 +30,9 @@ Utilizando Git:
 # 5.Utilizando Stash
     
 ```sh
-    
+    git stash 
+    git stash apply
+    git stash clear
 ```
 # 6.Utilizando Commit
     
