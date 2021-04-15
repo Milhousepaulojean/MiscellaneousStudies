@@ -27,7 +27,7 @@ Término em Dez/2021;
 <br>
 
 * 08/2019 - 09/2020 <br>
-  **Cognizant Serviços de Tecnologia e Software do Brasil S/A**
+**Cognizant Serviços de Tecnologia e Software do Brasil S/A**
 **Cargo:** Líder Técnico e Analista de Sistemas SR.<br>
 **Descrição do cargo:** Desenvolvimento de fluxos e rotinas em sistemas com banco de dados.
 <br>
@@ -43,43 +43,43 @@ Término em Dez/2021;
 
 * 05/2010 a 12/2012
 **SiB. Solution In Box**
-**Cargo:**: Líder de interface e Prototipação
-**Descrição do Cargo:** Desenvolvendo e Liderando nas confecções e Estrutura em sistemas ou sites. Utilizando técnicas como acessibilidade, usabilidade e SEO auxiliando na montagem da arquitetura da informação.
-**Tecnologias e técnicas utilizadas:** Tableless (Desenvolvimento de sites com Padrões Web), CSS, HTML/XHTML/DHTML, Acessibilidade ,Semântica de Elementos, Java script, Microformats, Jquery, Ajax, SEO, Wordpress, Drupal, WPF, C# e Silverlight.
+**Cargo:**: Líder de interface e Prototipação<br>
+**Descrição do Cargo:** Desenvolvendo e Liderando nas confecções e Estrutura em sistemas ou sites. Utilizando técnicas como acessibilidade, usabilidade e SEO auxiliando na montagem da arquitetura da informação.<br>
+**Tecnologias e técnicas utilizadas:** Tableless (Desenvolvimento de sites com Padrões Web), CSS, HTML/XHTML/DHTML, Acessibilidade ,Semântica de Elementos, Java script, Microformats, Jquery, Ajax, SEO, Wordpress, Drupal, WPF, C# e Silverlight.<br>
 <br>
 
 * 12/2010 a 05/2011 (Freelancer)
 **Agencia ClickIsobar**
-**Cargo:**: Desenvolvedor Web Front-End Pleno
-**Descrição do Cargo:** Desenvolvendo sites, sistemas e confecções & Estrutura de sites utilizando Acessibilidade e SEO.
+**Cargo:**: Desenvolvedor Web Front-End Pleno<br>
+**Descrição do Cargo:** Desenvolvendo sites, sistemas e confecções & Estrutura de sites utilizando Acessibilidade e SEO.<br>
 **Tecnologias e técnicas utilizadas:** Tableless (Desenvolvimento de sites com Padrões Web), CSS, XHTML/XHTML MP/DHTML, Acessibilidade,SSI ,Semântica de Elementos, Javascript, Microformats, Jquery, Ajax, SEO, Wordpress, Drupal, Api Google, .Net 3.5.
 <br>
 
 * 08/2009 a 08/2010 e 12/2012 a 01/2013 (Freelancer)
 **Giovanni DraftFcb**
-**Cargo:**: Programador HTML
-**Descrição do Cargo:** Desenvolvendo sites, confecções e estrutura de sites utilizando Acessibilidade e SEO.
-**Tecnologias e técnicas utilizadas:** Tableless (Desenvolvimento de sites com Padrões Web), CSS, XHTML/XHTML/MP/DHTML, Acessibilidade ,Semântica de Elementos, Javascript, Microformats, Jquery, Ajax, SEO, Wordpress.
+**Cargo:**: Programador HTML<br>
+**Descrição do Cargo:** Desenvolvendo sites, confecções e estrutura de sites utilizando Acessibilidade e SEO.<br>
+**Tecnologias e técnicas utilizadas:** Tableless (Desenvolvimento de sites com Padrões Web), CSS, XHTML/XHTML/MP/DHTML, Acessibilidade ,Semântica de Elementos, Javascript, Microformats, Jquery, Ajax, SEO, Wordpress.<br>
 <br>
 
 * 06/2009 a 08/2009
 **UOL**
-**Cargo:**: WebMasters
-**Descrição do Cargo:** Análise e modelagem de páginas para estrutura do portal UOL.
-**Tecnologias e técnicas utilizadas:** Tableless (Desenvolvimento de sites com Padrões Web), CSS, XHTML/XHTML/MP/DHTML, Acessibilidade, Semântica de Elementos, Javascript, Microformats, Jquery, Ajax, SEO.
+**Cargo:**: WebMasters<br>
+**Descrição do Cargo:** Análise e modelagem de páginas para estrutura do portal UOL.<br>
+**Tecnologias e técnicas utilizadas:** Tableless (Desenvolvimento de sites com Padrões Web), CSS, XHTML/XHTML/MP/DHTML, Acessibilidade, Semântica de Elementos, Javascript, Microformats, Jquery, Ajax, SEO.<br>
 <br>
 
 * 05/2008 a 06/2009
 **GARAGEIM**
-**Cargo:**: Programador Front End Júnior
-**Descrição do Cargo:** Desenvolvendo sites, confecções e estrutura de sites utilizando Acessibilidade e SEO.
-**Tecnologias e técnicas utilizadas:** Tableless (Desenvolvimento de sites com Padrões Web), CSS, XHTML/XHTML/MP/DHTML, Acessibilidade, Semântica de Elementos, Javascript, Microformats, Jquery, Ajax, SEO, Wordpress.
+**Cargo:**: Programador Front End Júnior<br>
+**Descrição do Cargo:** Desenvolvendo sites, confecções e estrutura de sites utilizando Acessibilidade e SEO.<br>
+**Tecnologias e técnicas utilizadas:** Tableless (Desenvolvimento de sites com Padrões Web), CSS, XHTML/XHTML/MP/DHTML, Acessibilidade, Semântica de Elementos, Javascript, Microformats, Jquery, Ajax, SEO, Wordpress.<br>
 <br>
 
 * 02/2008 a 05/2008
 **TV1.Com**
-**Cargo:**: Desenvolvedor Nível I.
-**Descrição do Cargo:** Trabalhando com confecções e Estruturação de sites;
+**Cargo:**: Desenvolvedor Nível I.<br>
+**Descrição do Cargo:** Trabalhando com confecções e Estruturação de sites;<br>
 **Tecnologias e técnicas utilizadas:** Tableless (Desenvolvimento de sites com Padrões Web), CSS, XHTML/XHTML/MP/DHTML, Acessibilidade, Semântica em elementos, Javascript, Microformats, Jquery, Ajax, SEO.
 
 ## Redes Sociais
