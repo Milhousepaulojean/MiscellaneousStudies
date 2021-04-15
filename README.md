@@ -24,7 +24,6 @@ Término em Dez/2021;
 **Cargo**: Analista de Sistemas Pleno.<br>
 **Descrição do cargo**: Desenvolvimento de fluxos e rotinas em sistemas web com a utlizacao de servicos das plataformas Mercado Livre e Mercado Pago.<br>
 **Tecnologias e técnicas utilizadas:** Java, Git (GitFlow), SQL(MySQL), GoLang, Teste Unitários(Junit, PowerMock), Docker. 
-<br>
 
 * 08/2019 - 09/2020 <br>
 **Cognizant Serviços de Tecnologia e Software do Brasil S/A**
