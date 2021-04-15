@@ -34,49 +34,49 @@ Término em Dez/2021;
 **Tecnologias e técnicas utilizadas:** C# ,ASP.NET / ASP.NET CORE, NoSQL (MongoDB, Cassandra), Windows Services e Web Api ,Angular, TypeScript, NodeJS, Teste Unitários(Nunit, MsTest, Jasmine),Cloud (AWS), Docker. 
 <br>
 
-* 03/2017 – 08/2019
+* 03/2017 – 08/2019 <br>
 **everis an NTT DATA Company**
-**Cargo:** Analista de Sistemas Jr.<br>
+**Cargo:** Analista de Sistemas Jr. <br>
 **Descrição do cargo:** Manutenção/Suporte e desenvolvimento de rotinas em sistemas com banco de dados.<br>
 **Tecnologias e técnicas utilizadas:** C#, ASP.NET, PL/SQL, SQL SERVER, Windows Services, WebServices, WebForms, EntityFramework, MySql, MVC, Razor, Web Api, ChatBots(Api.ai), MVVM, Javascript, Jquery, Ajax, Angular/Angular JS, TypeScript , Node, Teste Unitários e GraphQl.
 <br>
 
-* 05/2010 a 12/2012
+* 05/2010 a 12/2012 <br>
 **SiB. Solution In Box**
-**Cargo:**: Líder de interface e Prototipação<br>
+**Cargo:**: Líder de interface e Prototipação <br>
 **Descrição do Cargo:** Desenvolvendo e Liderando nas confecções e Estrutura em sistemas ou sites. Utilizando técnicas como acessibilidade, usabilidade e SEO auxiliando na montagem da arquitetura da informação.<br>
 **Tecnologias e técnicas utilizadas:** Tableless (Desenvolvimento de sites com Padrões Web), CSS, HTML/XHTML/DHTML, Acessibilidade ,Semântica de Elementos, Java script, Microformats, Jquery, Ajax, SEO, Wordpress, Drupal, WPF, C# e Silverlight.<br>
 <br>
 
-* 12/2010 a 05/2011 (Freelancer)
+* 12/2010 a 05/2011 (Freelancer) <br>
 **Agencia ClickIsobar**
 **Cargo:**: Desenvolvedor Web Front-End Pleno<br>
 **Descrição do Cargo:** Desenvolvendo sites, sistemas e confecções & Estrutura de sites utilizando Acessibilidade e SEO.<br>
 **Tecnologias e técnicas utilizadas:** Tableless (Desenvolvimento de sites com Padrões Web), CSS, XHTML/XHTML MP/DHTML, Acessibilidade,SSI ,Semântica de Elementos, Javascript, Microformats, Jquery, Ajax, SEO, Wordpress, Drupal, Api Google, .Net 3.5.
 <br>
 
-* 08/2009 a 08/2010 e 12/2012 a 01/2013 (Freelancer)
+* 08/2009 a 08/2010 e 12/2012 a 01/2013 (Freelancer) <br>
 **Giovanni DraftFcb**
 **Cargo:**: Programador HTML<br>
 **Descrição do Cargo:** Desenvolvendo sites, confecções e estrutura de sites utilizando Acessibilidade e SEO.<br>
 **Tecnologias e técnicas utilizadas:** Tableless (Desenvolvimento de sites com Padrões Web), CSS, XHTML/XHTML/MP/DHTML, Acessibilidade ,Semântica de Elementos, Javascript, Microformats, Jquery, Ajax, SEO, Wordpress.<br>
 <br>
 
-* 06/2009 a 08/2009
+* 06/2009 a 08/2009 <br>
 **UOL**
 **Cargo:**: WebMasters<br>
 **Descrição do Cargo:** Análise e modelagem de páginas para estrutura do portal UOL.<br>
 **Tecnologias e técnicas utilizadas:** Tableless (Desenvolvimento de sites com Padrões Web), CSS, XHTML/XHTML/MP/DHTML, Acessibilidade, Semântica de Elementos, Javascript, Microformats, Jquery, Ajax, SEO.<br>
 <br>
 
-* 05/2008 a 06/2009
+* 05/2008 a 06/2009 <br>
 **GARAGEIM**
 **Cargo:**: Programador Front End Júnior<br>
 **Descrição do Cargo:** Desenvolvendo sites, confecções e estrutura de sites utilizando Acessibilidade e SEO.<br>
 **Tecnologias e técnicas utilizadas:** Tableless (Desenvolvimento de sites com Padrões Web), CSS, XHTML/XHTML/MP/DHTML, Acessibilidade, Semântica de Elementos, Javascript, Microformats, Jquery, Ajax, SEO, Wordpress.<br>
 <br>
 
-* 02/2008 a 05/2008
+* 02/2008 a 05/2008 <br>
 **TV1.Com**
 **Cargo:**: Desenvolvedor Nível I.<br>
 **Descrição do Cargo:** Trabalhando com confecções e Estruturação de sites;<br>
