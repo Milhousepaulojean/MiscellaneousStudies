@@ -1,42 +1,43 @@
 # Paulo Jean Alves da Silva
 Desenvolvedor / Front-end e Back-end.
 
-:house: Guarulhos, Sao Paulo :round_pushpin: :brazil: 
-:envelope:  paulojean.alves@gmail.com
+:house: Guarulhos, Sao Paulo :round_pushpin: :brazil: <br>
+:envelope:  paulojean.alves@gmail.com <br>
 **Hobbies**: :bike: :computer: :runner: :guitar: :joystick: :book: :airplane:
 
-Olá, Sou Paulo Jean! 
+Olá, Sou Paulo Jean!<br> 
 Nascido em 85, oficializado "Paulista", porém Migrante! Corinthiano, maloqueiro e programador!
 Trabalho com programação seja interface ou back-end!
 
-## Formação
-**Universidade:** Anhanguera
-**Graduação:** Sistema da Informação
-**Término:** Concluído em 2008;
+## Formação 
+**Universidade:** Anhanguera<br>
+**Graduação:** Sistema da Informação<br>
+**Término:** Concluído em 2008;<br>
 
-**Universidade:** Estácio de Sá
-**Pós-Graduação:** Arquitetura e Projetos de Cloud Computing;
+**Universidade:** Estácio de Sá<br>
+**Pós-Graduação:** Arquitetura e Projetos de Cloud Computing;<br>
 Término em Dez/2021;
 
 ## Experência Profissional
-* 09/2020 - Atual
+* 09/2020 - Atual<br>
 **MercadoPago.com Representações LTDA** -
-**Cargo**: Analista de Sistemas Pleno.
-**Descrição do cargo**: Desenvolvimento de fluxos e rotinas em sistemas web com a utlizacao de servicos das plataformas Mercado Livre e Mercado Pago.
+**Cargo**: Analista de Sistemas Pleno.<br>
+**Descrição do cargo**: Desenvolvimento de fluxos e rotinas em sistemas web com a utlizacao de servicos das plataformas Mercado Livre e Mercado Pago.<br>
 **Tecnologias e técnicas utilizadas:** Java, Git (GitFlow), SQL(MySQL), GoLang, Teste Unitários(Junit, PowerMock), Docker. 
 <br>
 
-* 08/2019 - 09/2020
+* 08/2019 - 09/2020 <br>
   **Cognizant Serviços de Tecnologia e Software do Brasil S/A**
-**Cargo:** Líder Técnico e Analista de Sistemas SR.
+**Cargo:** Líder Técnico e Analista de Sistemas SR.<br>
 **Descrição do cargo:** Desenvolvimento de fluxos e rotinas em sistemas com banco de dados.
+<br>
 **Tecnologias e técnicas utilizadas:** C# ,ASP.NET / ASP.NET CORE, NoSQL (MongoDB, Cassandra), Windows Services e Web Api ,Angular, TypeScript, NodeJS, Teste Unitários(Nunit, MsTest, Jasmine),Cloud (AWS), Docker. 
 <br>
 
 * 03/2017 – 08/2019
 **everis an NTT DATA Company**
-**Cargo:** Analista de Sistemas Jr.
-**Descrição do cargo:** Manutenção/Suporte e desenvolvimento de rotinas em sistemas com banco de dados.
+**Cargo:** Analista de Sistemas Jr.<br>
+**Descrição do cargo:** Manutenção/Suporte e desenvolvimento de rotinas em sistemas com banco de dados.<br>
 **Tecnologias e técnicas utilizadas:** C#, ASP.NET, PL/SQL, SQL SERVER, Windows Services, WebServices, WebForms, EntityFramework, MySql, MVC, Razor, Web Api, ChatBots(Api.ai), MVVM, Javascript, Jquery, Ajax, Angular/Angular JS, TypeScript , Node, Teste Unitários e GraphQl.
 <br>
 
