@@ -11,6 +11,7 @@
   * [CommomJS](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/nodejs/06.CommomJS)
   * [Construindo Modulos](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/nodejs/07.ConstruindoModulos)
 <<<<<<< HEAD
+<<<<<<< HEAD
   * [Conexao Com Bando de Dados](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/nodejs/08.BancodeDados)
   * [Consign](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/nodejs/09.UtilizandoConsign)
   * [Models](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/nodejs/10.UtilizandoModels)
@@ -110,4 +111,7 @@ Término em Dez/2021;
 >>>>>>> 18fa3c3 (nodejs: Estudos Iniciais)
 =======
 >>>>>>> 7b86ea0 (nodejs: Ajuste no ReadMe)
+=======
+  * [Conexao Com Bando de Dados](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/nodejs/08.BancodeDados)
+>>>>>>> 903b4f2 (nodejs: Commit aplicado para atualizacao do Readme .)
 
