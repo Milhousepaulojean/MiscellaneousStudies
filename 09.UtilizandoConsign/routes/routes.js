@@ -1,13 +1,12 @@
-//var app = require('../config/server')
+module.exports = function(application){
+    application.get('/' ,function(req , res){
 
-module.exports = function(app){
-    app.get('/' ,function(req , res){
+        var connection = application.config.dbconnection();
+        var modelExample = application.app.models.model();
 
-        var connection = app.config.dbconnection();
-
-        connection.query('select * from Persons;', function(error, result){
+        modelExample.getData(connection, function(error, result){
             res.send(result)
-        })
+        });
         
     })
 }
