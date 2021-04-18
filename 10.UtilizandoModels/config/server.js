@@ -6,7 +6,7 @@ var consign = require('consign');
 consign()
     .include('routes')
     .then('config/dbconnection.js')
-    .then('../models/model.js')
+    .then('models/model.js')
     .into(app);
 
 module.exports = app;
