@@ -14,6 +14,7 @@ app.use(bodyParser.json())
 
 consign()
     .include('routes')
+<<<<<<< HEAD
 =======
 =======
 var bodyParser = require('body-parser');
@@ -32,6 +33,8 @@ consign()
     .then('config/dbconnection.js')
     .then('models/model.js')
 >>>>>>> c8e4a3b (nodejs: Commit aplicado demonstra os estudo de node com correcao na funcionalidade para pegar dados.)
+=======
+>>>>>>> c1eb282 (nodejs: Commit aplicado demonstra os estudo com utilizacao de Inserts, refactores de chamadas)
     .into(app);
 
 module.exports = app;
