@@ -20,6 +20,7 @@
   * [Classes com Prototype](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/nodejs/13.UsandoClassesComPrototype)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 :house: Guarulhos, Sao Paulo :round_pushpin: :brazil: <br>
 :envelope:  paulojean.alves@gmail.com <br>
@@ -114,4 +115,6 @@ Término em Dez/2021;
 =======
   * [Conexao Com Bando de Dados](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/nodejs/08.BancodeDados)
 >>>>>>> 903b4f2 (nodejs: Commit aplicado para atualizacao do Readme .)
+=======
+>>>>>>> 3c3f038 (nodejs: Commit aplicado para o atualizar o README)
 
