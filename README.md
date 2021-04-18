@@ -1,120 +1,14 @@
 # Nodejs
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 7b86ea0 (nodejs: Ajuste no ReadMe)
   * [Hello World](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/nodejs/01.HelloWorld)
   * [Criando um servidor](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/nodejs/02.CriandoUmServidor)
   * [Verificando Rotas](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/nodejs/03.VerificandoRotas)
   * [Criando projeto com NPM](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/nodejs/04.UsandoNPM)
   * [CommomJS](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/nodejs/06.CommomJS)
   * [Construindo Modulos](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/nodejs/07.ConstruindoModulos)
-<<<<<<< HEAD
-<<<<<<< HEAD
   * [Conexao Com Bando de Dados](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/nodejs/08.BancodeDados)
   * [Consign](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/nodejs/09.UtilizandoConsign)
   * [Models](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/nodejs/10.UtilizandoModels)
   * [Body-Parser](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/nodejs/11.UtilizandoBodyParse)
   * [Body-Parser com BD](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/nodejs/12.UtilizandoBodyParseComBD)
   * [Classes com Prototype](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/nodejs/13.UsandoClassesComPrototype)
-
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-:house: Guarulhos, Sao Paulo :round_pushpin: :brazil: <br>
-:envelope:  paulojean.alves@gmail.com <br>
-**Hobbies**: :bike: :computer: :runner: :guitar: :joystick: :book: :airplane:
-
-Olá, Sou Paulo Jean!<br> 
-Nascido em 85, oficializado "Paulista", porém Migrante! Corinthiano, maloqueiro e programador!
-Trabalho com programação seja interface ou back-end!
-
-## Formação 
-**Universidade:** Anhanguera<br>
-**Graduação:** Sistema da Informação<br>
-**Término:** Concluído em 2008;<br>
-
-**Universidade:** Estácio de Sá<br>
-**Pós-Graduação:** Arquitetura e Projetos de Cloud Computing;<br>
-Término em Dez/2021;
-
-## Experência Profissional
-* 09/2020 - Atual<br>
-**MercadoPago.com Representações LTDA** -
-**Cargo**: Analista de Sistemas Pleno.<br>
-**Descrição do cargo**: Desenvolvimento de fluxos e rotinas em sistemas web com a utlizacao de servicos das plataformas Mercado Livre e Mercado Pago.<br>
-**Tecnologias e técnicas utilizadas:** Java, Git (GitFlow), SQL(MySQL), GoLang, Teste Unitários(Junit, PowerMock), Docker. 
-
-* 08/2019 - 09/2020 <br>
-**Cognizant Serviços de Tecnologia e Software do Brasil S/A**
-**Cargo:** Líder Técnico e Analista de Sistemas SR. <br>
-**Descrição do cargo:** Desenvolvimento de fluxos e rotinas em sistemas com banco de dados.<br>
-**Tecnologias e técnicas utilizadas:** C# ,ASP.NET / ASP.NET CORE, NoSQL (MongoDB, Cassandra), Windows Services e Web Api ,Angular, TypeScript, NodeJS, Teste Unitários(Nunit, MsTest, Jasmine),Cloud (AWS), Docker. 
-
-* 03/2017 – 08/2019 <br>
-**everis an NTT DATA Company**
-**Cargo:** Analista de Sistemas Jr. <br>
-**Descrição do cargo:** Manutenção/Suporte e desenvolvimento de rotinas em sistemas com banco de dados.<br>
-**Tecnologias e técnicas utilizadas:** C#, ASP.NET, PL/SQL, SQL SERVER, Windows Services, WebServices, WebForms, EntityFramework, MySql, MVC, Razor, Web Api, ChatBots(Api.ai), MVVM, Javascript, Jquery, Ajax, Angular/Angular JS, TypeScript , Node, Teste Unitários e GraphQl.
-
-* 05/2010 a 12/2012 <br>
-**SiB. Solution In Box**
-**Cargo:**: Líder de interface e Prototipação <br>
-**Descrição do Cargo:** Desenvolvendo e Liderando nas confecções e Estrutura em sistemas ou sites. Utilizando técnicas como acessibilidade, usabilidade e SEO auxiliando na montagem da arquitetura da informação.<br>
-**Tecnologias e técnicas utilizadas:** Tableless (Desenvolvimento de sites com Padrões Web), CSS, HTML/XHTML/DHTML, Acessibilidade ,Semântica de Elementos, Java script, Microformats, Jquery, Ajax, SEO, Wordpress, Drupal, WPF, C# e Silverlight.
-
-* 12/2010 a 05/2011 (Freelancer) <br>
-**Agencia ClickIsobar**
-**Cargo:**: Desenvolvedor Web Front-End Pleno<br>
-**Descrição do Cargo:** Desenvolvendo sites, sistemas e confecções & Estrutura de sites utilizando Acessibilidade e SEO.<br>
-**Tecnologias e técnicas utilizadas:** Tableless (Desenvolvimento de sites com Padrões Web), CSS, XHTML/XHTML MP/DHTML, Acessibilidade,SSI ,Semântica de Elementos, Javascript, Microformats, Jquery, Ajax, SEO, Wordpress, Drupal, Api Google, .Net 3.5.
-
-* 08/2009 a 08/2010 e 12/2012 a 01/2013 (Freelancer) <br>
-**Giovanni DraftFcb**
-**Cargo:**: Programador HTML<br>
-**Descrição do Cargo:** Desenvolvendo sites, confecções e estrutura de sites utilizando Acessibilidade e SEO.<br>
-**Tecnologias e técnicas utilizadas:** Tableless (Desenvolvimento de sites com Padrões Web), CSS, XHTML/XHTML/MP/DHTML, Acessibilidade ,Semântica de Elementos, Javascript, Microformats, Jquery, Ajax, SEO, Wordpress.
-
-* 06/2009 a 08/2009 <br>
-**UOL**
-**Cargo:**: WebMasters<br>
-**Descrição do Cargo:** Análise e modelagem de páginas para estrutura do portal UOL.<br>
-**Tecnologias e técnicas utilizadas:** Tableless (Desenvolvimento de sites com Padrões Web), CSS, XHTML/XHTML/MP/DHTML, Acessibilidade, Semântica de Elementos, Javascript, Microformats, Jquery, Ajax, SEO.
-
-* 05/2008 a 06/2009 <br>
-**GARAGEIM**
-**Cargo:**: Programador Front End Júnior<br>
-**Descrição do Cargo:** Desenvolvendo sites, confecções e estrutura de sites utilizando Acessibilidade e SEO.<br>
-**Tecnologias e técnicas utilizadas:** Tableless (Desenvolvimento de sites com Padrões Web), CSS, XHTML/XHTML/MP/DHTML, Acessibilidade, Semântica de Elementos, Javascript, Microformats, Jquery, Ajax, SEO, Wordpress.
-
-* 02/2008 a 05/2008 <br>
-**TV1.Com**
-**Cargo:**: Desenvolvedor Nível I.<br>
-**Descrição do Cargo:** Trabalhando com confecções e Estruturação de sites;<br>
-**Tecnologias e técnicas utilizadas:** Tableless (Desenvolvimento de sites com Padrões Web), CSS, XHTML/XHTML/MP/DHTML, Acessibilidade, Semântica em elementos, Javascript, Microformats, Jquery, Ajax, SEO.
-
-## Redes Sociais
-*  [Facebook](https://www.facebook.com/PjMilhouse/)
-*  [Linkedin](https://www.linkedin.com/in/paulojeanalvesdasilva/)
-
-## Estudos
-*  [Java](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/Java/BackEnd/Java)
-*  [Git](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/Git)
->>>>>>> f625633 (nodejs: Se aplicado este commit ira ajustar outros pontos com br)
-=======
-  * Hello World;
-  * Criando um servidor;
-  * Verificando Rotas;
-  * Criando projeto com NPM;
-  * CommomJS;
-  * Construindo Modulos;
->>>>>>> 18fa3c3 (nodejs: Estudos Iniciais)
-=======
->>>>>>> 7b86ea0 (nodejs: Ajuste no ReadMe)
-=======
-  * [Conexao Com Bando de Dados](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/nodejs/08.BancodeDados)
->>>>>>> 903b4f2 (nodejs: Commit aplicado para atualizacao do Readme .)
-=======
->>>>>>> 3c3f038 (nodejs: Commit aplicado para o atualizar o README)
-
