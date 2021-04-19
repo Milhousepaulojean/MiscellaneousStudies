@@ -1,0 +1,1 @@
+{"version":"1.0.0","name":"11.utilizandobodyparse","dependencies":{"body-parser":{"version":"1.19.0"},"consign":{"version":"0.1.6"},"express-validator":{"version":"6.10.0"},"express":{"version":"4.17.1"},"mysql":{"version":"2.18.1"},"nodemon":{"version":"2.0.7"}}}
