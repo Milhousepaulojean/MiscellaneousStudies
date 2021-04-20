@@ -12,3 +12,5 @@
   * [Body-Parser](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/nodejs/11.UtilizandoBodyParse)
   * [Body-Parser com BD](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/nodejs/12.UtilizandoBodyParseComBD)
   * [Classes com Prototype](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/nodejs/13.UsandoClassesComPrototype)
+  * [Express Validator](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/nodejs/14.ValidacaoCamposComExpress)
+  * [Controllers](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/nodejs/15.UsandoControllers)
