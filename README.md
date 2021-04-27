@@ -45,6 +45,8 @@
 
 [ExpressionSession](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/nodejs/18.ExpressSession)
 
+[Cripto](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/nodejs/19.Criptografia)
+
 
 <h2>Projetos:</h2>
 
