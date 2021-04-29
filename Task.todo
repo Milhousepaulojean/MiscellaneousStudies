@@ -13,6 +13,7 @@
         ☐ [EstudosBasicos] Autenticacao de usuarios;
         ☐ [EstudosBasicos] Destruindo Sessao;
         ☐ [EstudosBasicos] Entender mais sobre CommonJs;
+        ☐ [EstudosBasicos] Implementar Content Negociation com express utilizando format com html e json;
         ☐ [Projetos] Criar um projeto Exemplo de utilizacao do CommonJs;
         ☐ [Ajuste] Readme Principal;
 
