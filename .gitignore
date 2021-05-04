@@ -128,6 +128,10 @@ dist/
 tmp/
 temp/
 
-Task.todo
 
 # End of https://www.toptal.com/developers/gitignore/api/node
+EstudosBasicos/17.NoSql/env.dist
+Task.todo
+Task.todo
+Projetos/CreateServerWithNpm/src/package-lock.json
+EstudosBasicos/17.NoSql/package-lock.json

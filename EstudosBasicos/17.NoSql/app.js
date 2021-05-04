@@ -1,8 +1,7 @@
-//y8m4LlQXY5GZK0E4
-
 const {MongoClient} = require('mongodb');
+const envVariable = require('dotenv').config({path: __dirname + '/.env'})
 
-const uri = ;
+const uri = process.env['urlMongo'];
 
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 
