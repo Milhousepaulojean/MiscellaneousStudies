@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.809.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeaderAuthorization", "HeaderAuthorization.csproj", "{077111A3-BA47-4422-8B57-D2961DCEDF1D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{077111A3-BA47-4422-8B57-D2961DCEDF1D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{077111A3-BA47-4422-8B57-D2961DCEDF1D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{077111A3-BA47-4422-8B57-D2961DCEDF1D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{077111A3-BA47-4422-8B57-D2961DCEDF1D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E7F9D8D0-17BA-4552-9DF4-97CCBE2F72F7}
+	EndGlobalSection
+EndGlobal
