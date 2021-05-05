@@ -82,4 +82,5 @@ Término em Dez/2021;
 *  [Git](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/Git)
 *  [Nodejs](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/nodejs)
 *  [curl](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/command-tips/Curl)
+*  [.Net](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/dotNet)
 
