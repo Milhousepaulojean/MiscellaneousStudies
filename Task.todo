@@ -3,7 +3,7 @@
         ✔ [Projetos] Utilizando MVC; @done (4/20/2021, 11:50:39 AM)
         ☐ [Projetos] Criar um projeto WebApi com conexao com BD in nodejs;
         ☐ [EstudosBasicos] Utilizando Teste Unit, TDD & BDD;
-        ☐ [EstudosBasicos] Criar documentacao em nodejs;
+        ✔ [EstudosBasicos] Criar documentacao em nodejs; @done (5/15/2021, 8:57:25 PM)
         ☐ [Projetos] Criar um projeto WebApi MVC com documentacao com conexao com BD in nodejs;
         ☐ [EstudosBasicos] Metrics;
         ☐ [Projetos] Criar um projeto WebApi MVC com documentacao e metricas com conexao com BD in nodejs;

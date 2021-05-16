@@ -20,14 +20,22 @@
 
 [Usando Express](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/nodejs/EstudosBasicos/06.CommomJS)
 * <b>Description</b>: Using module Express;
-* <b>Command install</b>: npm i express --save;
+* <b>Command install</b>: npm i ;
 * <b>Example test</b>: curl http://localhost:3000/testederotas;
 
 [Construindo Modulos](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/nodejs/EstudosBasicos/07.ConstruindoModulos)
+* <b>Description</b>: View modules different;
+* <b>Command install</b>: npm i;
+* <b>Example test</b>: curl http://localhost:3000/;
 
 [Conexao Com Bando de Dados](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/nodejs/EstudosBasicos/08.BancodeDados)
+* <b>Description</b>: Connect Layer BD in MySql;
+* <b>Command install</b>: npm i;
 
 [Consign](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/nodejs/EstudosBasicos/09.UtilizandoConsign)
+* <b>Description</b>: View modules different using package Consign;
+* <b>Command install</b>: npm i;
+* <b>Example test</b>: curl http://localhost:3000/;
 
 [Models](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/nodejs/EstudosBasicos/10.UtilizandoModels)
 
@@ -53,3 +61,7 @@
 <h2>Projetos:</h2>
 
 [MVC Simples](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/nodejs/Projetos/API-MVC/src)
+
+[Api Simples](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/nodejs/Projetos/ApiInNodeJs/Api)
+
+[Api using Swagger](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/nodejs/Projetos/ApiInNodeJsSwagger/Api)
