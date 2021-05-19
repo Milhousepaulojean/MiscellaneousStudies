@@ -38,6 +38,9 @@
 * <b>Example test</b>: curl http://localhost:3000/;
 
 [Models](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/nodejs/EstudosBasicos/10.UtilizandoModels)
+* <b>Description</b>: Using Mysql with class;
+* <b>Command install</b>: npm i;
+* <b>Example test</b>: curl http://localhost:3000/;
 
 [Body-Parser](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/nodejs/EstudosBasicos/11.UtilizandoBodyParse)
 

@@ -1,9 +1,9 @@
     Action:
         ☐ [DesignPatterns] GOF;
-        ✔ [Projetos] Utilizando MVC; @done (4/20/2021, 11:50:39 AM)
+
         ☐ [Projetos] Criar um projeto WebApi com conexao com BD in nodejs;
         ☐ [EstudosBasicos] Utilizando Teste Unit, TDD & BDD;
-        ✔ [EstudosBasicos] Criar documentacao em nodejs; @done (5/15/2021, 8:57:25 PM)
+
         ☐ [Projetos] Criar um projeto WebApi MVC com documentacao com conexao com BD in nodejs;
         ☐ [EstudosBasicos] Metrics;
         ☐ [Projetos] Criar um projeto WebApi MVC com documentacao e metricas com conexao com BD in nodejs;
@@ -16,7 +16,8 @@
         ☐ [EstudosBasicos] Implementar Content Negociation com express utilizando format com html e json;
         ☐ [Projetos] Criar um projeto Exemplo de utilizacao do CommonJs;
         ☐ [EstudosBasicos] Implementar Content Negociation com bodyParse e json utilizando format com html e json;
-        ☐ [Ajuste] Readme Principal;
+        ☐ [Ajuste] Readme Principal; @critical 
+        ✔ Criacao de log @critical @done (5/18/2021, 10:50:14 PM)
 
     Doing:
         Projetos - Utilizando MVC :
@@ -25,3 +26,7 @@
             ☐ Create Simple Api project with BD and Swagger; 
 
     Done:
+        ✔ [EstudosBasicos] Criar documentacao em nodejs; @done (5/15/2021, 8:57:25 PM)
+        ✔ [Projetos] Utilizando MVC; @done (4/20/2021, 11:50:39 AM)
+
+        https://marketplace.visualstudio.com/items?itemName=fabiospampinato.vscode-todo-plus
