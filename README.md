@@ -58,7 +58,19 @@
 
 [Cripto](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/nodejs/EstudosBasicos/19.Criptografia)
 
-[Content Negociation](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/nodejs/EstudosBasicos/19.Criptografia)
+[Criptografia](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/nodejs/EstudosBasicos/19.Criptografia)
+
+[Content Negociation](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/nodejs/EstudosBasicos/20.ContentNegociation)
+
+[Criando Arquivos](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/nodejs/EstudosBasicos/21.CriandoArquivos)
+
+[Logs](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/nodejs/EstudosBasicos/22.Usandologs)
+
+[Consumer Api](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/nodejs/EstudosBasicos/23.ConsumerApi)
+
+[Map](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/nodejs/EstudosBasicos/24.UsingMap)
+
+[25.ApiJsonWithMaps](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/nodejs/EstudosBasicos/25.ApiJsonWithMaps)
 
 
 <h2>Projetos:</h2>
