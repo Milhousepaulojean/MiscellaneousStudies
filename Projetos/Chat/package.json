@@ -1,16 +1,18 @@
 {
-  "name": "26.LeituradePastas",
+  "name": "chat",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "dotenv": "^10.0.0",
-    "mongodb": "^3.6.8"
+    "body-parse": "^0.1.0",
+    "consign": "^0.1.6",
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "express-validator": "^4.3.0"
   }
 }

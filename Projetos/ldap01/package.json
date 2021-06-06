@@ -1,16 +1,17 @@
 {
-  "name": "26.LeituradePastas",
+  "name": "ldap01",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "dotenv": "^10.0.0",
-    "mongodb": "^3.6.8"
+    "express": "4.15.x",
+    "cfenv": "1.0.x",
+    "body-parser": "*",
+    "ldapjs": "*"
   }
 }
