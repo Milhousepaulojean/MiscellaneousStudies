@@ -1,4 +1,5 @@
 using System;
+using Newtonsoft.Json;
 
 namespace appTeste
 {
@@ -11,5 +12,6 @@ namespace appTeste
         public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
 
         public string Summary { get; set; }
+
     }
 }

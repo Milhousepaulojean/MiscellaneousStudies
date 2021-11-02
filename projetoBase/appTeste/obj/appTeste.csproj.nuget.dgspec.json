@@ -38,13 +38,25 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
-            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+            "Newtonsoft.Json": {
               "target": "Package",
-              "version": "[3.0.0-preview5-19227-01, )"
+              "version": "[13.0.1, )"
             },
-            "Serilog.Extensions.Logging.File": {
+            "Serilog.AspNetCore": {
               "target": "Package",
-              "version": "[1.0.1, )"
+              "version": "[4.1.0, )"
+            },
+            "Serilog.Sinks.Console": {
+              "target": "Package",
+              "version": "[4.0.0, )"
+            },
+            "Serilog.Sinks.File": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Serilog.Sinks.Seq": {
+              "target": "Package",
+              "version": "[5.0.1, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

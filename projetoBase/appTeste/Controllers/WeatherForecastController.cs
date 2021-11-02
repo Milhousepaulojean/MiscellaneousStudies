@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
@@ -27,18 +29,25 @@ namespace appTeste.Controllers
         public IEnumerable<WeatherForecast> Get()
         {
             var rng = new Random();
-            _logger.LogInformation("Begin");
-            WeatherForecast[]  weatherForecast =  Enumerable.Range(1, 5).Select(index => new WeatherForecast
+            IEnumerable<WeatherForecast> weatherForecasts = Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
                 Date = DateTime.Now.AddDays(index),
                 TemperatureC = rng.Next(-20, 55),
                 Summary = Summaries[rng.Next(Summaries.Length)]
             })
-            .ToArray();
+           .ToArray();
+            LogInternal(weatherForecasts, 
+                        this.ControllerContext.RouteData.Values["action"].ToString(), 
+                        this.ControllerContext.RouteData.Values["controller"].ToString());
 
-
-            _logger.LogInformation(JsonConvert.SerializeObject(weatherForecast));
-            return weatherForecast;
+            return weatherForecasts;
         }
+
+        private void LogInternal(IEnumerable<WeatherForecast> weatherForecasts, string action, string controller)
+        {
+          _logger.Log(LogLevel.Information, string.Format("action = {1} , controller = {2} , Retorno da do array: {0}", JsonConvert.SerializeObject(string.Format("Date={0}, TemperatureC={1}, Summary={2}" , weatherForecasts.ToList()[0].Date , weatherForecasts.ToList()[0].TemperatureC, weatherForecasts.ToList()[0].Summary)) , action , controller));
+        }
+
     }
 }
+

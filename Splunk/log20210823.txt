@@ -1,0 +1,231 @@
+2021-08-23 22:27:09.183 -03:00 [INF] Starting Amplifier web host
+2021-08-23 22:27:10.817 -03:00 [INF] Now listening on: https://localhost:5001
+2021-08-23 22:27:10.827 -03:00 [INF] Now listening on: http://localhost:5000
+2021-08-23 22:27:10.828 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2021-08-23 22:27:10.828 -03:00 [INF] Hosting environment: Development
+2021-08-23 22:27:10.830 -03:00 [INF] Content root path: /Users/paulojeanalvesdasilva/Documents/Git/MiscellaneousStudies/projetoBase/appTeste
+2021-08-23 22:27:31.649 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/WeatherForecast - -
+2021-08-23 22:27:31.725 -03:00 [INF] Executing endpoint 'appTeste.Controllers.WeatherForecastController.Get (appTeste)'
+2021-08-23 22:27:31.750 -03:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[appTeste.WeatherForecast] Get() on controller appTeste.Controllers.WeatherForecastController (appTeste).
+2021-08-23 22:27:31.861 -03:00 [INF] action = Get , controller = WeatherForecast , Retorno da do array: "Date=24/08/2021 22:27:31, TemperatureC=26, Summary=Cool"
+2021-08-23 22:27:31.871 -03:00 [INF] Executing ObjectResult, writing value of type 'appTeste.WeatherForecast[]'.
+2021-08-23 22:27:31.982 -03:00 [INF] Executed action appTeste.Controllers.WeatherForecastController.Get (appTeste) in 226.2601ms
+2021-08-23 22:27:31.991 -03:00 [INF] Executed endpoint 'appTeste.Controllers.WeatherForecastController.Get (appTeste)'
+2021-08-23 22:27:31.995 -03:00 [INF] HTTP GET /WeatherForecast responded 200 in 299.9458 ms
+2021-08-23 22:27:32.008 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/WeatherForecast - - - 200 - application/json;+charset=utf-8 363.0365ms
+2021-08-23 22:27:32.062 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/WeatherForecast - -
+2021-08-23 22:27:32.062 -03:00 [INF] Executing endpoint 'appTeste.Controllers.WeatherForecastController.Get (appTeste)'
+2021-08-23 22:27:32.067 -03:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[appTeste.WeatherForecast] Get() on controller appTeste.Controllers.WeatherForecastController (appTeste).
+2021-08-23 22:27:32.071 -03:00 [INF] action = Get , controller = WeatherForecast , Retorno da do array: "Date=24/08/2021 22:27:32, TemperatureC=8, Summary=Chilly"
+2021-08-23 22:27:32.073 -03:00 [INF] Executing ObjectResult, writing value of type 'appTeste.WeatherForecast[]'.
+2021-08-23 22:27:32.075 -03:00 [INF] Executed action appTeste.Controllers.WeatherForecastController.Get (appTeste) in 4.1584ms
+2021-08-23 22:27:32.076 -03:00 [INF] Executed endpoint 'appTeste.Controllers.WeatherForecastController.Get (appTeste)'
+2021-08-23 22:27:32.076 -03:00 [INF] HTTP GET /WeatherForecast responded 200 in 13.6907 ms
+2021-08-23 22:27:32.077 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/WeatherForecast - - - 200 - application/json;+charset=utf-8 15.6408ms
+2021-08-23 22:27:32.145 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/WeatherForecast - -
+2021-08-23 22:27:32.146 -03:00 [INF] Executing endpoint 'appTeste.Controllers.WeatherForecastController.Get (appTeste)'
+2021-08-23 22:27:32.146 -03:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[appTeste.WeatherForecast] Get() on controller appTeste.Controllers.WeatherForecastController (appTeste).
+2021-08-23 22:27:32.147 -03:00 [INF] action = Get , controller = WeatherForecast , Retorno da do array: "Date=24/08/2021 22:27:32, TemperatureC=19, Summary=Warm"
+2021-08-23 22:27:32.147 -03:00 [INF] Executing ObjectResult, writing value of type 'appTeste.WeatherForecast[]'.
+2021-08-23 22:27:32.148 -03:00 [INF] Executed action appTeste.Controllers.WeatherForecastController.Get (appTeste) in 0.9643ms
+2021-08-23 22:27:32.148 -03:00 [INF] Executed endpoint 'appTeste.Controllers.WeatherForecastController.Get (appTeste)'
+2021-08-23 22:27:32.148 -03:00 [INF] HTTP GET /WeatherForecast responded 200 in 1.8175 ms
+2021-08-23 22:27:32.148 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/WeatherForecast - - - 200 - application/json;+charset=utf-8 3.0073ms
+2021-08-23 22:27:32.220 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/WeatherForecast - -
+2021-08-23 22:27:32.220 -03:00 [INF] Executing endpoint 'appTeste.Controllers.WeatherForecastController.Get (appTeste)'
+2021-08-23 22:27:32.220 -03:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[appTeste.WeatherForecast] Get() on controller appTeste.Controllers.WeatherForecastController (appTeste).
+2021-08-23 22:27:32.221 -03:00 [INF] action = Get , controller = WeatherForecast , Retorno da do array: "Date=24/08/2021 22:27:32, TemperatureC=-1, Summary=Bracing"
+2021-08-23 22:27:32.221 -03:00 [INF] Executing ObjectResult, writing value of type 'appTeste.WeatherForecast[]'.
+2021-08-23 22:27:32.221 -03:00 [INF] Executed action appTeste.Controllers.WeatherForecastController.Get (appTeste) in 0.6315ms
+2021-08-23 22:27:32.221 -03:00 [INF] Executed endpoint 'appTeste.Controllers.WeatherForecastController.Get (appTeste)'
+2021-08-23 22:27:32.222 -03:00 [INF] HTTP GET /WeatherForecast responded 200 in 1.4361 ms
+2021-08-23 22:27:32.222 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/WeatherForecast - - - 200 - application/json;+charset=utf-8 1.8807ms
+2021-08-23 22:27:32.310 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/WeatherForecast - -
+2021-08-23 22:27:32.310 -03:00 [INF] Executing endpoint 'appTeste.Controllers.WeatherForecastController.Get (appTeste)'
+2021-08-23 22:27:32.310 -03:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[appTeste.WeatherForecast] Get() on controller appTeste.Controllers.WeatherForecastController (appTeste).
+2021-08-23 22:27:32.310 -03:00 [INF] action = Get , controller = WeatherForecast , Retorno da do array: "Date=24/08/2021 22:27:32, TemperatureC=1, Summary=Chilly"
+2021-08-23 22:27:32.310 -03:00 [INF] Executing ObjectResult, writing value of type 'appTeste.WeatherForecast[]'.
+2021-08-23 22:27:32.311 -03:00 [INF] Executed action appTeste.Controllers.WeatherForecastController.Get (appTeste) in 0.4344ms
+2021-08-23 22:27:32.311 -03:00 [INF] Executed endpoint 'appTeste.Controllers.WeatherForecastController.Get (appTeste)'
+2021-08-23 22:27:32.311 -03:00 [INF] HTTP GET /WeatherForecast responded 200 in 0.9569 ms
+2021-08-23 22:27:32.311 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/WeatherForecast - - - 200 - application/json;+charset=utf-8 1.3940ms
+2021-08-23 22:27:32.375 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/WeatherForecast - -
+2021-08-23 22:27:32.375 -03:00 [INF] Executing endpoint 'appTeste.Controllers.WeatherForecastController.Get (appTeste)'
+2021-08-23 22:27:32.375 -03:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[appTeste.WeatherForecast] Get() on controller appTeste.Controllers.WeatherForecastController (appTeste).
+2021-08-23 22:27:32.375 -03:00 [INF] action = Get , controller = WeatherForecast , Retorno da do array: "Date=24/08/2021 22:27:32, TemperatureC=-8, Summary=Cool"
+2021-08-23 22:27:32.375 -03:00 [INF] Executing ObjectResult, writing value of type 'appTeste.WeatherForecast[]'.
+2021-08-23 22:27:32.376 -03:00 [INF] Executed action appTeste.Controllers.WeatherForecastController.Get (appTeste) in 0.585ms
+2021-08-23 22:27:32.376 -03:00 [INF] Executed endpoint 'appTeste.Controllers.WeatherForecastController.Get (appTeste)'
+2021-08-23 22:27:32.376 -03:00 [INF] HTTP GET /WeatherForecast responded 200 in 1.1169 ms
+2021-08-23 22:27:32.376 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/WeatherForecast - - - 200 - application/json;+charset=utf-8 1.5151ms
+2021-08-23 22:27:32.421 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/WeatherForecast - -
+2021-08-23 22:27:32.421 -03:00 [INF] Executing endpoint 'appTeste.Controllers.WeatherForecastController.Get (appTeste)'
+2021-08-23 22:27:32.421 -03:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[appTeste.WeatherForecast] Get() on controller appTeste.Controllers.WeatherForecastController (appTeste).
+2021-08-23 22:27:32.421 -03:00 [INF] action = Get , controller = WeatherForecast , Retorno da do array: "Date=24/08/2021 22:27:32, TemperatureC=-11, Summary=Bracing"
+2021-08-23 22:27:32.421 -03:00 [INF] Executing ObjectResult, writing value of type 'appTeste.WeatherForecast[]'.
+2021-08-23 22:27:32.422 -03:00 [INF] Executed action appTeste.Controllers.WeatherForecastController.Get (appTeste) in 0.4559ms
+2021-08-23 22:27:32.422 -03:00 [INF] Executed endpoint 'appTeste.Controllers.WeatherForecastController.Get (appTeste)'
+2021-08-23 22:27:32.422 -03:00 [INF] HTTP GET /WeatherForecast responded 200 in 1.0881 ms
+2021-08-23 22:27:32.422 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/WeatherForecast - - - 200 - application/json;+charset=utf-8 1.4318ms
+2021-08-23 22:27:32.471 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/WeatherForecast - -
+2021-08-23 22:27:32.472 -03:00 [INF] Executing endpoint 'appTeste.Controllers.WeatherForecastController.Get (appTeste)'
+2021-08-23 22:27:32.472 -03:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[appTeste.WeatherForecast] Get() on controller appTeste.Controllers.WeatherForecastController (appTeste).
+2021-08-23 22:27:32.472 -03:00 [INF] action = Get , controller = WeatherForecast , Retorno da do array: "Date=24/08/2021 22:27:32, TemperatureC=-16, Summary=Chilly"
+2021-08-23 22:27:32.472 -03:00 [INF] Executing ObjectResult, writing value of type 'appTeste.WeatherForecast[]'.
+2021-08-23 22:27:32.473 -03:00 [INF] Executed action appTeste.Controllers.WeatherForecastController.Get (appTeste) in 0.4997ms
+2021-08-23 22:27:32.473 -03:00 [INF] Executed endpoint 'appTeste.Controllers.WeatherForecastController.Get (appTeste)'
+2021-08-23 22:27:32.473 -03:00 [INF] HTTP GET /WeatherForecast responded 200 in 1.1018 ms
+2021-08-23 22:27:32.473 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/WeatherForecast - - - 200 - application/json;+charset=utf-8 1.8136ms
+2021-08-23 22:27:32.558 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/WeatherForecast - -
+2021-08-23 22:27:32.558 -03:00 [INF] Executing endpoint 'appTeste.Controllers.WeatherForecastController.Get (appTeste)'
+2021-08-23 22:27:32.558 -03:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[appTeste.WeatherForecast] Get() on controller appTeste.Controllers.WeatherForecastController (appTeste).
+2021-08-23 22:27:32.559 -03:00 [INF] action = Get , controller = WeatherForecast , Retorno da do array: "Date=24/08/2021 22:27:32, TemperatureC=-17, Summary=Bracing"
+2021-08-23 22:27:32.559 -03:00 [INF] Executing ObjectResult, writing value of type 'appTeste.WeatherForecast[]'.
+2021-08-23 22:27:32.559 -03:00 [INF] Executed action appTeste.Controllers.WeatherForecastController.Get (appTeste) in 0.6124ms
+2021-08-23 22:27:32.560 -03:00 [INF] Executed endpoint 'appTeste.Controllers.WeatherForecastController.Get (appTeste)'
+2021-08-23 22:27:32.560 -03:00 [INF] HTTP GET /WeatherForecast responded 200 in 1.7800 ms
+2021-08-23 22:27:32.560 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/WeatherForecast - - - 200 - application/json;+charset=utf-8 3.7796ms
+2021-08-23 22:27:32.629 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/WeatherForecast - -
+2021-08-23 22:27:32.630 -03:00 [INF] Executing endpoint 'appTeste.Controllers.WeatherForecastController.Get (appTeste)'
+2021-08-23 22:27:32.630 -03:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[appTeste.WeatherForecast] Get() on controller appTeste.Controllers.WeatherForecastController (appTeste).
+2021-08-23 22:27:32.630 -03:00 [INF] action = Get , controller = WeatherForecast , Retorno da do array: "Date=24/08/2021 22:27:32, TemperatureC=49, Summary=Sweltering"
+2021-08-23 22:27:32.630 -03:00 [INF] Executing ObjectResult, writing value of type 'appTeste.WeatherForecast[]'.
+2021-08-23 22:27:32.631 -03:00 [INF] Executed action appTeste.Controllers.WeatherForecastController.Get (appTeste) in 0.6895ms
+2021-08-23 22:27:32.631 -03:00 [INF] Executed endpoint 'appTeste.Controllers.WeatherForecastController.Get (appTeste)'
+2021-08-23 22:27:32.631 -03:00 [INF] HTTP GET /WeatherForecast responded 200 in 1.6483 ms
+2021-08-23 22:27:32.631 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/WeatherForecast - - - 200 - application/json;+charset=utf-8 2.1433ms
+2021-08-23 22:27:32.707 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/WeatherForecast - -
+2021-08-23 22:27:32.707 -03:00 [INF] Executing endpoint 'appTeste.Controllers.WeatherForecastController.Get (appTeste)'
+2021-08-23 22:27:32.707 -03:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[appTeste.WeatherForecast] Get() on controller appTeste.Controllers.WeatherForecastController (appTeste).
+2021-08-23 22:27:32.708 -03:00 [INF] action = Get , controller = WeatherForecast , Retorno da do array: "Date=24/08/2021 22:27:32, TemperatureC=50, Summary=Chilly"
+2021-08-23 22:27:32.708 -03:00 [INF] Executing ObjectResult, writing value of type 'appTeste.WeatherForecast[]'.
+2021-08-23 22:27:32.708 -03:00 [INF] Executed action appTeste.Controllers.WeatherForecastController.Get (appTeste) in 0.5745ms
+2021-08-23 22:27:32.708 -03:00 [INF] Executed endpoint 'appTeste.Controllers.WeatherForecastController.Get (appTeste)'
+2021-08-23 22:27:32.709 -03:00 [INF] HTTP GET /WeatherForecast responded 200 in 1.3741 ms
+2021-08-23 22:27:32.709 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/WeatherForecast - - - 200 - application/json;+charset=utf-8 2.1601ms
+2021-08-23 22:27:32.778 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/WeatherForecast - -
+2021-08-23 22:27:32.779 -03:00 [INF] Executing endpoint 'appTeste.Controllers.WeatherForecastController.Get (appTeste)'
+2021-08-23 22:27:32.779 -03:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[appTeste.WeatherForecast] Get() on controller appTeste.Controllers.WeatherForecastController (appTeste).
+2021-08-23 22:27:32.779 -03:00 [INF] action = Get , controller = WeatherForecast , Retorno da do array: "Date=24/08/2021 22:27:32, TemperatureC=-16, Summary=Balmy"
+2021-08-23 22:27:32.779 -03:00 [INF] Executing ObjectResult, writing value of type 'appTeste.WeatherForecast[]'.
+2021-08-23 22:27:32.779 -03:00 [INF] Executed action appTeste.Controllers.WeatherForecastController.Get (appTeste) in 0.4632ms
+2021-08-23 22:27:32.779 -03:00 [INF] Executed endpoint 'appTeste.Controllers.WeatherForecastController.Get (appTeste)'
+2021-08-23 22:27:32.779 -03:00 [INF] HTTP GET /WeatherForecast responded 200 in 0.9516 ms
+2021-08-23 22:27:32.780 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/WeatherForecast - - - 200 - application/json;+charset=utf-8 1.3352ms
+2021-08-23 22:27:32.855 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/WeatherForecast - -
+2021-08-23 22:27:32.856 -03:00 [INF] Executing endpoint 'appTeste.Controllers.WeatherForecastController.Get (appTeste)'
+2021-08-23 22:27:32.856 -03:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[appTeste.WeatherForecast] Get() on controller appTeste.Controllers.WeatherForecastController (appTeste).
+2021-08-23 22:27:32.856 -03:00 [INF] action = Get , controller = WeatherForecast , Retorno da do array: "Date=24/08/2021 22:27:32, TemperatureC=26, Summary=Freezing"
+2021-08-23 22:27:32.857 -03:00 [INF] Executing ObjectResult, writing value of type 'appTeste.WeatherForecast[]'.
+2021-08-23 22:27:32.858 -03:00 [INF] Executed action appTeste.Controllers.WeatherForecastController.Get (appTeste) in 1.4679ms
+2021-08-23 22:27:32.858 -03:00 [INF] Executed endpoint 'appTeste.Controllers.WeatherForecastController.Get (appTeste)'
+2021-08-23 22:27:32.858 -03:00 [INF] HTTP GET /WeatherForecast responded 200 in 2.3287 ms
+2021-08-23 22:27:32.858 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/WeatherForecast - - - 200 - application/json;+charset=utf-8 2.8731ms
+2021-08-23 22:27:32.922 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/WeatherForecast - -
+2021-08-23 22:27:32.922 -03:00 [INF] Executing endpoint 'appTeste.Controllers.WeatherForecastController.Get (appTeste)'
+2021-08-23 22:27:32.922 -03:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[appTeste.WeatherForecast] Get() on controller appTeste.Controllers.WeatherForecastController (appTeste).
+2021-08-23 22:27:32.922 -03:00 [INF] action = Get , controller = WeatherForecast , Retorno da do array: "Date=24/08/2021 22:27:32, TemperatureC=54, Summary=Freezing"
+2021-08-23 22:27:32.922 -03:00 [INF] Executing ObjectResult, writing value of type 'appTeste.WeatherForecast[]'.
+2021-08-23 22:27:32.923 -03:00 [INF] Executed action appTeste.Controllers.WeatherForecastController.Get (appTeste) in 0.5507ms
+2021-08-23 22:27:32.923 -03:00 [INF] Executed endpoint 'appTeste.Controllers.WeatherForecastController.Get (appTeste)'
+2021-08-23 22:27:32.923 -03:00 [INF] HTTP GET /WeatherForecast responded 200 in 1.2794 ms
+2021-08-23 22:27:32.923 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/WeatherForecast - - - 200 - application/json;+charset=utf-8 1.7449ms
+2021-08-23 22:27:32.986 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/WeatherForecast - -
+2021-08-23 22:27:32.987 -03:00 [INF] Executing endpoint 'appTeste.Controllers.WeatherForecastController.Get (appTeste)'
+2021-08-23 22:27:32.987 -03:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[appTeste.WeatherForecast] Get() on controller appTeste.Controllers.WeatherForecastController (appTeste).
+2021-08-23 22:27:32.987 -03:00 [INF] action = Get , controller = WeatherForecast , Retorno da do array: "Date=24/08/2021 22:27:32, TemperatureC=50, Summary=Balmy"
+2021-08-23 22:27:32.988 -03:00 [INF] Executing ObjectResult, writing value of type 'appTeste.WeatherForecast[]'.
+2021-08-23 22:27:32.988 -03:00 [INF] Executed action appTeste.Controllers.WeatherForecastController.Get (appTeste) in 0.8547ms
+2021-08-23 22:27:32.988 -03:00 [INF] Executed endpoint 'appTeste.Controllers.WeatherForecastController.Get (appTeste)'
+2021-08-23 22:27:32.988 -03:00 [INF] HTTP GET /WeatherForecast responded 200 in 1.8027 ms
+2021-08-23 22:27:32.989 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/WeatherForecast - - - 200 - application/json;+charset=utf-8 2.4148ms
+2021-08-23 22:27:33.051 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/WeatherForecast - -
+2021-08-23 22:27:33.052 -03:00 [INF] Executing endpoint 'appTeste.Controllers.WeatherForecastController.Get (appTeste)'
+2021-08-23 22:27:33.052 -03:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[appTeste.WeatherForecast] Get() on controller appTeste.Controllers.WeatherForecastController (appTeste).
+2021-08-23 22:27:33.052 -03:00 [INF] action = Get , controller = WeatherForecast , Retorno da do array: "Date=24/08/2021 22:27:33, TemperatureC=47, Summary=Mild"
+2021-08-23 22:27:33.053 -03:00 [INF] Executing ObjectResult, writing value of type 'appTeste.WeatherForecast[]'.
+2021-08-23 22:27:33.053 -03:00 [INF] Executed action appTeste.Controllers.WeatherForecastController.Get (appTeste) in 0.7658ms
+2021-08-23 22:27:33.053 -03:00 [INF] Executed endpoint 'appTeste.Controllers.WeatherForecastController.Get (appTeste)'
+2021-08-23 22:27:33.053 -03:00 [INF] HTTP GET /WeatherForecast responded 200 in 1.5633 ms
+2021-08-23 22:27:33.053 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/WeatherForecast - - - 200 - application/json;+charset=utf-8 2.0449ms
+2021-08-23 22:27:33.117 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/WeatherForecast - -
+2021-08-23 22:27:33.117 -03:00 [INF] Executing endpoint 'appTeste.Controllers.WeatherForecastController.Get (appTeste)'
+2021-08-23 22:27:33.117 -03:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[appTeste.WeatherForecast] Get() on controller appTeste.Controllers.WeatherForecastController (appTeste).
+2021-08-23 22:27:33.117 -03:00 [INF] action = Get , controller = WeatherForecast , Retorno da do array: "Date=24/08/2021 22:27:33, TemperatureC=45, Summary=Freezing"
+2021-08-23 22:27:33.118 -03:00 [INF] Executing ObjectResult, writing value of type 'appTeste.WeatherForecast[]'.
+2021-08-23 22:27:33.118 -03:00 [INF] Executed action appTeste.Controllers.WeatherForecastController.Get (appTeste) in 0.464ms
+2021-08-23 22:27:33.118 -03:00 [INF] Executed endpoint 'appTeste.Controllers.WeatherForecastController.Get (appTeste)'
+2021-08-23 22:27:33.118 -03:00 [INF] HTTP GET /WeatherForecast responded 200 in 0.9666 ms
+2021-08-23 22:27:33.118 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/WeatherForecast - - - 200 - application/json;+charset=utf-8 1.3608ms
+2021-08-23 22:27:33.179 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/WeatherForecast - -
+2021-08-23 22:27:33.179 -03:00 [INF] Executing endpoint 'appTeste.Controllers.WeatherForecastController.Get (appTeste)'
+2021-08-23 22:27:33.179 -03:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[appTeste.WeatherForecast] Get() on controller appTeste.Controllers.WeatherForecastController (appTeste).
+2021-08-23 22:27:33.180 -03:00 [INF] action = Get , controller = WeatherForecast , Retorno da do array: "Date=24/08/2021 22:27:33, TemperatureC=33, Summary=Chilly"
+2021-08-23 22:27:33.180 -03:00 [INF] Executing ObjectResult, writing value of type 'appTeste.WeatherForecast[]'.
+2021-08-23 22:27:33.180 -03:00 [INF] Executed action appTeste.Controllers.WeatherForecastController.Get (appTeste) in 0.4705ms
+2021-08-23 22:27:33.180 -03:00 [INF] Executed endpoint 'appTeste.Controllers.WeatherForecastController.Get (appTeste)'
+2021-08-23 22:27:33.180 -03:00 [INF] HTTP GET /WeatherForecast responded 200 in 1.0104 ms
+2021-08-23 22:27:33.180 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/WeatherForecast - - - 200 - application/json;+charset=utf-8 1.4348ms
+2021-08-23 22:27:33.244 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/WeatherForecast - -
+2021-08-23 22:27:33.244 -03:00 [INF] Executing endpoint 'appTeste.Controllers.WeatherForecastController.Get (appTeste)'
+2021-08-23 22:27:33.245 -03:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[appTeste.WeatherForecast] Get() on controller appTeste.Controllers.WeatherForecastController (appTeste).
+2021-08-23 22:27:33.245 -03:00 [INF] action = Get , controller = WeatherForecast , Retorno da do array: "Date=24/08/2021 22:27:33, TemperatureC=43, Summary=Chilly"
+2021-08-23 22:27:33.245 -03:00 [INF] Executing ObjectResult, writing value of type 'appTeste.WeatherForecast[]'.
+2021-08-23 22:27:33.245 -03:00 [INF] Executed action appTeste.Controllers.WeatherForecastController.Get (appTeste) in 0.3524ms
+2021-08-23 22:27:33.245 -03:00 [INF] Executed endpoint 'appTeste.Controllers.WeatherForecastController.Get (appTeste)'
+2021-08-23 22:27:33.245 -03:00 [INF] HTTP GET /WeatherForecast responded 200 in 0.7967 ms
+2021-08-23 22:27:33.245 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/WeatherForecast - - - 200 - application/json;+charset=utf-8 1.1966ms
+2021-08-23 22:27:33.298 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/WeatherForecast - -
+2021-08-23 22:27:33.298 -03:00 [INF] Executing endpoint 'appTeste.Controllers.WeatherForecastController.Get (appTeste)'
+2021-08-23 22:27:33.298 -03:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[appTeste.WeatherForecast] Get() on controller appTeste.Controllers.WeatherForecastController (appTeste).
+2021-08-23 22:27:33.299 -03:00 [INF] action = Get , controller = WeatherForecast , Retorno da do array: "Date=24/08/2021 22:27:33, TemperatureC=7, Summary=Hot"
+2021-08-23 22:27:33.299 -03:00 [INF] Executing ObjectResult, writing value of type 'appTeste.WeatherForecast[]'.
+2021-08-23 22:27:33.299 -03:00 [INF] Executed action appTeste.Controllers.WeatherForecastController.Get (appTeste) in 0.569ms
+2021-08-23 22:27:33.299 -03:00 [INF] Executed endpoint 'appTeste.Controllers.WeatherForecastController.Get (appTeste)'
+2021-08-23 22:27:33.299 -03:00 [INF] HTTP GET /WeatherForecast responded 200 in 0.9345 ms
+2021-08-23 22:27:33.299 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/WeatherForecast - - - 200 - application/json;+charset=utf-8 1.2904ms
+2021-08-23 22:27:33.372 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/WeatherForecast - -
+2021-08-23 22:27:33.372 -03:00 [INF] Executing endpoint 'appTeste.Controllers.WeatherForecastController.Get (appTeste)'
+2021-08-23 22:27:33.372 -03:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[appTeste.WeatherForecast] Get() on controller appTeste.Controllers.WeatherForecastController (appTeste).
+2021-08-23 22:27:33.372 -03:00 [INF] action = Get , controller = WeatherForecast , Retorno da do array: "Date=24/08/2021 22:27:33, TemperatureC=-20, Summary=Cool"
+2021-08-23 22:27:33.372 -03:00 [INF] Executing ObjectResult, writing value of type 'appTeste.WeatherForecast[]'.
+2021-08-23 22:27:33.372 -03:00 [INF] Executed action appTeste.Controllers.WeatherForecastController.Get (appTeste) in 0.2611ms
+2021-08-23 22:27:33.372 -03:00 [INF] Executed endpoint 'appTeste.Controllers.WeatherForecastController.Get (appTeste)'
+2021-08-23 22:27:33.372 -03:00 [INF] HTTP GET /WeatherForecast responded 200 in 0.5746 ms
+2021-08-23 22:27:33.373 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/WeatherForecast - - - 200 - application/json;+charset=utf-8 0.9305ms
+2021-08-23 22:27:33.474 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/WeatherForecast - -
+2021-08-23 22:27:33.478 -03:00 [INF] Executing endpoint 'appTeste.Controllers.WeatherForecastController.Get (appTeste)'
+2021-08-23 22:27:33.479 -03:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[appTeste.WeatherForecast] Get() on controller appTeste.Controllers.WeatherForecastController (appTeste).
+2021-08-23 22:27:33.479 -03:00 [INF] action = Get , controller = WeatherForecast , Retorno da do array: "Date=24/08/2021 22:27:33, TemperatureC=37, Summary=Balmy"
+2021-08-23 22:27:33.481 -03:00 [INF] Executing ObjectResult, writing value of type 'appTeste.WeatherForecast[]'.
+2021-08-23 22:27:33.481 -03:00 [INF] Executed action appTeste.Controllers.WeatherForecastController.Get (appTeste) in 1.6521ms
+2021-08-23 22:27:33.481 -03:00 [INF] Executed endpoint 'appTeste.Controllers.WeatherForecastController.Get (appTeste)'
+2021-08-23 22:27:33.482 -03:00 [INF] HTTP GET /WeatherForecast responded 200 in 5.2235 ms
+2021-08-23 22:27:33.482 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/WeatherForecast - - - 200 - application/json;+charset=utf-8 8.4419ms
+2021-08-23 22:27:33.557 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/WeatherForecast - -
+2021-08-23 22:27:33.557 -03:00 [INF] Executing endpoint 'appTeste.Controllers.WeatherForecastController.Get (appTeste)'
+2021-08-23 22:27:33.557 -03:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[appTeste.WeatherForecast] Get() on controller appTeste.Controllers.WeatherForecastController (appTeste).
+2021-08-23 22:27:33.557 -03:00 [INF] action = Get , controller = WeatherForecast , Retorno da do array: "Date=24/08/2021 22:27:33, TemperatureC=-3, Summary=Mild"
+2021-08-23 22:27:33.557 -03:00 [INF] Executing ObjectResult, writing value of type 'appTeste.WeatherForecast[]'.
+2021-08-23 22:27:33.558 -03:00 [INF] Executed action appTeste.Controllers.WeatherForecastController.Get (appTeste) in 0.5995ms
+2021-08-23 22:27:33.558 -03:00 [INF] Executed endpoint 'appTeste.Controllers.WeatherForecastController.Get (appTeste)'
+2021-08-23 22:27:33.558 -03:00 [INF] HTTP GET /WeatherForecast responded 200 in 1.1594 ms
+2021-08-23 22:27:33.558 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/WeatherForecast - - - 200 - application/json;+charset=utf-8 1.6399ms
+2021-08-23 22:27:33.624 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/WeatherForecast - -
+2021-08-23 22:27:33.624 -03:00 [INF] Executing endpoint 'appTeste.Controllers.WeatherForecastController.Get (appTeste)'
+2021-08-23 22:27:33.624 -03:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[appTeste.WeatherForecast] Get() on controller appTeste.Controllers.WeatherForecastController (appTeste).
+2021-08-23 22:27:33.624 -03:00 [INF] action = Get , controller = WeatherForecast , Retorno da do array: "Date=24/08/2021 22:27:33, TemperatureC=54, Summary=Freezing"
+2021-08-23 22:27:33.624 -03:00 [INF] Executing ObjectResult, writing value of type 'appTeste.WeatherForecast[]'.
+2021-08-23 22:27:33.624 -03:00 [INF] Executed action appTeste.Controllers.WeatherForecastController.Get (appTeste) in 0.2799ms
+2021-08-23 22:27:33.624 -03:00 [INF] Executed endpoint 'appTeste.Controllers.WeatherForecastController.Get (appTeste)'
+2021-08-23 22:27:33.624 -03:00 [INF] HTTP GET /WeatherForecast responded 200 in 0.5811 ms
+2021-08-23 22:27:33.625 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/WeatherForecast - - - 200 - application/json;+charset=utf-8 0.8480ms
+2021-08-23 22:27:33.694 -03:00 [INF] Request starting HTTP/1.1 GET https://localhost:5001/WeatherForecast - -
+2021-08-23 22:27:33.695 -03:00 [INF] Executing endpoint 'appTeste.Controllers.WeatherForecastController.Get (appTeste)'
+2021-08-23 22:27:33.695 -03:00 [INF] Route matched with {action = "Get", controller = "WeatherForecast"}. Executing controller action with signature System.Collections.Generic.IEnumerable`1[appTeste.WeatherForecast] Get() on controller appTeste.Controllers.WeatherForecastController (appTeste).
+2021-08-23 22:27:33.695 -03:00 [INF] action = Get , controller = WeatherForecast , Retorno da do array: "Date=24/08/2021 22:27:33, TemperatureC=28, Summary=Balmy"
+2021-08-23 22:27:33.695 -03:00 [INF] Executing ObjectResult, writing value of type 'appTeste.WeatherForecast[]'.
+2021-08-23 22:27:33.696 -03:00 [INF] Executed action appTeste.Controllers.WeatherForecastController.Get (appTeste) in 0.4891ms
+2021-08-23 22:27:33.696 -03:00 [INF] Executed endpoint 'appTeste.Controllers.WeatherForecastController.Get (appTeste)'
+2021-08-23 22:27:33.696 -03:00 [INF] HTTP GET /WeatherForecast responded 200 in 1.2384 ms
+2021-08-23 22:27:33.696 -03:00 [INF] Request finished HTTP/1.1 GET https://localhost:5001/WeatherForecast - - - 200 - application/json;+charset=utf-8 1.6497ms

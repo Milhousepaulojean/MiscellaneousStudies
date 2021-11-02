@@ -1,8 +1,0 @@
-2021-08-03T23:47:29.4206050-03:00  [INF] Now listening on: "https://localhost:5001" (d826f4b8)
-2021-08-03T23:47:29.4279210-03:00  [INF] Now listening on: "http://localhost:5000" (d826f4b8)
-2021-08-03T23:47:29.4294150-03:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
-2021-08-03T23:47:29.4295100-03:00  [INF] Hosting environment: "Development" (c3307c92)
-2021-08-03T23:47:29.4315300-03:00  [INF] Content root path: "/Users/paulojeanalvesdasilva/Documents/Git/MiscellaneousStudies/projetoBase/appTeste" (b5d60022)
-2021-08-03T23:48:01.0218110-03:00 0HMAMU9323KK7:00000002 [INF] Begin (b910f637)
-2021-08-03T23:48:01.1340630-03:00 0HMAMU9323KK7:00000002 [INF] [{"Date":"2021-08-04T23:48:01.025681-03:00","TemperatureC":35,"TemperatureF":94,"Summary":"Scorching"},{"Date":"2021-08-05T23:48:01.026184-03:00","TemperatureC":-6,"TemperatureF":22,"Summary":"Mild"},{"Date":"2021-08-06T23:48:01.026188-03:00","TemperatureC":2,"TemperatureF":35,"Summary":"Sweltering"},{"Date":"2021-08-07T23:48:01.02619-03:00","TemperatureC":43,"TemperatureF":109,"Summary":"Bracing"},{"Date":"2021-08-08T23:48:01.02619-03:00","TemperatureC":-7,"TemperatureF":20,"Summary":"Freezing"}] (c57bcbc4)
-2021-08-03T23:51:24.7431750-03:00  [INF] Application is shutting down... (90f52c38)
