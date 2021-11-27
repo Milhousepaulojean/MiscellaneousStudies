@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row tableCamp" *ngFor="let obj of arrayobj">
+    <div class="col-sm">
+      
+      <h4>{{obj.nomedocampeonato}}</h4>
+      <dl class="border" *ngFor="let subItem of obj.info">
+        <dt>Futebol</dt>
+        <dd>Encerrado</dd>
+        <dt><img src={{subItem.escudoequipemandante}}> <span>{{subItem.equipemandanate}}</span></dt>
+        <dd>{{subItem.placarmandante}}</dd>
+        <dt><img src={{subItem.escudoequipevisitante}}> <span>{{subItem.equipevisitante}}</span></dt>
+        <dd>{{subItem.placarvisitante}}</dd>
+        <dt class="boxstatus">Rodada {{subItem.rodada}}</dt>
+        <dd>&nbsp;</dd>
+      </dl>
+    </div>
+  </div>
+</div>
+  

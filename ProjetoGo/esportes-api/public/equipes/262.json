@@ -1,0 +1,80 @@
+{
+    "resultados": {
+        "status": {
+            "descricao": "Ativo",
+            "status_id": "1"
+        },
+        "genero": "M",
+        "bandeiras": {
+            "60x60": "https://s.glbimg.com/es/sde/f/organizacoes/bandeira_default_65x65.png",
+            "30x30": "https://s.glbimg.com/es/sde/f/organizacoes/bandeira_default_30x30.png",
+            "svg": "https://s.glbimg.com/es/sde/f/organizacoes/bandeira_default_svg.svg",
+            "45x45": "https://s.glbimg.com/es/sde/f/organizacoes/bandeira_default_45x45.png"
+        },
+        "categoria_id": 4,
+        "organizacao_id": 262,
+        "equipe_id": 262,
+        "nome": "Clube de Regatas do Flamengo",
+        "escudos": {
+            "60x60": "https://s.glbimg.com/es/sde/f/organizacoes/2018/04/09/Flamengo-65.png",
+            "30x30": "https://s.glbimg.com/es/sde/f/organizacoes/2018/04/09/Flamengo-30.png",
+            "svg": "https://s.glbimg.com/es/sde/f/organizacoes/2018/04/10/Flamengo-2018.svg",
+            "45x45": "https://s.glbimg.com/es/sde/f/organizacoes/2018/04/09/Flamengo-45.png"
+        },
+        "nome_popular": "Flamengo",
+        "esporte_id": 1,
+        "modalidade_id": 1,
+        "cores": {
+            "terciaria": "#000000",
+            "secundaria": "#000000",
+            "primaria": "#dd0000"
+        },
+        "sigla": "FLA",
+        "apelido": "Flamengo",
+        "slug": "flamengo",
+        "flamulas": {
+            "60x60": "https://s.glbimg.com/es/sde/f/organizacoes/flamula_default_65x65.png",
+            "30x30": "https://s.glbimg.com/es/sde/f/organizacoes/flamula_default_30x30.png",
+            "45x45": "https://s.glbimg.com/es/sde/f/organizacoes/flamula_default_45x45.png"
+        }
+    },
+    "referencias": {
+        "organizacoes": {
+            "262": {
+                "organizacao_id": 262,
+                "fundacao ": "1895-11-15",
+                "escudos": {
+                    "60x60": "https://s.glbimg.com/es/sde/f/organizacoes/2018/04/09/Flamengo-65.png",
+                    "30x30": "https://s.glbimg.com/es/sde/f/organizacoes/2018/04/09/Flamengo-30.png",
+                    "svg": "https://s.glbimg.com/es/sde/f/organizacoes/2018/04/10/Flamengo-2018.svg",
+                    "45x45": "https://s.glbimg.com/es/sde/f/organizacoes/2018/04/09/Flamengo-45.png"
+                },
+                "nome": "Clube de Regatas do Flamengo"
+            }
+        },
+        "categorias": {
+            "4": {
+                "esporte_id": 1,
+                "nome": "Profissional",
+                "slug": "profissional",
+                "categoria_id": 4
+            }
+        },
+        "modalidades": {
+            "1": {
+                "esporte_id": 1,
+                "modalidade_id": 1,
+                "slug": "futebol_de_campo",
+                "nome": "Futebol de campo"
+            }
+        },
+        "esportes": {
+            "1": {
+                "esporte_id": 1,
+                "slug": "futebol",
+                "nome": "Futebol"
+            }
+        }
+    },
+    "paginacao": {}
+}
