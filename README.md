@@ -17,6 +17,7 @@
 
 [Criando projeto com NPM](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/nodejs/EstudosBasicos/04.UsandoNPM)
 * <b>Description</b>: Criando Package.json que configura o projeto;
+* <b>Command Create Install</b>: npm init -y;
 
 [Usando Express](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/nodejs/EstudosBasicos/06.CommomJS)
 * <b>Description</b>: Using module Express;
@@ -70,7 +71,7 @@
 
 [Map](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/nodejs/EstudosBasicos/24.UsingMap)
 
-[25.ApiJsonWithMaps](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/nodejs/EstudosBasicos/25.ApiJsonWithMaps)
+[ApiJsonWithMaps](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/nodejs/EstudosBasicos/25.ApiJsonWithMaps)
 
 
 <h2>Projetos:</h2>
