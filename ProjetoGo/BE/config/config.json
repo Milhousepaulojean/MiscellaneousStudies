@@ -1,5 +1,0 @@
-{
-    "Port": "8000",
-    "Pathfile": "/api/v1",
-    "Urlagenda": "http://localhost:8080/esportes/futebol/modalidades/futebol_de_campo/categorias/profissional/data/_DATAENVIADA_/jogos"
-}
