@@ -1,3 +1,5 @@
+
+//Consutla estruturas
 data "local_file" data_file{
     filename ="exemplo.txt"
 }
