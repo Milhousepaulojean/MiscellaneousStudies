@@ -18,8 +18,16 @@ Trabalho com programação seja interface ou back-end!
 **Pós-Graduação:** Arquitetura e Projetos de Cloud Computing;<br>
 Término em Dez/2021;
 
+
 ## Experência Profissional
-* 09/2020 - Atual<br>
+* 04/2021 - Atual<br>
+**Itaú Unibanco** -
+**Cargo**: Engenheiro de Software Senior.<br>
+**Descrição do cargo**: Desenvolvimento de fluxos e rotinas em sistemas web com a utlizacao de servicos das plataformas Mercado Livre e Mercado Pago.<br>
+**Tecnologias e técnicas utilizadas:** Java, Git (GitFlow), SQL(MySQL), GoLang, Teste Unitários(Junit, PowerMock), Docker. 
+
+## Experência Profissional
+* 09/2020 - 04/2021<br>
 **MercadoPago.com Representações LTDA** -
 **Cargo**: Analista de Sistemas Pleno.<br>
 **Descrição do cargo**: Desenvolvimento de fluxos e rotinas em sistemas web com a utlizacao de servicos das plataformas Mercado Livre e Mercado Pago.<br>
@@ -83,4 +91,5 @@ Término em Dez/2021;
 *  [Nodejs](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/nodejs)
 *  [curl](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/command-tips/Curl)
 *  [.Net](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/dotNet)
+*  [terraform](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/terraform)
 
