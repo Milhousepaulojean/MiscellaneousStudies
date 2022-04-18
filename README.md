@@ -2,7 +2,7 @@
 Terraform é uma infraestrutura de código aberto como ferramenta de software de código criada pela  HashiCorp. Os usuários definem e fornecem infraestrutura de data center usando uma linguagem de
 configuração declarativa conhecida como HashiCorp Configuration Language ou, opcionalmente, JSON.
 
-## Indices
+## Sumário
 
 [HelloWorld]<br />
 
