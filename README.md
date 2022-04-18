@@ -4,6 +4,8 @@ configuração declarativa conhecida como HashiCorp Configuration Language ou, o
 
 ## Indices
 
+[HelloWorld]<br />
+
 [Modules]<br />
 Um modules é um contêiner para vários recursos que são usados ​​juntos. Os módulos podem ser usados  ​​para criar abstrações leves, para que você possa descrever sua infraestrutura em termos de  arquitetura, em vez de diretamente em termos de objetos físicos.
 
@@ -15,8 +17,6 @@ Os recursos são o elemento mais importante na linguagem do Terraform.  Cada blo
 
 [Output]<br />
 Os valores de saída disponibilizam informações sobre sua infraestrutura na linha de comando e podem  expor informações para outras configurações do Terraform usarem. Os valores de saída são  semelhantes aos valores de retorno em linguagens de programação
-
-[HelloWorld]<br />
 
 [DataSource]<br />
 As fontes de dados permitem que o Terraform use informações definidas fora do Terraform, definidas  por outra configuração separada do Terraform ou modificadas por funções.
