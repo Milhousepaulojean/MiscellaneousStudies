@@ -23,8 +23,8 @@ Término em Dez/2021;
 * 04/2021 - Atual<br>
 **Itaú Unibanco** -
 **Cargo**: Engenheiro de Software Senior.<br>
-**Descrição do cargo**: Desenvolvimento de fluxos e rotinas em sistemas web com a utlizacao de servicos das plataformas Mercado Livre e Mercado Pago.<br>
-**Tecnologias e técnicas utilizadas:** Java, Git (GitFlow), SQL(MySQL), GoLang, Teste Unitários(Junit, PowerMock), Docker. 
+**Descrição do cargo**: Desenvolvimento de fluxos e rotinas em sistemas web com a utliizacao de servicos de comunicacao entre plataformas.<br>
+**Tecnologias e técnicas utilizadas:** AWS, C#, ASP.NET, Windows Services, WebServices, Web Api, Javascript, Angular/Angular JS, TypeScript , Node, Teste Unitários, Git (GitFlow), Teste Unitários(Junit, PowerMock, Jest), Docker. 
 
 ## Experência Profissional
 * 09/2020 - 04/2021<br>
