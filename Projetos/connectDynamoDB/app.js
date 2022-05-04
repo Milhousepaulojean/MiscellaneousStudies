@@ -1,15 +1,12 @@
 const AWS = require('aws-sdk');
+const connectFac = require('./connectFactory');
 const config = require('./config');
-
-    AWS.config.update(config.aws_remote_config);
-
-    const docClient = new AWS.DynamoDB.DocumentClient();
 
     const params = {
         TableName: config.aws_table_name
     };
 
-    docClient.scan(params, function (err, data) {
+    connectFac().scan(params, function (err, data) {
 
         if (err) {
             console.log(err)
