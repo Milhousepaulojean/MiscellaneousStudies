@@ -1,10 +1,16 @@
 #!/bin/sh
 
+#Create Folder App
+mkdir app
+
+#Create Folder App/src
+mkdir app/src
+
 #Install NPM INT
-npm init -y
+npm app/init -y
 
 #Install express
-npm i express --save
+npm app/ i express --save
 
 #Install cors
 npm i cors --save
@@ -13,10 +19,10 @@ npm i cors --save
 npm i body-parser --save
 
 #Install Nodemon
-npm install --save-dev nodemon
+npm i --save-dev nodemon
 
 #Install Consign
-npm install consign --save
+npm i consign --save
 
 #Start Project
 nodemon

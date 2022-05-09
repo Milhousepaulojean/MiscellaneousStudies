@@ -135,3 +135,5 @@ Task.todo
 Task.todo
 Projetos/CreateServerWithNpm/src/package-lock.json
 EstudosBasicos/17.NoSql/package-lock.json
+
+.env
