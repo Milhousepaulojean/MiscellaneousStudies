@@ -49,6 +49,7 @@ module.exports = app;" > config/server.js
 mkdir routes
 touch routes/routes.js
 echo "module.exports = function(app){
+    // #swagger.parameters['id'] = { description: 'ID do usuário.' }
     app.get('/' ,function(req , res){
         const serviceExample = app.services.servicesSample; 
         res.send(serviceExample)
@@ -140,10 +141,6 @@ services:
       - '${TMPDIR:-/tmp/localstack}:/tmp/localstack'
       - '/var/run/docker.sock:/var/run/docker.sock'" > docker-compose.yml
 
-
-
-#Nodemon
-touch nodemon.json
 
 #Swagger
 node ./swagger.js

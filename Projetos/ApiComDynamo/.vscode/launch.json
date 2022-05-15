@@ -11,6 +11,19 @@
     ],
     "configurations": [
         {
+            "name": "Launch via NPM",
+            "request": "launch",
+            "runtimeArgs": [
+                "run-script",
+                "swagger"
+            ],
+            "runtimeExecutable": "npm",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "node"
+        },
+        {
             "name": "Launch Chrome",
             "request": "launch",
             "type": "chrome",
@@ -29,6 +42,6 @@
                 "<node_internals>/**"
             ],
             "type": "node"
-        }
+        },
     ]
 }

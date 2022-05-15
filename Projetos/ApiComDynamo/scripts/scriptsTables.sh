@@ -16,5 +16,10 @@ aws --endpoint-url=http://localhost:4566 dynamodb put-item \
     --item \
         '{"Artist": {"S": "No One You Know"}, "SongTitle": {"S": "Call Me Today"}, "AlbumTitle": {"S": "Somewhat Famous"}, "Awards": {"N": "1"}}'
 
+aws --endpoint-url=http://localhost:4566 dynamodb put-item \
+    --table-name Music  \
+    --item \
+        '{"Artist": {"S": "No Two You Know"}, "SongTitle": {"S": "Call Me Yesterday"}, "AlbumTitle": {"S": "Somewhat inFamous"}, "Awards": {"N": "2"}}'
+
 echo "########### Describing a status ###########"
 aws --endpoint-url=http://localhost:4566 dynamodb describe-table --table-name Music | grep TableStatus

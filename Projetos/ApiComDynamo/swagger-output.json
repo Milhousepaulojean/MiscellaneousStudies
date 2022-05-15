@@ -16,10 +16,31 @@
   "schemes": [],
   "securityDefinitions": {},
   "paths": {
-    "/rotaTest": {
+    "/rotacomscan": {
       "get": {
         "description": "",
         "parameters": [],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/rotacomquery": {
+      "get": {
+        "tags": [
+          "User"
+        ],
+        "description": "Endpoint para obter um usuário.",
+        "parameters": [
+          {
+            "name": "filtro",
+            "in": "query",
+            "description": "Um filtro qualquer.",
+            "type": "string"
+          }
+        ],
         "responses": {
           "200": {
             "description": "OK"
