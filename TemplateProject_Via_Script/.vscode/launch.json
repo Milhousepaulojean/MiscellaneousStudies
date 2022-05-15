@@ -7,7 +7,6 @@
         {
             "name": "Configuration default",
             "configurations": [
-                "Launch via NPM",
                 "nodemon",
                 "Launch Chrome"
             ]
