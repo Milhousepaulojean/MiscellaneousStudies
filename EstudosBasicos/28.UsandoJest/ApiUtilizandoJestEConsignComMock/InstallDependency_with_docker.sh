@@ -24,6 +24,8 @@ npm i jest --save
 #Install Consign
 npm i supertest --save
 
+npm i @babel/preset-env --save-dev
+
 #Install swagger
 npm i --save-dev swagger-autogen
 npm i --save-dev swagger-ui-express
@@ -147,18 +149,8 @@ services:
       - '${TMPDIR:-/tmp/localstack}:/tmp/localstack'
       - '/var/run/docker.sock:/var/run/docker.sock'" > docker-compose.yml
 
-
-
-#Jest Config
-touch  jest.config.js
-echo "module.exports = {
-    clearMocks: true,
-    collectCoverage: true,
-    coverageDirectory: 'coverage',
-    coverageProvider: 'v8',
-    testEnvironment: 'node',
-};
-" > jest.config.js
+touch babel.config.js
+echo "module.exports = {presets: ['@babel/preset-env']}" babel.config.js
 
 #Swagger
 node ./swagger.js
