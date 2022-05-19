@@ -141,10 +141,6 @@ services:
       - '${TMPDIR:-/tmp/localstack}:/tmp/localstack'
       - '/var/run/docker.sock:/var/run/docker.sock'" > docker-compose.yml
 
-mkdir test
-mkdir test/routes
-touch test/routes/routes.spec.js
-
 #Conf Jest
 jest --init
 
