@@ -7,6 +7,5 @@ describe('teste com services',() =>{
         let abc = servicesTest.callServicesExample({message: "abc"});
 
         console.log(`Testing services ${JSON.stringify(abc)}`);
-    
     })
 })
