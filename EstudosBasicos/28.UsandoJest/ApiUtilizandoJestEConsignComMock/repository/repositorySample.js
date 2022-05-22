@@ -1,3 +1,7 @@
 module.exports = function(app){
-    return 'repositorio ok'
+    this.callRepository = () =>{
+        return 'repositorio ok'
+    }
+
+    return this;
 }

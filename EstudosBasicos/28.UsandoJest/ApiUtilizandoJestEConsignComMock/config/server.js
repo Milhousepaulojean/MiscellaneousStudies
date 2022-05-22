@@ -10,7 +10,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json())
 app.use('/doc', swaggerUi.serve, swaggerUi.setup(swaggerFile))
 
-consign()
+consign({verbose: false})
     .include('routes')
     .then('repository')
     .then('services')
