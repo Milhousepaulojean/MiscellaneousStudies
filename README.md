@@ -26,7 +26,7 @@ Término em Dez/2021;
   **Itaú Unibanco** -
   **Cargo**: Engenheiro de Software Senior.<br>
   **Descrição do cargo**: Desenvolvimento de fluxos e rotinas em sistemas web com a utliizacao de servicos de comunicacao entre plataformas.<br>
-  **Tecnologias e técnicas utilizadas:** AWS, C#, ASP.NET, Windows Services, WebServices, Web Api, Javascript, Angular/Angular JS, TypeScript , Node, Teste Unitários, Git (GitFlow), Teste Unitários(Junit, PowerMock, Jest), Docker.
+  **Tecnologias e técnicas utilizadas:** AWS, C#, ASP.NET, Windows Services, WebServices, Web Api, Javascript, Angular/Angular JS, TypeScript , Node, Teste Unitários, Git (GitFlow), Teste Unitários(Junit, PowerMock, Jest), Cucumber, Docker.
 
 - 09/2020 - 04/2021<br>
   **MercadoPago.com Representações LTDA** -
@@ -89,10 +89,12 @@ Término em Dez/2021;
 
 ## Estudos
 
-- [Java](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/Java/BackEnd/Java)
-- [Git](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/Git)
+<!--  - [Java](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/Java/BackEnd/Java)
+- [Git](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/Git)-->
+
 - [Nodejs](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/nodejs)
-- [curl](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/command-tips/Curl)
+
+<!-- [curl](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/command-tips/Curl)
 - [.Net](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/dotNet)
 - [terraform](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/terraform)
-- [Angular](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/Angular)
+- [Angular](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/Angular) -->
