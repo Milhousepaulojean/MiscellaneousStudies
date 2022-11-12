@@ -20,3 +20,6 @@ aws --endpoint-url=http://localhost:4566 dynamodb put-item \
 
 echo "########### Describing a status ###########"
 aws --endpoint-url=http://localhost:4566 dynamodb describe-table --table-name ExampleTable | grep TableStatus
+
+echo "########### select info  ###########"
+aws dynamodb scan --endpoint-url=http://localhost:4566 --table-name ExampleTable
