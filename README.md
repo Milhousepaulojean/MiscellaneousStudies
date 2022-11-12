@@ -1,14 +1,8 @@
 # Topicos
 
-| Estudos                                                                                                                  | Projetos                                                                                                          |
-| -------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| [Hello World](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/nodejs/EstudosBasicos/01.HelloWorld)                | [ActiveDirectory](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/nodejs/Projetos/ActiveDirectory) |
-| [Criando um servidor](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/nodejs/EstudosBasicos/02.CriandoUmServidor) | [MVC](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/nodejs/Projetos/API-MVC/src)                 |
-| [Verificando Rotas](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/nodejs/EstudosBasicos/03.VerificandoRotas)      | [Api Com Dynamo](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/nodejs/Projetos/ApiComDynamo)     |
-
-
-
-
+| Estudos                                                                                                    | Projetos                                                                                                                   |
+| ---------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
+| [Hello World](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/nodejs/Estudos/01.HelloWorld) | [Usando API com Dynamo](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/nodejs/Projetos/UsingDynamoWithAPI) |
 
 <!--
 * <b>Description</b>: Create simple server;
