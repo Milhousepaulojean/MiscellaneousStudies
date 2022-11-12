@@ -18,6 +18,12 @@ npm i --save-dev nodemon
 #Install Consign
 npm i consign --save
 
+#Install dotEnv
+npm i dotenv --save
+
+#Install dotEnv
+npm i aws-sdk --save
+
 #Install swagger
 npm i --save-dev swagger-autogen
 npm i --save-dev swagger-ui-express
@@ -41,6 +47,7 @@ consign()
     .include('routes')
     .then('repository')
     .then('services')
+    .then('middleware')
     .into(app);
 
 module.exports = app;" > config/server.js
@@ -144,6 +151,25 @@ services:
 mkdir test
 mkdir test/routes
 touch test/routes/routes.spec.js
+
+
+mkdir middleware
+touch middleware/middlewareSample.js
+echo "require('dotenv').config({ path: '../.env' })
+const AWS = require('aws-sdk');
+
+module.exports = function(){
+    AWS.config.update({
+      endpoint: `${process.env.PROTOCOL}://${process.env.DOMAIN}:${process.env.PORT}`,
+      accessKeyId: `${process.env.ACCESSKEYID}`,
+      secretAccessKey: `${process.env.SECRETACCESSKEY}`,
+      region: `${process.env.REGION}`,
+    });
+    const docClient = new AWS.DynamoDB.DocumentClient();
+    return docClient;
+}" > middleware/middlewareSample.js
+
+
 
 #Conf Jest
 jest --init
