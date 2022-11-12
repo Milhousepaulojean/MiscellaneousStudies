@@ -1,5 +1,0 @@
-{
-    "posts": [
-      { "id": 1, "title": "json-server", "author": "typicode" , "arrayObjects" : [{"teste": 1} , {"teste": 2}, {"teste": 3}]}
-    ]
-  }

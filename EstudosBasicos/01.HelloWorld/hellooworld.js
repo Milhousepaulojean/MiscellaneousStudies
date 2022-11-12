@@ -1,1 +1,0 @@
-console.log('Hello World usando node com nome do arquivo.')

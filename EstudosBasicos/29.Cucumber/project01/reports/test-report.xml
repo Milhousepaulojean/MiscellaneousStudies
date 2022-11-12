@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<test-results name="jest results" date="2022-06-22" time="01:16:43" invalid="0" ignored="0" inconclusive="0" not-run="0" errors="0" total="0" failures="0" skipped="0">
-  <environment nunit-version="na" clr-version="na" os-version="21.5.0" platform="darwin" cwd="/Users/paulojeanalvesdasilva/Documents/Git/MiscellaneousStudies/EstudosBasicos/29.Cucumber/project01" user="na" user-domain="na" machine-name="Paulos-MacBook-Pro.local"/>
-  <culture-info current-culture="na" current-uiculture="na"/>
-  <test-suite name="/Users/paulojeanalvesdasilva/Documents/Git/MiscellaneousStudies/EstudosBasicos/29.Cucumber/project01/features/saveTheWorld.feature" time="0" executed="False" success="True" result="Success" type="TestFixture">
-    <results>
-    </results>
-  </test-suite>
-</test-results>
