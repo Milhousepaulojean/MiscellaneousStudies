@@ -1,8 +1,10 @@
+const { json } = require("body-parser");
+
 module.exports = function (app) {
     // #swagger.parameters['id'] = { description: 'ID do usuário.' }
     app.get('/urlantiga/:unid/:cli', async function (req, res) {
-        console.log(req.params);
-        const serviceExample = await app.services.servicesSample.callServicesGetTypeUrlAntigaItems();
+        console.log(`dados entrando no routes: ${JSON.stringify(req.params)}`);
+        const serviceExample = await app.services.servicesSample.callServicesGetTypeUrlAntigaItems(req.params);
         res.send(serviceExample)
     })
 

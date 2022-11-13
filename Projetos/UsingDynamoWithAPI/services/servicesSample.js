@@ -1,9 +1,9 @@
 module.exports = function (app) {
 
-    this.callServicesGetTypeUrlAntigaItems = async function () {
-        console.log("services");
+    this.callServicesGetTypeUrlAntigaItems = async function (params) {
+        console.log(`dados entrando no services: ${JSON.stringify(params)}`);
 
-        let object = await app.repository.repositorySample.callDynamoGetTypeUrlAntigaItems();
+        let object = await app.repository.repositorySample.callDynamoGetTypeUrlAntigaItems(params);
 
         // //console.log(object.Items)
 
