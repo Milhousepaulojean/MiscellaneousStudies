@@ -16,15 +16,101 @@
   "schemes": [],
   "securityDefinitions": {},
   "paths": {
-    "/": {
+    "/urlantiga/{unid}/{cli}": {
       "get": {
         "description": "",
-        "parameters": [],
+        "parameters": [
+          {
+            "name": "unid",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "cli",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
         "responses": {
           "200": {
             "description": "OK"
           }
         }
+      }
+    },
+    "/urlnovacomtodoitens/{unidade}/{cli}": {
+      "get": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "unidade",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "cli",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/urlnovacomtodoitemespecifico/{unidade}/{ami}/{cli}/": {
+      "get": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "unidade",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "ami",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "cli",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/urldeletaitem/{unidade}/{ami}": {
+      "delete": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "unidade",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "ami",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {}
+      }
+    },
+    "/inseriritem": {
+      "post": {
+        "description": "",
+        "parameters": [],
+        "responses": {}
       }
     }
   }
