@@ -40,12 +40,12 @@
         }
       }
     },
-    "/urlnovacomtodoitens/{unidade}/{cli}": {
+    "/urlnovacomtodoitens/{unid}/{cli}": {
       "get": {
         "description": "",
         "parameters": [
           {
-            "name": "unidade",
+            "name": "unid",
             "in": "path",
             "required": true,
             "type": "string"
@@ -57,15 +57,19 @@
             "type": "string"
           }
         ],
-        "responses": {}
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
       }
     },
-    "/urlnovacomtodoitemespecifico/{unidade}/{ami}/{cli}/": {
+    "/urlnovacomtodoitemespecifico/{unid}/{ami}/{cli}/": {
       "get": {
         "description": "",
         "parameters": [
           {
-            "name": "unidade",
+            "name": "unid",
             "in": "path",
             "required": true,
             "type": "string"
@@ -86,12 +90,12 @@
         "responses": {}
       }
     },
-    "/urldeletaitem/{unidade}/{ami}": {
+    "/urldeletaitem/{unid}/{ami}": {
       "delete": {
         "description": "",
         "parameters": [
           {
-            "name": "unidade",
+            "name": "unid",
             "in": "path",
             "required": true,
             "type": "string"

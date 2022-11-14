@@ -1,4 +1,6 @@
 require('dotenv').config()
+
+
 const connectFac = require('../middleware/middlewareSample');
 
 module.exports = function (app) {
@@ -9,7 +11,6 @@ module.exports = function (app) {
         // };
         // return await connectFac().scan(params).promise();
     }
-
 
     this.callDynamoGetTypeUrlAntigaItems = async function (params) {
         console.log(`dados entrando no repositorio: ${JSON.stringify(params)}`);
@@ -37,20 +38,47 @@ module.exports = function (app) {
         // const resp = await connectFac().query(paramDynamo).promise();
 
         //uso do operador like para begins_with
+        // var paramDynamo = {
+        //     TableName: `${process.env.TABLENAME}`,
+        //     KeyConditionExpression: 'campo1Obj = :hkey AND begins_with(campo3Hash, :rkey)',
+        //     ExpressionAttributeValues: {
+        //         ':hkey': 'xmujr7ryw#00fld7j7l',
+        //         ':rkey': "rd596ctsk"
+        //     }
+
+        // };
+        // const resp = await connectFac().query(paramDynamo).promise();
+
         var paramDynamo = {
             TableName: `${process.env.TABLENAME}`,
-            KeyConditionExpression: 'campo01Obj = :hkey AND begins_with(campo2Hash, :rkey)',
+            KeyConditionExpression: 'campo1Obj = :hkey AND begins_with(campo3Hash, :rkey)',
             ExpressionAttributeValues: {
-                ':hkey': 'xmujr7ryw#00fld7j7l',
-                ':rkey': "rd596ctsk"
+                ':hkey': `xmujr7ryw#${params.unid}`,
+                ':rkey': `${params.cli}`
             }
 
         };
         const resp = await connectFac().query(paramDynamo).promise();
 
-        console.log(`retorno: ${JSON.stringify(resp)} `)
+        return resp;
+    }
 
-        return `retorno: ${JSON.stringify(params)}`
+    this.callDynamoGetTypeComTodoItens = async function (params) {
+        console.log(`dados entrando no repositorio: ${JSON.stringify(params)}`);
+
+
+        var paramDynamo = {
+            TableName: `${process.env.TABLENAME}`,
+            KeyConditionExpression: 'campo1Obj = :hkey AND begins_with(campo3Hash, :rkey)',
+            ExpressionAttributeValues: {
+                ':hkey': `${params.org}#${params.unid}`,
+                ':rkey': `${params.cli}`
+            }
+
+        };
+        const resp = await connectFac().query(paramDynamo).promise();
+
+        return resp;
     }
 
     return this;
