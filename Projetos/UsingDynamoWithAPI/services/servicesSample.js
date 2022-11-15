@@ -3,63 +3,81 @@ var _ = require('lodash');
 module.exports = function (app) {
 
     this.callServicesGetTypeUrlAntigaItems = async function (params) {
+
         console.log(`dados entrando no services: ${JSON.stringify(params)}`);
+        if (params.organizacao == undefined) {
+            params.organizacao = "58DD61E9-993D-4AA4-8AFB-78B5B55CDA79";
+            console.log(`dados de organizacao inputados no services: ${JSON.stringify(params)}`);
+        }
 
-        let object = await app.repository.repositorySample.callDynamoGetTypeUrlAntigaItems(params);
-        let objectjson = JSON.parse(JSON.stringify(object));
+        let objectresponserepository = await app.repository.repositorySample.callDynamoDBGetAllItemsPorUnidadeOrganizacionalECodCli(params);
+        let objectresponsemodel = await app.model.modelSample.callModelGetTypeUrlAntigaItems(JSON.parse(JSON.stringify(objectresponserepository)));
 
-        let i = 1;
-        let j = 1;
-        objectjson.Items.map(objItem => {
-            switch (objItem["campo2Fri"]) {
-                case "5pir44f5c":
-                    i++;
-                    break;
-                case "6uafwkkw8":
-                    j++;
-                    break;
-                default:
-                    j;
-                    break;
-            }
+        return objectresponsemodel;
 
-        });
 
-        let objresponse = {};
-        objresponse.total = i + j;
-        objresponse.totalA = j;
-        objresponse.totalB = i;
-
-        //console.log(`count total amigo: ${i}, \n count total sem amigo: ${j}`)
-        return objresponse;
     }
 
     this.callServicesGetTypeComTodoItens = async function (params) {
+
         console.log(`dados entrando no services: ${JSON.stringify(params)}`);
+        if (params.organizacao == undefined) {
+            params.organizacao = "58DD61E9-993D-4AA4-8AFB-78B5B55CDA79";
+            console.log(`dados de organizacao inputados no services: ${JSON.stringify(params)}`);
+        }
 
-        params.org = "xmujr7ryw";
-        let object = await app.repository.repositorySample.callDynamoGetTypeComTodoItens(params);
-        let objectjson = JSON.parse(JSON.stringify(object));
+        let objectresponserepository = await app.repository.repositorySample.callDynamoDBGetAllItemsPorUnidadeOrganizacionalECodCli(params);
+        let objectresponsemodel = await app.model.modelSample.callModelGetTypeComTodoItens(params, JSON.parse(JSON.stringify(objectresponserepository)));
 
-        console.log(objectjson)
+        return objectresponsemodel;
+    }
 
-        //Remove duplicates
-        let uniqueChars = [...new Set(_.map(objectjson.Items, "campo2Fri"))];
-        console.log(uniqueChars);
+    this.callServicesGetTypeItemEspecifico = async function (params) {
 
-        let objresponse = {};
+        console.log(`dados entrando no services: ${JSON.stringify(params)}`);
+        if (params.organizacao == undefined) {
+            params.organizacao = "58DD61E9-993D-4AA4-8AFB-78B5B55CDA79";
+            console.log(`dados de organizacao inputados no services: ${JSON.stringify(params)}`);
+        }
 
+        let objectresponserepository = await app.repository.repositorySample.callDynamoDBGetAllItemsPorUnidadeOrganizacionalECodCli(params);
+        let objectresponsemodel = await app.model.modelSample.callModelGetTypeComItemEspecifico(params, JSON.parse(JSON.stringify(objectresponserepository)));
 
-        objectjson.Items.map(function (item, index) {
-            console.log(index)
-        })
+        return objectresponsemodel;
+    }
 
-        objresponse.org = params.org;
-        objresponse.unid = params.unid;
-        objresponse.cli = params.cli;
-        objresponse.total = objectjson.Count;
-        //console.log(`count total amigo: ${i}, \n count total sem amigo: ${j}`)
-        return objresponse;
+    this.callServicesDelete = async function (params) {
+
+        console.log(`dados entrando no services: ${JSON.stringify(params)}`);
+        if (params.organizacao == undefined) {
+            params.organizacao = "58DD61E9-993D-4AA4-8AFB-78B5B55CDA79";
+            console.log(`dados de organizacao inputados no services: ${JSON.stringify(params)}`);
+        }
+
+        let objectresponserepositorysearchItems = await app.repository.repositorySample.callDynamoDBGetAllItemsPorUnidadeOrganizacionalECodCli(params);
+        let objectresponsemodelDelete = await app.model.modelSample.callModelSendRepositoryDelete(params, JSON.parse(JSON.stringify(objectresponserepositorysearchItems)));
+
+        if (objectresponsemodelDelete.length == 0) {
+            return app.model.modelSample.callModelSendMessageDelete(false);
+        } else {
+            objectresponsemodelDelete.forEach(async (element) => {
+                await app.repository.repositorySample.callDynamoDelete(element);
+            });
+        }
+        return app.model.modelSample.callModelSendMessageDelete(true);
+
+    }
+
+    this.callServicesPost = async function (params) {
+
+        console.log(`dados entrando no services: ${JSON.stringify(params)}`);
+        if (params.organizacao == undefined) {
+            params.organizacao = "58DD61E9-993D-4AA4-8AFB-78B5B55CDA79";
+            console.log(`dados de organizacao inputados no services: ${JSON.stringify(params)}`);
+        }
+
+        await app.repository.repositorySample.callDynamoPost(params);
+        return app.model.modelSample.callModelSendMessagePost(true);
     }
 
     return this;

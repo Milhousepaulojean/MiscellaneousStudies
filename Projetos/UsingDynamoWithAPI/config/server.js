@@ -16,6 +16,7 @@ consign()
     .then('repository')
     .then('services')
     .then('middleware')
+    .then('model')
     .into(app);
 
 module.exports = app;

@@ -1,17 +1,3 @@
-#!/bin/bash
-
-echo "########### Creating table with global secondary index ###########"
-        aws dynamodb --endpoint-url=http://localhost:4566 create-table \
-            --table-name ExampleTable \
-            --attribute-definitions \
-                AttributeName=cod_objt_patc_mens,AttributeType=S \
-                AttributeName=cod_objt_cli,AttributeType=S \
-            --key-schema \
-                AttributeName=cod_objt_patc_mens,KeyType=HASH \
-                AttributeName=cod_objt_cli,KeyType=RANGE \
-        --provisioned-throughput \
-                ReadCapacityUnits=10,WriteCapacityUnits=5
-
 echo "########### Inserting test data into a table ###########"
 aws --endpoint-url=http://localhost:4566 dynamodb put-item \
     --table-name ExampleTable  \
@@ -56,9 +42,3 @@ aws --endpoint-url=http://localhost:4566 dynamodb put-item \
     --item \
         '{ "cod_objt_patc_mens": { "S": "58DD61E9-993D-4AA4-8AFB-78B5B55CDA79#6FC300C4-1207-49A6-AE49-D584133C8624" }, "cod_objt_aten": { "S": "D78B109D-4BEB-4C79-8766-2A7E2AED51F2" }, "cod_objt_cli": { "S": "32679660862#2022-10-21T17:42:41+00:00" }, "cod_objt_clsr_mens": { "S": "A226F2C8-4D27-4174-9974-C8F29708C4FB" }, "cod_objt_mens": { "S": "people" },  "nom_apel_remt": { "S": "Fulano de tal" }}'
 
-
-echo "########### Describing a status ###########"
-aws --endpoint-url=http://localhost:4566 dynamodb describe-table --table-name ExampleTable | grep TableStatus
-
-echo "########### select info  ###########"
-aws dynamodb scan --endpoint-url=http://localhost:4566 --table-name ExampleTable

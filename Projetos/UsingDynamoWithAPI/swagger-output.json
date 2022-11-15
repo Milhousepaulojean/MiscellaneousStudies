@@ -5,31 +5,45 @@
     "title": "REST API",
     "description": ""
   },
-  "host": "",
-  "basePath": "",
+  "host": "localhost:3000",
+  "basePath": "/",
   "tags": [
     {
       "name": "",
       "description": ""
     }
   ],
-  "schemes": [],
+  "schemes": [
+    "http"
+  ],
   "securityDefinitions": {},
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
   "paths": {
-    "/urlantiga/{unid}/{cli}": {
+    "/listarmensagenspendentesdeconvivencia": {
       "get": {
         "description": "",
         "parameters": [
           {
-            "name": "unid",
-            "in": "path",
-            "required": true,
+            "name": "organizacao",
+            "in": "query",
+            "description": "Some description...",
             "type": "string"
           },
           {
-            "name": "cli",
-            "in": "path",
-            "required": true,
+            "name": "unidade_organizacional",
+            "in": "query",
+            "description": "Some description...",
+            "type": "string"
+          },
+          {
+            "name": "cod_cli",
+            "in": "query",
+            "description": "Some description...",
             "type": "string"
           }
         ],
@@ -40,20 +54,26 @@
         }
       }
     },
-    "/urlnovacomtodoitens/{unid}/{cli}": {
+    "/urlnovacomtodoitens": {
       "get": {
         "description": "",
         "parameters": [
           {
-            "name": "unid",
-            "in": "path",
-            "required": true,
+            "name": "organizacao",
+            "in": "query",
+            "description": "Some description...",
             "type": "string"
           },
           {
-            "name": "cli",
-            "in": "path",
-            "required": true,
+            "name": "unidade_organizacional",
+            "in": "query",
+            "description": "Some description...",
+            "type": "string"
+          },
+          {
+            "name": "cod_cli",
+            "in": "query",
+            "description": "Some description...",
             "type": "string"
           }
         ],
@@ -64,57 +84,163 @@
         }
       }
     },
-    "/urlnovacomtodoitemespecifico/{unid}/{ami}/{cli}/": {
+    "/urlnovacomitemespecifico": {
       "get": {
         "description": "",
         "parameters": [
           {
-            "name": "unid",
-            "in": "path",
-            "required": true,
+            "name": "organizacao",
+            "in": "query",
+            "description": "Some description...",
             "type": "string"
           },
           {
-            "name": "ami",
-            "in": "path",
-            "required": true,
+            "name": "unidade_organizacional",
+            "in": "query",
+            "description": "Some description...",
             "type": "string"
           },
           {
-            "name": "cli",
-            "in": "path",
-            "required": true,
+            "name": "cod_cli",
+            "in": "query",
+            "description": "Some description...",
+            "type": "string"
+          },
+          {
+            "name": "chatbot",
+            "in": "query",
+            "description": "Some description...",
             "type": "string"
           }
         ],
-        "responses": {}
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
       }
     },
-    "/urldeletaitem/{unid}/{ami}": {
+    "/urldeletaitem/{unidade_organizacional}/{cod_cli}/{chatbot}": {
       "delete": {
         "description": "",
         "parameters": [
           {
-            "name": "unid",
+            "name": "unidade_organizacional",
             "in": "path",
             "required": true,
             "type": "string"
           },
           {
-            "name": "ami",
+            "name": "cod_cli",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "name": "chatbot",
             "in": "path",
             "required": true,
             "type": "string"
           }
         ],
-        "responses": {}
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
       }
     },
     "/inseriritem": {
       "post": {
         "description": "",
-        "parameters": [],
-        "responses": {}
+        "parameters": [
+          {
+            "name": "obj",
+            "in": "body",
+            "description": "Some description...",
+            "schema": {
+              "type": "object",
+              "properties": {
+                "organizacao": {
+                  "type": "string",
+                  "example": "58DD61E9-993D-4AA4-8AFB-78B5B55CDA79"
+                },
+                "unidade_organizacional": {
+                  "type": "string",
+                  "example": "6FC300C4-1207-49A6-AE49-D584133C8624"
+                },
+                "chatbot": {
+                  "type": "string",
+                  "example": "8F8C717A-BFFC-4BFA-8E04-605361410172"
+                },
+                "cod_clie": {
+                  "type": "string",
+                  "example": "32679660862"
+                },
+                "cod_mens": {
+                  "type": "string",
+                  "example": "7D353B04-AC34-46A0-80E8-C1CBA1A15BC3"
+                },
+                "tip_rem": {
+                  "type": "string",
+                  "example": "agent"
+                },
+                "nome_rem": {
+                  "type": "string",
+                  "example": "Fulano de tal 2"
+                },
+                "origem": {
+                  "type": "string",
+                  "example": "iumessenger"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "inseriritem": {
+      "type": "object",
+      "properties": {
+        "organizacao": {
+          "type": "string",
+          "example": "58DD61E9-993D-4AA4-8AFB-78B5B55CDA79"
+        },
+        "unidade_organizacional": {
+          "type": "string",
+          "example": "6FC300C4-1207-49A6-AE49-D584133C8624"
+        },
+        "chatbot": {
+          "type": "string",
+          "example": "8F8C717A-BFFC-4BFA-8E04-605361410172"
+        },
+        "cod_clie": {
+          "type": "string",
+          "example": "32679660862"
+        },
+        "cod_mens": {
+          "type": "string",
+          "example": "7D353B04-AC34-46A0-80E8-C1CBA1A15BC3"
+        },
+        "tip_rem": {
+          "type": "string",
+          "example": "agent"
+        },
+        "nome_rem": {
+          "type": "string",
+          "example": "Fulano de tal 2"
+        },
+        "origem": {
+          "type": "string",
+          "example": "iumessenger"
+        }
       }
     }
   }

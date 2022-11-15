@@ -12,18 +12,28 @@ module.exports = function (app) {
         // return await connectFac().scan(params).promise();
     }
 
-    this.callDynamoGetTypeUrlAntigaItems = async function (params) {
+    this.callDynamoGetTypeComTodoItens = async function (params) {
         console.log(`dados entrando no repositorio: ${JSON.stringify(params)}`);
 
-        // var paramDynamo = {
-        //     TableName: `${process.env.TABLENAME}`,
-        //     Key: {
-        //         "campo01Obj": "xmujr7ryw#00fld7j7l#5pir44f5c",
-        //         "campo2Hash": "rd596ctsk"
-        //     }
+
+        var paramDynamo = {
+            TableName: `${process.env.TABLENAME}`,
+            KeyConditionExpression: 'campo1Obj = :hkey AND begins_with(campo3Hash, :rkey)',
+            ExpressionAttributeValues: {
+                ':hkey': `${params.org}#${params.unid}`,
+                ':rkey': `${params.cod_cli}`
+            }
+
+        };
+        const resp = await connectFac().query(paramDynamo).promise();
+
+        return resp;
+    }
+
+    this.callDynamoDBGetAllItemsPorUnidadeOrganizacionalECodCli = async function (params) {
+        console.log(`dados entrando no repositorio: ${JSON.stringify(params)}`);
 
 
-        // };
         //const resp = await connectFac().get(paramDynamo).promise();
 
         // var paramDynamo = {
@@ -49,12 +59,14 @@ module.exports = function (app) {
         // };
         // const resp = await connectFac().query(paramDynamo).promise();
 
+
+
         var paramDynamo = {
             TableName: `${process.env.TABLENAME}`,
-            KeyConditionExpression: 'campo1Obj = :hkey AND begins_with(campo3Hash, :rkey)',
+            KeyConditionExpression: 'cod_objt_patc_mens = :hkey AND begins_with(cod_objt_cli, :rkey)',
             ExpressionAttributeValues: {
-                ':hkey': `xmujr7ryw#${params.unid}`,
-                ':rkey': `${params.cli}`
+                ':hkey': `${params.organizacao}#${params.unidade_organizacional}`,
+                ':rkey': `${params.cod_cli}`
             }
 
         };
@@ -63,20 +75,39 @@ module.exports = function (app) {
         return resp;
     }
 
-    this.callDynamoGetTypeComTodoItens = async function (params) {
+    this.callDynamoDelete = async function (params) {
         console.log(`dados entrando no repositorio: ${JSON.stringify(params)}`);
-
 
         var paramDynamo = {
             TableName: `${process.env.TABLENAME}`,
-            KeyConditionExpression: 'campo1Obj = :hkey AND begins_with(campo3Hash, :rkey)',
-            ExpressionAttributeValues: {
-                ':hkey': `${params.org}#${params.unid}`,
-                ':rkey': `${params.cli}`
+            Key: {
+                'cod_objt_patc_mens': `${params.organizacao}#${params.unidade_organizacional}`,
+                'cod_objt_cli': `${params.cod_cli}`
             }
-
         };
-        const resp = await connectFac().query(paramDynamo).promise();
+
+        const resp = await connectFac().delete(paramDynamo).promise();
+
+        return resp;
+    }
+
+    this.callDynamoPost = async function (params) {
+        console.log(`dados entrando no repositorio: ${JSON.stringify(params)}`);
+
+        var datetime = new Date();
+        var paramDynamo = {
+            TableName: `${process.env.TABLENAME}`,
+            Item: {
+                'cod_objt_patc_mens': `${params.organizacao}#${params.unidade_organizacional}`,
+                'cod_objt_cli': `${params.cod_clie}#${datetime.toJSON().toString()}}`,
+                'cod_objt_aten': `${params.chatbot}`,
+                'cod_objt_clsr_mens': `${params.cod_mens}`,
+                'cod_objt_mens': `${params.tip_rem}`,
+                'nom_apel_remt': `${params.nome_rem}`
+            }
+        };
+
+        const resp = await connectFac().put(paramDynamo).promise();
 
         return resp;
     }
