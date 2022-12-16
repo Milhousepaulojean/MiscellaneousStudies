@@ -24,7 +24,7 @@ Apenas para efeito de estudo sobre Api com nodejs e utiliza;'ao do DynamoDb.
 
 ## Screenshots
 
-![App Screenshot](https://github.com/Milhousepaulojean/MiscellaneousStudies/blob/feature/AlteracaoDeEscopo/Projetos/UsingDynamoWithAPI/img/img01.png) { width=50% }
+![App Screenshot](https://github.com/Milhousepaulojean/MiscellaneousStudies/blob/feature/AlteracaoDeEscopo/Projetos/UsingDynamoWithAPI/img/img01.png) {width=50% }
 
 ## Stack utilizada
 
@@ -58,6 +58,6 @@ O que você aprendeu construindo esse projeto? Quais desafios você enfrentou e 
 
 ## Autores
 
-![App Screenshot01](https://avatars.githubusercontent.com/u/6538609?s=400&u=de86842e8f0bfba233fcafe873617ece2f08d454&v=4){ width=50% }
+![App Screenshot01](https://avatars.githubusercontent.com/u/6538609?s=400&u=de86842e8f0bfba233fcafe873617ece2f08d454&v=4){width=50% }
 
 - [@Milhousepaulojean](https://github.com/Milhousepaulojean)
