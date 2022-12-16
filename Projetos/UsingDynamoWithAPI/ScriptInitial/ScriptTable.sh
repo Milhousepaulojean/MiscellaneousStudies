@@ -25,17 +25,17 @@ echo "########### Creating table with global secondary index ###########"
 
 echo "########### Inserting test data into a table ###########"
 aws --endpoint-url=http://localhost:4566 dynamodb put-item \
-    --table-name ExampleTablePessoa  \
+    --table-name ExampleTableLogradouro  \
     --item \
         '{ "endereco": { "S": "Rua Sem fim, 000 - Terra do nunca" }, "estado": { "S": "paulo@silva.com" }}'
 
 aws --endpoint-url=http://localhost:4566 dynamodb put-item \
-    --table-name ExampleTableLogradouro  \
+    --table-name  ExampleTablePessoa \
     --item \
         '{ "nome": { "S": "Paulo Silva" }, "email": { "S": "paulo@silva.com" }}'
 
 echo "########### Describing a status ###########"
-aws --endpoint-url=http://localhost:4566 dynamodb describe-table --table-name ExampleTable | grep TableStatus
+aws --endpoint-url=http://localhost:4566 dynamodb describe-table --table-name ExampleTablePessoa | grep TableStatus
 
 echo "########### select info  ###########"
-aws dynamodb scan --endpoint-url=http://localhost:4566 --table-name ExampleTable
+aws dynamodb scan --endpoint-url=http://localhost:4566 --table-name ExampleTablePessoa
