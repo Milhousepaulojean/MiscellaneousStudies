@@ -24,132 +24,6 @@
     "application/json"
   ],
   "paths": {
-    "/listarmensagenspendentesdeconvivencia": {
-      "get": {
-        "description": "",
-        "parameters": [
-          {
-            "name": "organizacao",
-            "in": "query",
-            "description": "Some description...",
-            "type": "string"
-          },
-          {
-            "name": "unidade_organizacional",
-            "in": "query",
-            "description": "Some description...",
-            "type": "string"
-          },
-          {
-            "name": "cod_cli",
-            "in": "query",
-            "description": "Some description...",
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/urlnovacomtodoitens": {
-      "get": {
-        "description": "",
-        "parameters": [
-          {
-            "name": "organizacao",
-            "in": "query",
-            "description": "Some description...",
-            "type": "string"
-          },
-          {
-            "name": "unidade_organizacional",
-            "in": "query",
-            "description": "Some description...",
-            "type": "string"
-          },
-          {
-            "name": "cod_cli",
-            "in": "query",
-            "description": "Some description...",
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/urlnovacomitemespecifico": {
-      "get": {
-        "description": "",
-        "parameters": [
-          {
-            "name": "organizacao",
-            "in": "query",
-            "description": "Some description...",
-            "type": "string"
-          },
-          {
-            "name": "unidade_organizacional",
-            "in": "query",
-            "description": "Some description...",
-            "type": "string"
-          },
-          {
-            "name": "cod_cli",
-            "in": "query",
-            "description": "Some description...",
-            "type": "string"
-          },
-          {
-            "name": "chatbot",
-            "in": "query",
-            "description": "Some description...",
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/urldeletaitem/{unidade_organizacional}/{cod_cli}/{chatbot}": {
-      "delete": {
-        "description": "",
-        "parameters": [
-          {
-            "name": "unidade_organizacional",
-            "in": "path",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "name": "cod_cli",
-            "in": "path",
-            "required": true,
-            "type": "string"
-          },
-          {
-            "name": "chatbot",
-            "in": "path",
-            "required": true,
-            "type": "string"
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
     "/inseriritem": {
       "post": {
         "description": "",
@@ -161,40 +35,52 @@
             "schema": {
               "type": "object",
               "properties": {
-                "organizacao": {
+                "nome": {
                   "type": "string",
-                  "example": "58DD61E9-993D-4AA4-8AFB-78B5B55CDA79"
+                  "example": "Paulo Sila"
                 },
-                "unidade_organizacional": {
+                "email": {
                   "type": "string",
-                  "example": "6FC300C4-1207-49A6-AE49-D584133C8624"
+                  "example": "paulo@paulo.com"
                 },
-                "chatbot": {
+                "end": {
                   "type": "string",
-                  "example": "8F8C717A-BFFC-4BFA-8E04-605361410172"
+                  "example": "rua das pintobeiras, 3"
                 },
-                "cod_clie": {
+                "cidade": {
                   "type": "string",
-                  "example": "32679660862"
+                  "example": "guarulhos"
                 },
-                "cod_mens": {
+                "estado": {
                   "type": "string",
-                  "example": "7D353B04-AC34-46A0-80E8-C1CBA1A15BC3"
-                },
-                "tip_rem": {
-                  "type": "string",
-                  "example": "agent"
-                },
-                "nome_rem": {
-                  "type": "string",
-                  "example": "Fulano de tal 2"
-                },
-                "origem": {
-                  "type": "string",
-                  "example": "iumessenger"
+                  "example": "sp"
                 }
               }
             }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/getcomLimite_pagincao": {
+      "get": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "nome",
+            "in": "query",
+            "description": "Nome.",
+            "type": "string"
+          },
+          {
+            "name": "email",
+            "in": "query",
+            "description": "email.",
+            "type": "string"
           }
         ],
         "responses": {

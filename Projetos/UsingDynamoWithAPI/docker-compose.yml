@@ -1,19 +1,14 @@
-version: '3.0'
 
+
+version: '3.7'
 services:
-
-  localstack:
-    image: localstack/localstack:latest
-    environment: 
-      - AWS_DEFAULT_REGION=ap-southeast-1
-      - EDGE_PORT=4566
-      - SERVICES=dynamodb
-      - KINESIS_PROVIDER=kinesalite
-      - AWS_ACCESS_KEY_ID=dummyaccess
-      - AWS_SECRET_ACCESS_KEY=dummysecret
-      - AWS_DEFAULT_REGION=us-east-1
-    ports:
-      - '4566:4566'
+  dynamodb:
+    image:  amazon/dynamodb-local
+    container_name: my-dynamodb
+    hostname: dynamodb
+    restart: always
     volumes:
-      - '/var/folders/5h/s7tly89s3sv316634kx_2nvr0000gn/T/:/tmp/localstack'
-      - '/var/run/docker.sock:/var/run/docker.sock'
+      -  ./my-dynamodb-data:/home/dynamodblocal/data
+    ports:
+      - 8000:8000
+    command: "-jar DynamoDBLocal.jar -sharedDb -dbPath /home/dynamodblocal/data/"
