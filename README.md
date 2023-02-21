@@ -7,7 +7,7 @@
 
 # Mapa Mental
 
-![Screenshot](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/nodejs/mindmaps/img/node.png)
+![Map](https://github.com/Milhousepaulojean/MiscellaneousStudies/blob/nodejs/mindmaps/img/node.png)
 
 <!--
 
