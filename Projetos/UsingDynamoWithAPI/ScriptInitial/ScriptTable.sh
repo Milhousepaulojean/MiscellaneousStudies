@@ -43,6 +43,11 @@ aws --endpoint-url=http://localhost:8000 dynamodb put-item \
     --item \
         '{ "nome": { "S": "Ted Silva5" }, "email": { "S": "ted5@ted.com.br" }, "end": { "S": "rua das pintobeiras, 249" }, "cidade": { "S": "guarulhos" }, "estado": { "S": "sp" }}'
 
+aws --endpoint-url=http://localhost:8000 dynamodb put-item \
+    --table-name ExampleTable  \
+    --item \
+        '{ "nome": { "S": "Paulo J" }, "email": { "S": "pauloj@ted.com.br" }, "end": { "S": "rua das pintobeiras, 250" }, "cidade": { "S": "guarulhos" }, "estado": { "S": "sp" }}'
+
 
 echo "########### Describing a status ###########"
 aws --endpoint-url=http://localhost:8000 dynamodb describe-table --table-name ExampleTable | grep TableStatus

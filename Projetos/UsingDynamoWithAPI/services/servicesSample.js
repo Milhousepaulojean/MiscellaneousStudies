@@ -13,5 +13,11 @@ module.exports = function (app) {
 
     }
 
+    this.callServicesComContains = async function (paramreq) {
+
+        return await app.repository.repositorySample.callDynamoGetContains(paramreq);
+
+    }
+
     return this;
 }

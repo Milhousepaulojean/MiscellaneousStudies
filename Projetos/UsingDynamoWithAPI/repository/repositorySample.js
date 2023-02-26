@@ -19,6 +19,23 @@ module.exports = function (app) {
         return await connectFac.scan(params).promise();
     }
 
+    this.callDynamoGetContains = async function (paramreq) {
+        console.log("repositorio");
+
+        const params = {
+            TableName: "ExampleTable",
+            FilterExpression: "contains(#email, :email)",
+            ExpressionAttributeNames: {
+                "#email": "email",
+            },
+            ExpressionAttributeValues: {
+                ":email": paramreq,
+            }
+        };
+
+        const connectFac = app.middleware.middlewareSample;
+        return await connectFac.scan(params).promise();
+    }
 
     this.callDynamoPost = async function (params) {
         console.log(`dados entrando no repositorio: ${JSON.stringify(params)}`);

@@ -33,4 +33,15 @@ module.exports = function (app) {
               const serviceExample = await app.services.servicesSample.callServicesLimiteePaginacao(req.query);
               res.send(JSON.parse(JSON.stringify(serviceExample)))
        })
+
+       app.get('/getcomContains', async function (req, res) {
+
+              /*  #swagger.parameters['nome'] = {
+          in: 'query',
+          description: 'Nome.',
+              } */
+
+              const serviceExample = await app.services.servicesSample.callServicesComContains(req.query.nome);
+              res.send(JSON.parse(JSON.stringify(serviceExample)))
+       })
 }
