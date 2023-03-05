@@ -3,6 +3,10 @@
 ++ Estudos
 +++ Hello World
 +++ Criando um Servidor
++++ Verificando rotas
++++ usando o npm
+++++ npm init
++++ Usando express
 -- Projetos
 --- UsingDynamoWithAPI
 @endmindmap

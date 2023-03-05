@@ -4,6 +4,9 @@
 | --------------------------------------------------------------------------------------------------------------------------------- |
 | [Hello World](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/nodejs/Estudos/01.HelloWorld)                        |
 | [Criando um Servidor Simples](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/nodejs/Estudos/02.CriandoUmServidor) |
+| [Criando rotas](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/nodejs/Estudos/03.VerificandoRotas)                |
+| [Usando npm](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/nodejs/Estudos/04.UsandoNPM)                          |
+| [Usando express](https://github.com/Milhousepaulojean/MiscellaneousStudies/tree/nodejs/Estudos/05.UsandoExpress)                  |
 
 | Projeto                                                                                                       |
 | ------------------------------------------------------------------------------------------------------------- |
