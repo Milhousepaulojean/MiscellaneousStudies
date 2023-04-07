@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-04-07T21:34:07.450Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="AIjIfd8cdy6X16-Fhsk6" version="20.8.19" type="github">
+<mxfile host="app.diagrams.net" modified="2023-04-07T21:41:39.510Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="46sqCnfsC1wyLb3Avy5f" version="20.8.19" type="github">
   <diagram name="Página-1" id="s-PmPzrtkzn6yLQomVvi">
     <mxGraphModel dx="794" dy="516" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -23,6 +23,9 @@
             </Array>
           </mxGeometry>
         </mxCell>
+        <mxCell id="xPOa8HNcyULqr3sJDc3M-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="xPOa8HNcyULqr3sJDc3M-2" target="xPOa8HNcyULqr3sJDc3M-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="xPOa8HNcyULqr3sJDc3M-2" value="Mapear Conteudo" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="230" y="60" width="120" height="60" as="geometry" />
         </mxCell>
@@ -37,6 +40,51 @@
         </mxCell>
         <mxCell id="xPOa8HNcyULqr3sJDc3M-9" value="Cadastrar Anki" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="630" y="150" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xPOa8HNcyULqr3sJDc3M-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="xPOa8HNcyULqr3sJDc3M-11" target="xPOa8HNcyULqr3sJDc3M-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xPOa8HNcyULqr3sJDc3M-11" value="Rotacao Espacada" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="230" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xPOa8HNcyULqr3sJDc3M-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="xPOa8HNcyULqr3sJDc3M-13" target="xPOa8HNcyULqr3sJDc3M-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="xPOa8HNcyULqr3sJDc3M-18" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="xPOa8HNcyULqr3sJDc3M-13" target="xPOa8HNcyULqr3sJDc3M-17">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="500" y="430" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xPOa8HNcyULqr3sJDc3M-20" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="xPOa8HNcyULqr3sJDc3M-13" target="xPOa8HNcyULqr3sJDc3M-19">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="500" y="550" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xPOa8HNcyULqr3sJDc3M-22" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="xPOa8HNcyULqr3sJDc3M-13" target="xPOa8HNcyULqr3sJDc3M-21">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="500" y="650" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xPOa8HNcyULqr3sJDc3M-13" value="Definir Datas" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xPOa8HNcyULqr3sJDc3M-15" value="1 dia" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xPOa8HNcyULqr3sJDc3M-17" value="1 semana" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="400" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xPOa8HNcyULqr3sJDc3M-19" value="1 mes" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="510" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="xPOa8HNcyULqr3sJDc3M-21" value="3 meses" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="630" y="620" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
