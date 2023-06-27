@@ -15,13 +15,18 @@ module.exports = function (app) {
     }
 
     this.decrypt = async function (params) {
-        let iv = Buffer.from(params.tokenencrypt.iv, 'hex');
-        let encryptedText = Buffer.from(params.tokenencrypt.encryptedData, 'hex');
-        let decipher = crypto.createDecipheriv('aes-256-cbc', Buffer.from(key), iv);
-        let decrypted = decipher.update(encryptedText);
-        decrypted = Buffer.concat([decrypted, decipher.final()]);
-        console.log(`dados entrando no decrypt: ${JSON.stringify(decrypted)}`);
-        return decrypted.toString();
+        try {
+            let iv = Buffer.from(params.tokenencrypt.iv, 'hex');
+            let encryptedText = Buffer.from(params.tokenencrypt.encryptedData, 'hex');
+            let decipher = crypto.createDecipheriv('aes-256-cbc', Buffer.from(key), iv);
+            let decrypted = decipher.update(encryptedText);
+            decrypted = Buffer.concat([decrypted, decipher.final()]);
+            console.log(`dados entrando no decrypt: ${JSON.stringify(decrypted)}`);
+            return decrypted.toString();
+        } catch (error) {
+            console.log(`error decrypt: ${JSON.stringify(error)}`);
+            return JSON.stringify(error);
+        }
     }
 
     return this;

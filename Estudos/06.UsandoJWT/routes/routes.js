@@ -28,7 +28,18 @@ module.exports = function (app) {
           in: 'query',
           description: 'Nome.',
               } */
-        const exampleauthorization = await app.middlewares.auth.authentication(req.query)
-        res.send(exampleauthorization)
+        try {
+            let exampleauthenticaton;
+            for (let index = 0; index < 10; index++) {
+                console.log("--------")
+                console.log(index)
+                exampleauthenticaton = await app.middlewares.auth.authentication(req.query)
+                console.log(exampleauthenticaton)
+            }
+            res.send(exampleauthenticaton)
+        } catch (error) {
+            console.log(error)
+            res.status(400).send(error.message)
+        }
     })
 }
