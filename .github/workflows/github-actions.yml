@@ -34,7 +34,7 @@ jobs:
       - name: Apply Terraform
         run: terraform apply -auto-approve
 
-   deploy-nodejs:
+  deploy-nodejs:
     needs: terraform
     runs-on: ubuntu-latest
 
