@@ -3,7 +3,7 @@ name: Construir Cluster EKS com Terraform
 on:
   push:
     branches:
-      - main # ajuste conforme sua branch principal
+      - repoMongoteste # ajuste conforme sua branch principal
 
 jobs:
   build:
