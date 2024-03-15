@@ -29,8 +29,7 @@ jobs:
         run: terraform init
 
       - name: Buscar tfstate atual
-        run: terraform state pull
-        #run: terraform state pull > terraform.tfstate
+        run: terraform state pull > terraform.tfstate
 
       - name: Planificar Infraestrutura
         run: terraform plan -out=plano.tfplan
