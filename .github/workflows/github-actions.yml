@@ -3,7 +3,7 @@ name: Deploy Testes AWS DocumentDB with Terraform and Node.js
 on:
   push:
     branches:
-      - master
+      - repoMongoteste
 
 jobs:
   build:
