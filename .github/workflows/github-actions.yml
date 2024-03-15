@@ -33,36 +33,45 @@ jobs:
       - name: Inicializar Terraform
         run: terraform init
 
-      - name: Buscar tfstate atual
-        run: terraform state pull > terraform-state-fiap-paulinho02/Prod/terraform.tfstate
+      # - name: Buscar tfstate atual
+      #   run: terraform state pull > terraform-state-fiap-paulinho02/Prod/terraform.tfstate
 
-      - name: Planificar Infraestrutura
-        run: terraform plan -out=plano.tfplan
+      # - name: Planificar Infraestrutura
+      #   run: terraform plan -out=plano.tfplan
 
-      - name: Aplicar Infraestrutura
-        run: terraform apply -auto-approve plano.tfplan
-
-  deploy-nodejs:
-    needs: terraform
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
+      # - name: Aplicar Infraestrutura
+      #   run: terraform apply -auto-approve plano.tfplan
+      - name: Download Terraform State
+        uses: actions/download-artifact@v2
         with:
-          node-version: "14"
+          name: terraform-state
+          path: .
 
-      - name: Install dependencies
-        run: npm install
+      - name: Print Terraform State
+        run: cat terraform.tfstate # Exemplo de como usar o estado baixado
 
-      - name: Build application
-        run: npm run build
 
-      - name: Deploy application
-        run: npm run deploy
+  # deploy-nodejs:
+  #   needs: terraform
+  #   runs-on: ubuntu-latest
 
-      - name: Deploy application
-        run: npm start
+  #   steps:
+  #     - name: Checkout repository
+  #       uses: actions/checkout@v2
+
+  #     - name: Setup Node.js
+  #       uses: actions/setup-node@v2
+  #       with:
+  #         node-version: "14"
+
+  #     - name: Install dependencies
+  #       run: npm install
+
+  #     - name: Build application
+  #       run: npm run build
+
+  #     - name: Deploy application
+  #       run: npm run deploy
+
+  #     - name: Deploy application
+  #       run: npm start
