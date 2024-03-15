@@ -34,7 +34,7 @@ jobs:
         run: terraform init
 
       - name: Buscar tfstate atual
-        run: terraform state pull > terraform.tfstate
+        run: terraform state pull > terraform-state-fiap-paulinho02/Prod/terraform.tfstate
 
       - name: Planificar Infraestrutura
         run: terraform plan -out=plano.tfplan
