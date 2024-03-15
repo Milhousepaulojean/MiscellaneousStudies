@@ -1,4 +1,4 @@
-name: Construir Cluster EKS com Terraform
+name: Construir Cluster AWSDOCUMENT com Terraform
 
 on:
   push:
