@@ -1,5 +1,5 @@
 provider "aws" {
-  region = var.aws_region # Substitua pela região desejada
+  region = var.region # Substitua pela região desejada
 }
 resource "aws_docdb_cluster" "default" {
   cluster_identifier = "docdb-cluster-demo"
