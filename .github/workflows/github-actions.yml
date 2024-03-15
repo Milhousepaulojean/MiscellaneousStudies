@@ -3,7 +3,7 @@ name: Deploy Testes AWS DocumentDB with Terraform and Node.js
 on:
   push:
     branches:
-      - master
+      - repoMongoTeste
 
 jobs:
   terraform:
@@ -40,6 +40,7 @@ jobs:
         run: terraform apply tfplan -auto-approve
 
   deploy-nodejs:
+    needs: terraform
     runs-on: ubuntu-latest
 
     steps:
