@@ -34,27 +34,27 @@ jobs:
       - name: Apply Terraform
         run: terraform apply -auto-approve
 
-  # deploy-nodejs:
-  #   needs: terraform
-  #   runs-on: ubuntu-latest
+   deploy-nodejs:
+    needs: terraform
+    runs-on: ubuntu-latest
 
-  #   steps:
-  #     - name: Checkout repository
-  #       uses: actions/checkout@v2
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
-  #     - name: Setup Node.js
-  #       uses: actions/setup-node@v2
-  #       with:
-  #         node-version: "14"
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: "14"
 
-  #     - name: Install dependencies
-  #       run: npm install
+      - name: Install dependencies
+        run: npm install
 
-  #     - name: Build application
-  #       run: npm run build
+      - name: Build application
+        run: npm run build
 
-  #     - name: Deploy application
-  #       run: npm run deploy
+      - name: Deploy application
+        run: npm run deploy
 
-  #     - name: Deploy application
-  #       run: npm start
+      - name: Deploy application
+        run: npm start
