@@ -12,5 +12,5 @@ jobs:
     steps:
       - name: Print AWS Credentials
         run: |
-          echo "AWS Access Key ID: ${{ secrets.AWS_ACCESS_KEY_ID }}"
-          echo "AWS Secret Access Key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}"
+          echo "AWS Access Key ID: ${{ secrets.AWS_ACCESS_TESTE_USER }}"
+          echo "AWS Secret Access Key: ${{ secrets.AWS_ACCESS_TESTE_PASS }}"
