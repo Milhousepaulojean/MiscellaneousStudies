@@ -30,14 +30,17 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-1
 
-      - name: Terraform init
+      - name: Inicializar Terraform
         run: terraform init
 
-      - name: Terraform plan
-        run: terraform plan -out=tfplan
+      - name: Buscar tfstate atual
+        run: terraform state pull > terraform.tfstate
 
-      - name: Terraform apply
-        run: terraform apply tfplan -auto-approve
+      - name: Planificar Infraestrutura
+        run: terraform plan -out=plano.tfplan
+
+      - name: Aplicar Infraestrutura
+        run: terraform apply -auto-approve plano.tfplan
 
   deploy-nodejs:
     needs: terraform
