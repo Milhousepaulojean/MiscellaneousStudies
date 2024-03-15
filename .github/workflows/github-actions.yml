@@ -28,8 +28,8 @@ jobs:
       - name: Inicializar Terraform
         run: terraform init
 
-      - name: Buscar tfstate atual
-        run: terraform state pull > terraform.tfstate
+      # - name: Buscar tfstate atual
+      #   run: terraform state pull > terraform.tfstate
 
       - name: Planificar Infraestrutura
         run: terraform plan -out=plano.tfplan
