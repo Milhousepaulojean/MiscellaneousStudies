@@ -1,0 +1,36 @@
+name: Destruir cluster
+
+on:
+  workflow_dispatch:
+    inputs:
+      do_destroy:
+        description: "Indica se a infraestrutura deve ser destruída"
+        required: false
+        default: "true"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout do repositório
+        uses: actions/checkout@v2
+
+      - name: Configurar AWS CLI
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-1 # substitua pela sua região da AWS
+
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v2
+        with:
+          terraform_version: 1.4.2
+
+      - name: Verificar se a destruição deve ser realizada
+        run: |
+          terraform init
+          terraform state pull > terraform.tfstate
+          terraform destroy -auto-approve
+          echo "A destruição da infraestrutura não está ativada. Nenhum comando de destruição será executado."
