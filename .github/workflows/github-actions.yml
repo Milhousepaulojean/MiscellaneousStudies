@@ -3,62 +3,69 @@ name: Deploy Testes AWS DocumentDB with Terraform and Node.js
 on:
   push:
     branches:
-      - master
+      - repoMongoteste
 
-jobs:
-  terraform:
-    runs-on: ubuntu-latest
 
-    env:
-      TF_VAR_aws_region: us-east-1
-      TF_VAR_aws_secret_user: ${{ secrets.TOKEN_USER_AWS_DBDOC }}
-      TF_VAR_aws_secret_pass: ${{ secrets.TOKEN_PASS_AWS_DBDOC }}
+ jobs:
+   terraform:
+      steps:
+        - name: Print AWS Credentials
+          run: |
+            echo "AWS Access Key ID: ${{ secrets.AWS_ACCESS_KEY_ID }}"
+            echo "AWS Secret Access Key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}"
+    #     runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
+#     env:
+#       TF_VAR_aws_region: us-east-1
+#       TF_VAR_aws_secret_user: ${{ secrets.TOKEN_USER_AWS_DBDOC }}
+#       TF_VAR_aws_secret_pass: ${{ secrets.TOKEN_PASS_AWS_DBDOC }}
 
-      - name: Setup Terraform
-        uses: hashicorp/setup-terraform@v1
-        with:
-          terraform_version: 1.0.0
+#     steps:
+#       - name: Checkout repository
+#         uses: actions/checkout@v2
 
-      - name: Configure AWS credentials
-        uses: aws-actions/configure-aws-credentials@v2
-        with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: us-east-1
+#       - name: Setup Terraform
+#         uses: hashicorp/setup-terraform@v1
+#         with:
+#           terraform_version: 1.0.0
 
-      - name: Terraform init
-        run: terraform init
+#       - name: Configure AWS credentials
+#         uses: aws-actions/configure-aws-credentials@v2
+#         with:
+#           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+#           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+#           aws-region: us-east-1
 
-      - name: Terraform plan
-        run: terraform plan -out=tfplan
+#       - name: Terraform init
+#         run: terraform init
 
-      - name: Terraform apply
-        run: terraform apply tfplan -auto-approve
+#       - name: Terraform plan
+#         run: terraform plan -out=tfplan
 
-  deploy-nodejs:
-    runs-on: ubuntu-latest
+#       - name: Terraform apply
+#         run: terraform apply tfplan -auto-approve
 
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2
+#   deploy-nodejs:
+#     needs: terraform
+#     runs-on: ubuntu-latest
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: "14"
+#     steps:
+#       - name: Checkout repository
+#         uses: actions/checkout@v2
 
-      - name: Install dependencies
-        run: npm install
+#       - name: Setup Node.js
+#         uses: actions/setup-node@v2
+#         with:
+#           node-version: "14"
 
-      - name: Build application
-        run: npm run build
+#       - name: Install dependencies
+#         run: npm install
 
-      - name: Deploy application
-        run: npm run deploy
+#       - name: Build application
+#         run: npm run build
 
-      - name: Deploy application
-        run: npm start
+#       - name: Deploy application
+#         run: npm run deploy
+
+#       - name: Deploy application
+#         run: npm start
