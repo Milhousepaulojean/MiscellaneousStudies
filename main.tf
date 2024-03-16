@@ -4,7 +4,7 @@ provider "aws" {
 
 resource "aws_docdb_cluster_instance" "example_instance" {
   identifier                   = "example-instance01"
-  instance_class               = "db.r5.large" # Tipo de instância para o cluster
+  instance_class               = "db.t3.medium" # Tipo de instância para o cluster
   cluster_identifier           = aws_docdb_cluster.example_cluster.id
   preferred_maintenance_window = "sun:06:00-sun:07:00"
 }
