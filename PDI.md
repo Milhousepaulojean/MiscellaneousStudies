@@ -164,53 +164,119 @@
 
 ## Leituras Recomendadas
 
-- **Mergulho nos Padrões de Projeto**
-- Arquitetura Limpa. O Guia do Artesao para Estrutura e Design de Software
+- [** Arquitetura Limpa. O Guia do Artesao para Estrutura e Design de Software**](livros\ArquiteturaLimpa.md)
 
-  - Introdução
+  - Parte I: Introdução
 
-    - A História das Disciplinas de Software: Explora a evolução da engenharia de software e a importância da arquitetura.
-    - O Que é Arquitetura?: Define o que significa arquitetura de software e sua importância.
+    - Cap. 1: O que sao Design e Arquitetura?
 
-  - Paradigmas de Programação
+      - O Objetivo?
+      - Estudo de caso
+      - Conclusao
 
-    - Paradigma Estruturado
-    - Paradigma Orientado a Objetos
-    - Paradigma Funcional
+    - Cap. 2: Um conto de Dois valores
+      - Comportamento
+      - Arquitetura
+      - O valor maior
+      - Matriz de Eisnhower
+      - Lute pela Arquitetura
 
-  - Princípios Sólidos
+  - Parte II: Comecando com os Tijolos: Paradigmas de Programacao
 
-    - SRP (Single Responsibility Principle): Princípio da responsabilidade única.
-    - OCP (Open-Closed Principle): Princípio do aberto-fechado.
-    - LSP (Liskov Substitution Principle): Princípio da substituição de Liskov.
-    - ISP (Interface Segregation Principle): Princípio da segregação de interfaces.
-    - DIP (Dependency Inversion Principle): Princípio da inversão de dependência.
+    - Cap. 3: Panorama do Paradigma
 
-  - Componentes de Design
+      - Paradigma Estruturado
+      - Paradigma Orientado a Objetos
+      - Paradigma Funcional
+      - Para Refletir
+      - Conclusao
 
-    - Componentes e Coesão: Como criar componentes coesos.
-    - Componentes e Acoplamento: Como minimizar o acoplamento entre componentes.
-    - Componentes e Ciclos: Evitando dependências cíclicas entre componentes.
+    - Cap. 4: Panorama do Paradigma
 
-  - Arquitetura
+      - Paradigma Estruturado
+      - Paradigma Orientado a Objetos
+      - Paradigma Funcional
+      - Para Refletir
+      - Conclusao
 
-    - O Que é Arquitetura de Software?
-    - Regras de Dependência
-    - Arquitetura Limpa
-    - Limites Arquiteturais: Definindo e respeitando limites claros na arquitetura.
-    - As Regras da Arquitetura Limpa
+    - Cap. 5: Paradigma Estruturado
 
-  - Detalhes
+      - Prova
+      - Uma Proclamacao Prejudicial
+      - Decomposicao Funcional
+      - Nenhuma Proa Formal
+      - A Ciencia Chega para o Resgate
+      - Testes
+      - Conclusao
 
-    - Estratégias de Banco de Dados: Separar a lógica do banco de dados da lógica de negócios.
-    - Web é um Detalhe
-    - Frameworks são Detalhes
-    - Gerenciamento de Sessão
-    - Teste Arquitetural
+    - Cap. 6: Paradigma Funcional
+      - Quadrados de Inteiros
+      - Imutabilidade e Arquitetura
+      - Segregacao de Mutabilidade
+      - Event Sourcing
+      - Conclusao
 
-  - Conclusão
+  - Parte III: Principio de Desing
 
-  - Caminho para a Maestria: Disciplina e prática para se tornar um arquiteto de software eficaz.
+    - Cap. 7: SRP - O Principio da Responsabilidade Unica
+
+      - Sintoma 1: Duplicacao Acidental
+      - Sintoma 2: Fusoes
+      - Solucoes
+      - Conclusoes
+
+    - Cap. 8: OCP - O Principio Abert/Fechado
+
+      - Um Experimento mental
+      - Controle Direcional
+      - Ocultando Informacoes
+
+    - Cap. 9: LSP - O Principio de Substituicao de Liskov
+
+      - Guiando o uso da Heranca
+      - O problema quadrado/Retangulo
+      - LSP e a Arquitetura
+      - Exemplo de violacao do LSP
+      - Conclusao
+
+    - Cap. 10:ISP - O Principio de Segregacao de Interface
+
+      - ISP e a Linguagem
+      - ISP e a Arquitetura
+      - Conclusao
+
+    - Cap. 11:DIP - O Principio da Inversao de Dependencia
+      - Abstracoes Estaveis
+      - Fabricas (Factories)
+      - Componentes Concretos
+      - Conclusao
+
+  - Parte IV
+
+    - Cap. 12: Componentes
+
+      - Uma Breve Historia dos Componentes
+      - Relocalizacao
+      - Ligadores
+      - Conclusao
+
+    - Cap. 13: Coesao de Componentes
+
+      - O Principio da Equivalencia do Reuso/Release
+      - O Principio do Fechamento Comum
+      - O Principio do Reuso Comum
+      - O Diagrama de Tensao para Coesao de Componentes
+      - Conclusao
+
+    - Cap. 14: Acomplamentos de Componentes
+      - O Principio das Dependencias Aciclicas
+      - Design de Cima para Baixo (TOP-Down Design)
+      - O Principio de Dependencia Estaveis
+      - O Principio de Abstracao Estaveis
+      - Conclusao
+
+  - Parte V
+  - Parte VII
 
 ## Artigos
 
