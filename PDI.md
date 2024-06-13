@@ -164,7 +164,7 @@
 
 ## Leituras Recomendadas
 
-- [** Arquitetura Limpa. O Guia do Artesao para Estrutura e Design de Software**](livros\ArquiteturaLimpa.md)
+- [** Arquitetura Limpa. O Guia do Artesao para Estrutura e Design de Software**](livros/ArquiteturaLimpa.md)
 
   - Parte I: Introdução
 
