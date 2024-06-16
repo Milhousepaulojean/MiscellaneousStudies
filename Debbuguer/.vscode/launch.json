@@ -1,0 +1,32 @@
+{
+  "configurations": [
+    // {
+    //   "type": "aws-sam",
+    //   "request": "direct-invoke",
+    //   "name": "Debug SAM Local Lambda",
+    //   "invokeTarget": {
+    //     "target": "code",
+    //     "lambdaHandler": "app.lambda_handler",
+    //     "projectRoot": "${workspaceFolder}/hello_world/",
+    //   },
+    //   "lambda": {
+    //     "runtime": "python3.11",
+    //     "payload": {},
+    //     "environmentVariables": {
+    //       "EXAMPLE_ENV_VAR": "local"
+    //     }
+    //   }
+    // },
+    {
+      "type": "aws-sam",
+      "request": "direct-invoke",
+      "name": "Python: Debug with Tests",
+      "preLaunchTask": "Build SAM Application",
+      "invokeTarget": {
+        "target": "template",
+        "templatePath": "${workspaceFolder}/template.yaml",
+        "logicalId": "HelloWorldFunction"
+      },
+    }
+  ]
+}
