@@ -145,3 +145,4 @@ dist
 /log
 .terraform/
 
+.DS_Store

@@ -7,6 +7,15 @@
 
 ## Objetivos de Carreira
 
+### Menor Prazo (1-3 meses)
+
+- Leitura de um livro tecnico
+- Revisao dos Capitulos, via Readme.
+- Um termino de curso e descricao via Readme com Branch associada.
+- Uma Branch/pasta de padroes de projeto
+- Um modulo de ingles
+- Leitura de 2 artigos;
+
 ### Curto Prazo (6-12 meses)
 
 - **Aprendizagem e Certificação:**
@@ -164,119 +173,19 @@
 
 ## Leituras Recomendadas
 
-- [** Arquitetura Limpa. O Guia do Artesao para Estrutura e Design de Software**](livros/ArquiteturaLimpa.md)
+- [**Arquitetura Limpa. O Guia do Artesao para Estrutura e Design de Software**](livros/ArquiteturaLimpa.md)
 
-  - Parte I: Introdução
-
-    - Cap. 1: O que sao Design e Arquitetura?
-
-      - O Objetivo?
-      - Estudo de caso
-      - Conclusao
-
-    - Cap. 2: Um conto de Dois valores
-      - Comportamento
-      - Arquitetura
-      - O valor maior
-      - Matriz de Eisnhower
-      - Lute pela Arquitetura
-
-  - Parte II: Comecando com os Tijolos: Paradigmas de Programacao
-
-    - Cap. 3: Panorama do Paradigma
-
-      - Paradigma Estruturado
-      - Paradigma Orientado a Objetos
-      - Paradigma Funcional
-      - Para Refletir
-      - Conclusao
-
-    - Cap. 4: Panorama do Paradigma
-
-      - Paradigma Estruturado
-      - Paradigma Orientado a Objetos
-      - Paradigma Funcional
-      - Para Refletir
-      - Conclusao
-
-    - Cap. 5: Paradigma Estruturado
-
-      - Prova
-      - Uma Proclamacao Prejudicial
-      - Decomposicao Funcional
-      - Nenhuma Proa Formal
-      - A Ciencia Chega para o Resgate
-      - Testes
-      - Conclusao
-
-    - Cap. 6: Paradigma Funcional
-      - Quadrados de Inteiros
-      - Imutabilidade e Arquitetura
-      - Segregacao de Mutabilidade
-      - Event Sourcing
-      - Conclusao
-
-  - Parte III: Principio de Desing
-
-    - Cap. 7: SRP - O Principio da Responsabilidade Unica
-
-      - Sintoma 1: Duplicacao Acidental
-      - Sintoma 2: Fusoes
-      - Solucoes
-      - Conclusoes
-
-    - Cap. 8: OCP - O Principio Abert/Fechado
-
-      - Um Experimento mental
-      - Controle Direcional
-      - Ocultando Informacoes
-
-    - Cap. 9: LSP - O Principio de Substituicao de Liskov
-
-      - Guiando o uso da Heranca
-      - O problema quadrado/Retangulo
-      - LSP e a Arquitetura
-      - Exemplo de violacao do LSP
-      - Conclusao
-
-    - Cap. 10:ISP - O Principio de Segregacao de Interface
-
-      - ISP e a Linguagem
-      - ISP e a Arquitetura
-      - Conclusao
-
-    - Cap. 11:DIP - O Principio da Inversao de Dependencia
-      - Abstracoes Estaveis
-      - Fabricas (Factories)
-      - Componentes Concretos
-      - Conclusao
-
-  - Parte IV
-
-    - Cap. 12: Componentes
-
-      - Uma Breve Historia dos Componentes
-      - Relocalizacao
-      - Ligadores
-      - Conclusao
-
-    - Cap. 13: Coesao de Componentes
-
-      - O Principio da Equivalencia do Reuso/Release
-      - O Principio do Fechamento Comum
-      - O Principio do Reuso Comum
-      - O Diagrama de Tensao para Coesao de Componentes
-      - Conclusao
-
-    - Cap. 14: Acomplamentos de Componentes
-      - O Principio das Dependencias Aciclicas
-      - Design de Cima para Baixo (TOP-Down Design)
-      - O Principio de Dependencia Estaveis
-      - O Principio de Abstracao Estaveis
-      - Conclusao
-
-  - Parte V
-  - Parte VII
+- **Domain Drive Design**
+- **Refatoracao**
+- **Implementando Domain-Drive Design**
+- **UML**
+- **Codigo Limpo**
+  \_ **Codificador Limpor**
+- **Use a cabeca! Programacao**
+- **O Programador Pragmatico**
+- **Use a cabeca! SQL**
+- **Use a cabeca! Analise de Projeto Orientado ao Objeto**
+- **Use a cabeca! Padroes de Projeto**
 
 ## Artigos
 
@@ -300,10 +209,67 @@
 ### Plataformas Online
 
 - **Udemy:**
-
+  - Programação em Python do básico ao avançado
+  - AWS, na prática!
+  - Curso de Gestão do Tempo, Organização, Produtividade e GTD
+    -Certificação Amazon AWS Cloud Practitioner (CLF-C01)
+    -ChatGPT para Desenvolvedores: Aprenda e crie soluções com IA
+    -Visual Studio Code: Produtividade Absoluta
+    -Node.js Microservices: NestJS, RabbitMQ and Cloud Services
+    -Curso de Angular 2 (v17+) Typescript do Básico ao Avançado
+    -NodeJs Avançado com Clean Architecture, NestJS e Typescript
+    -AWS Serverless com TypeScript e AWS Cloud Development Kit
+    -Datadog: Performance monitoring tool (from Zero to Hero)
+    -AWS Certified Cloud Practitioner CLF-C01 Exam Questions
+    -Aprendendo a Aprender: Técnicas de estudo
+    -Insomnia Rest para Requisições HTTP
+    -Construindo Aplicações Web Com o Novo Angular (4, 5 e 6)
+    -Testes Unitários com jest
+    -API Restful Javascript com Node.js, Typescript, TypeORM etc
+    -API REST em Node.JS aplicando testes (TDD) desde o princípio
+    -Node.js do Zero a Maestria com diversos Projetos
+    -Curso Completo do Desenvolvedor NodeJS e MongoDB
+    -Aprenda Golang do Zero! Desenvolva uma APLICAÇÃO COMPLETA!
+    -Testes unitários em JAVA: Domine JUnit 4, Mockito e TDD
+    -Git e Github para iniciantes
+    -Curso de Go (Golang)
+    -Docker do zero - introdução a administração de containers
+    -Curso Java Spring Boot: Começando a trabalhar em uma empresa
+    -Como usar Git e Gitflow sem linha de comando com GitKraken
+    -React Native: Desenvolva APPs Nativas para Android e iOS
+    -Aprenda PowerShell do zero
+    -ASP.NET Core: Aprendendo do zero ao avançado (v 1.1 e 2.0)
+    -Camunda BPM
+    -Curso Definitivo de Investimentos para Iniciantes
+    -Aumente a sua produtividade e procrastine sem culpa
+    -Terminal Linux
+    -Microsoft Azure: [Aprenda do Zero]
+    -Github Copilot: Inteligência Artificial para Testes
+    -Padrões de Projeto GoF (Design Patterns)
+    -Aumente sua PRODUTIVIDADE com o EVERNOTE + 5 cursos extras
+    -Java COMPLETO Programação Orientada a Objetos + Projetos
+    -TESTES DE SOFTWARE NA PRÁTICA E AUTOMAÇÃO - CURSO COMPLETO
+    -Aprenda Testes Unitários com Javascript
+    -NEW AWS Certified Solutions Architect - Associate
+    -Jenkins básico para Sysadmins e Developers
+    -Entendendo e documentando REST / RESTful APIs
+    -Introdução ao Splunk
+    -Engenharia de Software
+    -Amazon AWS Certified Solutions Architect Course
+    -Cloud Computing - AWS, Google Cloud e Azure - Dados na nuvem
+    -Introdução à linguagem JavaScript
+    -HTML5 para quem não sabe nada de HTML5
+    -Docker Essencial para o Desenvolvedor
+    -Automação de testes de API com Postman + Projeto de testes
+    -Certificação AWS Solutions Architect 2021 - Associate
+    -Git e Github na Vida Real
+    -Desenvolvimento AWS 2020 com foco em Serverless
+    -Curso completo de Kotlin para Android
+    -Alcance a Fluência em Inglês com Sucesso
+    -Formação Engenharia de Dados: Domine Big Data!
+    -Primeiros Passos no Linux - Conceitos e Principais Comandos
+    -Testes unitários em C# com NUnit e Moq
 - **FullCyle:**
-
-- **Degreed:**
 
 - **idiomus - Ingles:**
 
