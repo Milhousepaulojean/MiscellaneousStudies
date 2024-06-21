@@ -82,7 +82,7 @@
 
 ## Padrões Criacionais
 
-1. **[Factory Method](https://refactoring.guru/design-patterns/factory- Method)**
+1. **[Factory Method](https://refactoring.guru/design-patterns/factory-Method)**
 
 - Define uma interface para criar um objeto, mas permite que as subclasses alterem o tipo de objeto que será criado.
 
@@ -183,7 +183,7 @@
 - **Implementando Domain-Drive Design**
 - **UML**
 - **Codigo Limpo**
-  \_ **Codificador Limpor**
+- **Codificador Limpor**
 - **Use a cabeca! Programacao**
 - **O Programador Pragmatico**
 - **Use a cabeca! SQL**
@@ -213,66 +213,66 @@
 
 - **Udemy:**
 
-- Programação em Python do básico ao avançado
-- AWS, na prática!
-- Curso de Gestão do Tempo, Organização, Produtividade e GTD
-- Certificação Amazon AWS Cloud Practitioner (CLF- C01)
-- ChatGPT para Desenvolvedores: Aprenda e crie soluções com IA
-- Visual Studio Code: Produtividade Absoluta
-- Node.js Microservices: NestJS, RabbitMQ and Cloud Services
-- Curso de Angular 2 (v17+) Typescript do Básico ao Avançado
-- NodeJs Avançado com Clean Architecture, NestJS e Typescript
-- AWS Serverless com TypeScript e AWS Cloud Development Kit
-- Datadog: Performance monitoring tool (from Zero to Hero)
-- AWS Certified Cloud Practitioner CLF- C01 Exam Questions
-- Aprendendo a Aprender: Técnicas de estudo
-- Insomnia Rest para Requisições HTTP
-- Construindo Aplicações Web Com o Novo Angular (4, 5 e 6)
-- Testes Unitários com jest
-- API Restful Javascript com Node.js, Typescript, TypeORM etc
-- API REST em Node.JS aplicando testes (TDD) desde o princípio
-- Node.js do Zero a Maestria com diversos Projetos
-- Curso Completo do Desenvolvedor NodeJS e MongoDB
-- Aprenda Golang do Zero! Desenvolva uma APLICAÇÃO COMPLETA!
-- Testes unitários em JAVA: Domine JUnit 4, Mockito e TDD
-- Git e Github para iniciantes
-- Curso de Go (Golang)
-- Docker do zero - introdução a administração de containers
-- Curso Java Spring Boot: Começando a trabalhar em uma empresa
-- Como usar Git e Gitflow sem linha de comando com GitKraken
-- React Native: Desenvolva APPs Nativas para Android e iOS
-- Aprenda PowerShell do zero
-- ASP.NET Core: Aprendendo do zero ao avançado (v 1.1 e 2.0)
-- Camunda BPM
-- Curso Definitivo de Investimentos para Iniciantes
-- Aumente a sua produtividade e procrastine sem culpa
-- Terminal Linux
-- Microsoft Azure: [Aprenda do Zero]
-- Github Copilot: Inteligência Artificial para Testes
-- Padrões de Projeto GoF (Design Patterns)
-- Aumente sua PRODUTIVIDADE com o EVERNOTE + 5 cursos extras
-- Java COMPLETO Programação Orientada a Objetos + Projetos
-- TESTES DE SOFTWARE NA PRÁTICA E AUTOMAÇÃO - CURSO COMPLETO
-- Aprenda Testes Unitários com Javascript
-- NEW AWS Certified Solutions Architect - Associate
-- Jenkins básico para Sysadmins e Developers
-- Entendendo e documentando REST / RESTful APIs
-- Introdução ao Splunk
-- Engenharia de Software
-- Amazon AWS Certified Solutions Architect Course
-- Cloud Computing - AWS, Google Cloud e Azure - Dados na nuvem
-- Introdução à linguagem JavaScript
-- HTML5 para quem não sabe nada de HTML5
-- Docker Essencial para o Desenvolvedor
-- Automação de testes de API com Postman + Projeto de testes
-- Certificação AWS Solutions Architect 2021 - Associate
-- Git e Github na Vida Real
-- Desenvolvimento AWS 2020 com foco em Serverless
-- Curso completo de Kotlin para Android
-- Alcance a Fluência em Inglês com Sucesso
-- Formação Engenharia de Dados: Domine Big Data!
-- Primeiros Passos no Linux - Conceitos e Principais Comandos
-- Testes unitários em C# com NUnit e Moq
+  - Programação em Python do básico ao avançado
+  - AWS, na prática!
+  - Curso de Gestão do Tempo, Organização, Produtividade e GTD
+  - Certificação Amazon AWS Cloud Practitioner (CLF- C01)
+  - ChatGPT para Desenvolvedores: Aprenda e crie soluções com IA
+  - Visual Studio Code: Produtividade Absoluta
+  - Node.js Microservices: NestJS, RabbitMQ and Cloud Services
+  - Curso de Angular 2 (v17+) Typescript do Básico ao Avançado
+  - NodeJs Avançado com Clean Architecture, NestJS e Typescript
+  - AWS Serverless com TypeScript e AWS Cloud Development Kit
+  - Datadog: Performance monitoring tool (from Zero to Hero)
+  - AWS Certified Cloud Practitioner CLF- C01 Exam Questions
+  - Aprendendo a Aprender: Técnicas de estudo
+  - Insomnia Rest para Requisições HTTP
+  - Construindo Aplicações Web Com o Novo Angular (4, 5 e 6)
+  - Testes Unitários com jest
+  - API Restful Javascript com Node.js, Typescript, TypeORM etc
+  - API REST em Node.JS aplicando testes (TDD) desde o princípio
+  - Node.js do Zero a Maestria com diversos Projetos
+  - Curso Completo do Desenvolvedor NodeJS e MongoDB
+  - Aprenda Golang do Zero! Desenvolva uma APLICAÇÃO COMPLETA!
+  - Testes unitários em JAVA: Domine JUnit 4, Mockito e TDD
+  - Git e Github para iniciantes
+  - Curso de Go (Golang)
+  - Docker do zero - introdução a administração de containers
+  - Curso Java Spring Boot: Começando a trabalhar em uma empresa
+  - Como usar Git e Gitflow sem linha de comando com GitKraken
+  - React Native: Desenvolva APPs Nativas para Android e iOS
+  - Aprenda PowerShell do zero
+  - ASP.NET Core: Aprendendo do zero ao avançado (v 1.1 e 2.0)
+  - Camunda BPM
+  - Curso Definitivo de Investimentos para Iniciantes
+  - Aumente a sua produtividade e procrastine sem culpa
+  - Terminal Linux
+  - Microsoft Azure: [Aprenda do Zero]
+  - Github Copilot: Inteligência Artificial para Testes
+  - Padrões de Projeto GoF (Design Patterns)
+  - Aumente sua PRODUTIVIDADE com o EVERNOTE + 5 cursos extras
+  - Java COMPLETO Programação Orientada a Objetos + Projetos
+  - TESTES DE SOFTWARE NA PRÁTICA E AUTOMAÇÃO - CURSO COMPLETO
+  - Aprenda Testes Unitários com Javascript
+  - NEW AWS Certified Solutions Architect - Associate
+  - Jenkins básico para Sysadmins e Developers
+  - Entendendo e documentando REST / RESTful APIs
+  - Introdução ao Splunk
+  - Engenharia de Software
+  - Amazon AWS Certified Solutions Architect Course
+  - Cloud Computing - AWS, Google Cloud e Azure - Dados na nuvem
+  - Introdução à linguagem JavaScript
+  - HTML5 para quem não sabe nada de HTML5
+  - Docker Essencial para o Desenvolvedor
+  - Automação de testes de API com Postman + Projeto de testes
+  - Certificação AWS Solutions Architect 2021 - Associate
+  - Git e Github na Vida Real
+  - Desenvolvimento AWS 2020 com foco em Serverless
+  - Curso completo de Kotlin para Android
+  - Alcance a Fluência em Inglês com Sucesso
+  - Formação Engenharia de Dados: Domine Big Data!
+  - Primeiros Passos no Linux - Conceitos e Principais Comandos
+  - Testes unitários em C# com NUnit e Moq
 
 - **FullCyle:**
 
