@@ -276,7 +276,38 @@
 
 - **FullCyle:**
 
+  - Fundamentos da arquitetura de software
+  - Comunicacao entre sistemas
+  - Solid Express
+  - Domain Drive Design
+  - DDD: Modelagem Tatica e Partterns
+  - Event Storming na Pratica
+  - Arquitetura Hexagonal
+  - Clean Architecture
+  - Sistemas monoliticos
+  - Arquitetura baseada em microservices
+  - EDA - Event Driven Architecture
+  - RabbitMQ
+  - Apache Kafka
+  - Autenticacao e KeyCloak
+  - Padroes e tecnica avan;adas com Git & Github
+  - Integracao Continua
+  - Kubernets
+  - Api Gateway
+  - Api Gateway com kong
+  - Observabilidade
+  - Introducao A OpenTelemetry
+  - Gitops
+  - Deploy nas Cloud Providers
+
 - **idiomus - Ingles:**
+- Módulo 1: Construindo um Alicerce
+- Módulo 2: Expandindo seu Vocabulário
+- Módulo 3: Listening
+- Módulo 4: Gramática Essencial
+- Módulo 5: Criação do pensamento Monolíngue | Writing
+- Módulo 6: Speaking
+- Módulo 7: Phrasal Verbs e Expressões Idiomáticas
 
 ### Certificações
 
