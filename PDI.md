@@ -98,6 +98,7 @@ Use os checkboxes abaixo para acompanhar sua evolução mensal em cada uma das f
 - [ ] Escola Conquer – Inteligência Emocional 4.0
 - ✅ Alura – Profissão Tech Lead
 - [ ] Padrão de Projeto – Factory Method
+- [ ] Udemy – Datadog para Iniciantes
 - [ ] FullCycle – Docker e Containers (início)
 - [ ] Livro – Início de “Arquitetura Limpa”
 
@@ -107,6 +108,7 @@ Use os checkboxes abaixo para acompanhar sua evolução mensal em cada uma das f
 
 - [ ] Escola Conquer – Comunicação & Oratória
 - [ ] Alura – Práticas e rotinas de gestão
+- [ ] Udemy – Java COMPLETO Programação Orientada a Objetos + Projetos
 - [ ] Padrão de Projeto – Abstract Factory
 - [ ] FullCycle – Docker e Containers (finalização)
 - [ ] Livro – Finalizar “Arquitetura Limpa”
@@ -117,6 +119,7 @@ Use os checkboxes abaixo para acompanhar sua evolução mensal em cada uma das f
 
 - [ ] Escola Conquer – Produtividade Inteligente
 - [ ] Alura – Guiando para alta performance
+- [ ] Udemy – AWS, na prática! (início)
 - [ ] Padrão de Projeto – Builder
 - [ ] FullCycle – API Design, gRPC e API Gateway (início)
 - [ ] Livro – Início de “Domain-Driven Design”
@@ -127,6 +130,7 @@ Use os checkboxes abaixo para acompanhar sua evolução mensal em cada uma das f
 
 - [ ] Escola Conquer – Virei Líder, e agora?
 - [ ] Alura – Comunicação estratégica
+- [ ] Udemy – AWS, na prática! (finalização)
 - [ ] Padrão de Projeto – Prototype
 - [ ] FullCycle – API Design, gRPC e API Gateway (continuação)
 - [ ] Livro – Continuação de “Domain-Driven Design”
@@ -137,6 +141,7 @@ Use os checkboxes abaixo para acompanhar sua evolução mensal em cada uma das f
 
 - [ ] Escola Conquer – Inteligência Emocional
 - [ ] Alura – Tech Lead em Lisboa
+- [ ] Udemy – Certificação AWS CLF-C02 (início)
 - [ ] Padrão de Projeto – Singleton
 - [ ] FullCycle – Testes Automatizados (início)
 - [ ] Livro – Finalizar “Domain-Driven Design”
@@ -147,6 +152,7 @@ Use os checkboxes abaixo para acompanhar sua evolução mensal em cada uma das f
 
 - [ ] Escola Conquer – Foco
 - [ ] Alura – Liderança: aprendendo sobre a missão e propósito de liderar pessoas
+- [ ] Udemy – Certificação AWS CLF-C02 (finalização)
 - [ ] Padrão de Projeto – Adapter
 - [ ] FullCycle – Testes Automatizados (finalização)
 - [ ] Livro – Início de “Refatoração – Martin Fowler”
@@ -157,6 +163,7 @@ Use os checkboxes abaixo para acompanhar sua evolução mensal em cada uma das f
 
 - [ ] Escola Conquer – Formação em Liderança
 - [ ] Alura – Liderança: práticas de gestão e melhorias
+- [ ] Udemy – Simulados AWS CLF-C02 (início)
 - [ ] Padrão de Projeto – Bridge
 - [ ] FullCycle – SOLID & Design Patterns (início)
 - [ ] Livro – Continuação de “Refatoração”
@@ -167,6 +174,7 @@ Use os checkboxes abaixo para acompanhar sua evolução mensal em cada uma das f
 
 - [ ] Escola Conquer – Branding Pessoal
 - [ ] Alura – Como manter a motivação no dia a dia da equipe & As estruturas organizacionais
+- [ ] Udemy – Simulados AWS CLF-C02 (finalização)
 - [ ] Padrão de Projeto – Composite
 - [ ] FullCycle – SOLID & Design Patterns (finalização)
 - [ ] Livro – Finalizar “Refatoração”
