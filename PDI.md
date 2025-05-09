@@ -1,341 +1,175 @@
-# Plano de Desenvolvimento Individual (PDI)
+# 🌱 Plano de Desenvolvimento Individual (PDI)
 
-## Objetivo de Carreira
+## 🎯 Objetivo
 
-- **Transição de Cargo:**
-- Passar de Engenheiro de Software para Arquiteto de Software.
+Consolidar a atuação como líder técnico por meio de desenvolvimento técnico e comportamental, com foco em impacto, comunicação, eficiência e marca pessoal.
 
-## Objetivos de Carreira
+## 🔍 Análise SWOT – Transição de Carreira para Arquiteto, Coordenador ou Especialista
 
-### Menor Prazo (1-3 meses)
+| **Forças (Strengths)**                                                         | **Fraquezas (Weaknesses)**                                                        |
+| ------------------------------------------------------------------------------ | --------------------------------------------------------------------------------- |
+| • Sólida base técnica em desenvolvimento e engenharia                          | • Falta de experiência formal em cargos de liderança                              |
+| • Perfil autodidata com disciplina em formação contínua                        | • Pouca visibilidade externa (branding pessoal em construção)                     |
+| • Proatividade e boa comunicação com equipes                                   | • • Ainda desenvolvendo domínio pleno de soft skills como negociação e influência |
+| • Experiência prática com ferramentas modernas (AWS, Terraform, Airflow, etc.) |                                                                                   |
 
-- Leitura de um livro tecnico
-- Revisao dos Capitulos, via Readme.
-- Um termino de curso e descricao via Readme com Branch associada.
-- Uma Branch/pasta de padroes de projeto
-- Um modulo de ingles
-- Leitura de 2 artigos;
+| **Oportunidades (Opportunities)**                           | **Ameaças (Threats)**                                           |
+| ----------------------------------------------------------- | --------------------------------------------------------------- |
+| • Mercado aquecido para arquitetos e líderes técnicos       | • Competitividade elevada para posições de destaque             |
+| • Plano estruturado de desenvolvimento pessoal e técnico    | • Possibilidade de sobrecarga entre família, trabalho e estudos |
+| • Presença em plataformas como LinkedIn e GitHub            | • Mudanças constantes nas tecnologias e no mercado              |
+| • Apoio de mentores, comunidades e cursos de alta qualidade |                                                                 |
 
-### Curto Prazo (6-12 meses)
+## 🛤️ Objetivos de Carreira por Horizonte de Tempo
 
-- **Aprendizagem e Certificação:**
-- Concluir cursos de arquitetura de software.
-- Obter certificações relevantes.
-- **Experiência Prática:**
-- Participar em projetos que envolvam decisões de arquitetura.
-- Trabalhar próximo aos arquitetos de software para entender melhor o papel.
-- **Desenvolvimento de Soft Skills:**
-- Melhorar habilidades de comunicação e apresentação.
-- Desenvolver habilidades de liderança e gestão de projetos.
+Organização das metas profissionais para facilitar o acompanhamento contínuo da evolução rumo a posições como Arquiteto de Software, Coordenador Técnico ou Especialista.
 
-### Médio Prazo (1-3 anos)
+---
 
-- **Papel de Liderança:**
-- Assumir um papel de liderança em projetos de software.
-- Tornar-se um recurso chave para decisões de arquitetura dentro da equipe.
-- **Reconhecimento Profissional:**
-- Tornar-se um arquiteto de software reconhecido na empresa.
+### ⏳ Menor Prazo (1 a 3 meses)
 
-### Longo Prazo (3-5 anos)
+**🔍 Ações Técnicas Imediatas**
 
-- **Especialização:**
-- Tornar-se um especialista em arquitetura de software com reconhecimento no mercado.
-- Contribuir para a comunidade de tecnologia através de mentorias, blogs ou palestras.
-- **Inovação:**
-- Participar em projetos/Comunidaes de inovação e transformação digital.
+- [ ] Leitura de 1 livro técnico
+- [ ] Revisar capítulos no README
+- [ ] Concluir 1 curso técnico e documentar no README (com branch associada / artigo)
+- [ ] Criar branch/pasta exclusiva para padrões de projeto
+- [ ] Leitura de 2 artigos técnicos (com resumo no Medium)
 
-## Habilidades a Desenvolver
+**🌎 Idiomas**
 
-### Habilidades Técnicas
+- [ ] Finalizar módulos de inglês
 
-- **Padrões de Arquitetura:**
-- Domínio de padrões de arquitetura (Microservices, Serverless, etc.).
-- **Linguagens de Programação:**
-- Conhecimento avançado em linguagens de programação relevantes (Java, Python, etc.).
-- **Ferramentas de DevOps:**
-- Proficiência em ferramentas como Docker, Kubernetes, CI/CD.
-- **Design de Sistemas:**
-- Aumentar meu leque de conhecimento ao projetar sistemas escaláveis e resilientes.
+---
 
-### Habilidades Interpessoais
+### 📅 Curto Prazo (6 a 12 meses)
 
-- **Comunicação:**
-- Desenvolver comunicação eficaz para explicar decisões técnicas a diferentes públicos.
-- **Liderança:**
-- Melhorar habilidades de liderança e gestão de equipes.
-- **Negociação:**
-- Aprender técnicas de negociação e resolução de conflitos.
+**📘 Aprendizagem e Certificação**
 
-### Habilidades Adicionais
+- [x] Concluir curso(s) de arquitetura de software (ex: FullCycle, Alura, etc.)
+- [ ] Obter ao menos 1 certificação técnica relevante
 
-- **Gerenciamento de Tempo:**
-- Eficiência no gerenciamento de tempo e priorização de tarefas.
-- **Pensamento Crítico:**
-- Desenvolver habilidades de pensamento crítico e resolução de problemas.
-- **Metodologias Ágeis:**
-- Prática em metodologias ágeis (Scrum, Kanban).
-- **Análises e Estatísticas:**
-- Conhecimento em análises e estatísticas aplicadas.
-- Implementação e interpretação de testes A/B.
+**🏗️ Experiência Prática**
 
-# Padrões de Projeto
+- 🟡 Participar de projeto com decisões arquiteturais
+- 🟡 Trabalhar próximo de arquitetos ou participar de revisões técnicas
 
-## Padrões Criacionais
+**🗣️ Soft Skills**
 
-1. **[Factory Method](https://refactoring.guru/design-patterns/factory-Method)**
+- 🟡 Melhorar comunicação em reuniões técnicas (feedback do time)
+- 🟡 Liderar pequenas entregas ou iniciativas técnicas
 
-- Define uma interface para criar um objeto, mas permite que as subclasses alterem o tipo de objeto que será criado.
+---
 
-2. **[Abstract Factory](https://refactoring.guru/design-patterns/abstract-factory)**
+### 🚀 Médio Prazo (1 a 3 anos)
 
-- Fornece uma interface para criar famílias de objetos relacionados ou dependentes sem especificar suas classes concretas.
+**👥 Liderança Técnica**
 
-3. **[Builder](https://refactoring.guru/design-patterns/builder)**
+- [ ] Assumir papel de liderança formal ou informal em projetos
+- 🟡 Ser referência técnica na equipe para decisões de arquitetura
 
-- Separa a construção de um objeto complexo da sua representação, permitindo a criação passo a passo.
+**🏅 Reconhecimento**
 
-4. **[Prototype](https://refactoring.guru/design-patterns/prototype)**
+- [ ] Ser reconhecido internamente como Arquiteto ou Especialista
+- 🟡 Ser convidado para participar de discussões estratégicas
 
-- Permite a criação de novos objetos copiando instâncias existentes, evitando a complexidade de criar instâncias de forma manual.
+---
 
-5. **[Singleton](https://refactoring.guru/design-patterns/singleton)**
+### 🌍 Longo Prazo (3 a 5 anos)
 
-- Garante que uma classe tenha apenas uma instância e fornece um ponto global de acesso a ela.
+**📚 Especialização e Impacto**
 
-## Padrões Estruturais
+- [ ] Tornar-se um especialista em arquitetura reconhecido no mercado
+- [ ] Participar ativamente da comunidade (mentor, blog, palestra)
 
-1. **[Adapter](https://refactoring.guru/design-patterns/adapter)**
+**💡 Inovação e Transformação**
 
-- Permite que interfaces incompatíveis trabalhem juntas convertendo a interface de uma classe em outra interface esperada pelos clientes.
+- 🟡 Contribuir para projetos de transformação digital
+- 🟡 Fazer parte de iniciativas de inovação e design de soluções de impacto
 
-2. **[Bridge](https://refactoring.guru/design-patterns/bridge)**
+## 📅 Trilhas de Estudo por Mês (com acompanhamento)
 
-- Desacopla uma abstração da sua implementação, permitindo que ambas variem independentemente.
+Use os checkboxes abaixo para acompanhar sua evolução mensal em cada uma das frentes: cursos comportamentais (Conquer), técnicos (Alura), padrões de projeto, FullCycle e leitura de livros.
 
-3. **[Composite](https://refactoring.guru/design-patterns/composite)**
+---
 
-- Compõe objetos em estruturas de árvore para representar hierarquias parte- Todo. Permite que os clientes tratem objetos individuais e composições de forma uniforme.
+### **Maio**
 
-4. **[Decorator](https://refactoring.guru/design-patterns/decorator)**
+- [ ] Escola Conquer – Inteligência Emocional 4.0
+- ✅ Alura – Profissão Tech Lead
+- [ ] Padrão de Projeto – Factory Method
+- [ ] FullCycle – Docker e Containers (início)
+- [ ] Livro – Início de “Arquitetura Limpa”
 
-- Anexa responsabilidades adicionais a um objeto dinamicamente. Os decoradores fornecem uma alternativa flexível ao uso de subclasses para estender funcionalidades.
+---
 
-5. **[Facade](https://refactoring.guru/design-patterns/facade)**
+### **Junho**
 
-- Fornece uma interface simplificada para um subsistema complexo.
+- [ ] Escola Conquer – Comunicação & Oratória
+- [ ] Alura – Práticas e rotinas de gestão
+- [ ] Padrão de Projeto – Abstract Factory
+- [ ] FullCycle – Docker e Containers (finalização)
+- [ ] Livro – Finalizar “Arquitetura Limpa”
 
-6. **[Flyweight](https://refactoring.guru/design-patterns/flyweight)**
+---
 
-- Usa o compartilhamento para suportar eficientemente grandes quantidades de objetos de grão fino.
+### **Julho**
 
-7. **[Proxy](https://refactoring.guru/design-patterns/proxy)**
+- [ ] Escola Conquer – Produtividade Inteligente
+- [ ] Alura – Guiando para alta performance
+- [ ] Padrão de Projeto – Builder
+- [ ] FullCycle – API Design, gRPC e API Gateway (início)
+- [ ] Livro – Início de “Domain-Driven Design”
 
-- Fornece um substituto ou ponto de acesso para outro objeto para controlar o acesso a ele.
+---
 
-## Padrões Comportamentais
+### **Agosto**
 
-1. **[Chain of Responsibility](https://refactoring.guru/design-patterns/chain-of-responsibility)**
+- [ ] Escola Conquer – Virei Líder, e agora?
+- [ ] Alura – Comunicação estratégica
+- [ ] Padrão de Projeto – Prototype
+- [ ] FullCycle – API Design, gRPC e API Gateway (continuação)
+- [ ] Livro – Continuação de “Domain-Driven Design”
 
-- Evita o acoplamento do remetente de uma solicitação ao seu receptor ao dar a mais de um objeto a chance de tratar a solicitação.
+---
 
-2. **[Command](https://refactoring.guru/design-patterns/command)**
+### **Setembro**
 
-- Encapsula uma solicitação como um objeto, permitindo parametrizar clientes com diferentes solicitações, enfileirar ou registrar solicitações, e suportar operações reversíveis.
+- [ ] Escola Conquer – Inteligência Emocional
+- [ ] Alura – Tech Lead em Lisboa
+- [ ] Padrão de Projeto – Singleton
+- [ ] FullCycle – Testes Automatizados (início)
+- [ ] Livro – Finalizar “Domain-Driven Design”
 
-3. **[Iterator](https://refactoring.guru/design-patterns/iterator)**
+---
 
-- Fornece uma maneira de acessar sequencialmente os elementos de um objeto agregado sem expor sua representação subjacente.
+### **Outubro**
 
-4. **[Mediator](https://refactoring.guru/design-patterns/mediator)**
+- [ ] Escola Conquer – Foco
+- [ ] Alura – Liderança: aprendendo sobre a missão e propósito de liderar pessoas
+- [ ] Padrão de Projeto – Adapter
+- [ ] FullCycle – Testes Automatizados (finalização)
+- [ ] Livro – Início de “Refatoração – Martin Fowler”
 
-- Define um objeto que encapsula como um conjunto de objetos interage, promovendo um acoplamento fraco.
+---
 
-5. **[Memento](https://refactoring.guru/design-patterns/memento)**
+### **Novembro**
 
-- Sem violar o encapsulamento, captura e externaliza o estado interno de um objeto para que o objeto possa ser restaurado a esse estado mais tarde.
+- [ ] Escola Conquer – Formação em Liderança
+- [ ] Alura – Liderança: práticas de gestão e melhorias
+- [ ] Padrão de Projeto – Bridge
+- [ ] FullCycle – SOLID & Design Patterns (início)
+- [ ] Livro – Continuação de “Refatoração”
 
-6. **[Observer](https://refactoring.guru/design-patterns/observer)**
+---
 
-- Define uma dependência um-para- Muitos entre objetos para que quando um objeto mudar de estado, todos os seus dependentes sejam notificados e atualizados automaticamente.
+### **Dezembro**
 
-7. **[State](https://refactoring.guru/design-patterns/state)**
-
-- Permite que um objeto altere seu comportamento quando seu estado interno muda. O objeto parecerá ter mudado de classe.
-
-8. **[Strategy](https://refactoring.guru/design-patterns/strategy)**
-
-- Define uma família de algoritmos, encapsula cada um deles e os torna intercambiáveis. Permite que o algoritmo varie independentemente dos clientes que o utilizam.
-
-9. **[Template Method](https://refactoring.guru/design-patterns/template- Method)**
-
-- Define o esqueleto de um algoritmo em uma operação, diferindo alguns passos para as subclasses. Permite que as subclasses redefinam certos passos de um algoritmo sem mudar a estrutura do mesmo.
-
-10. **[Visitor](https://refactoring.guru/design-patterns/visitor)**
-
-- Representa uma operação a ser realizada nos elementos de uma estrutura de objeto. Permite que uma nova operação seja definida sem mudar as classes dos elementos sobre os quais opera.
-
-## Leituras Recomendadas
-
-- [**Arquitetura Limpa. O Guia do Artesao para Estrutura e Design de Software**](livros/ArquiteturaLimpa.md)
-
-- **Domain Drive Design**
-- **Refatoracao**
-- **Implementando Domain-Drive Design**
-- **UML**
-- **Codigo Limpo**
-- **Codificador Limpor**
-- **Use a cabeca! Programacao**
-- **O Programador Pragmatico**
-- **Use a cabeca! SQL**
-- **Use a cabeca! Analise de Projeto Orientado ao Objeto**
-- **Use a cabeca! Padroes de Projeto**
-
-## Artigos
-
-- https://www.oreilly.com/library/view/understanding-experimentation-platforms/9781492038139/
-
-- https://engineering.atspotify.com/2023/08/coming-soon- Confidence- An-experimentation-platform-from-spotify/
-
-- https://confidence.spotify.com/blog/ab- Tests- And-rollouts
-
-- https://www.microsoft.com/en-us/research/group/experimentation-platform-exp/articles/stedii-properties-of- A-good- Metric/
-
-- https://alexbretas11.medium.com/pdi-uma-boa- Ideia- Mal-executada-1c3399187932
-
-- https://franklincovey.com.br/blog/autoavaliacao/
-
-- https://basecase.vc/blog/headless-bi
-- https://engineering.atspotify.com/2020/10/spotifys-new-experimentation-platform-part-1/
-
-## Cursos Recomendados
-
-### Plataformas Online
-
-- **Udemy:**
-
-  - Programação em Python do básico ao avançado
-  - AWS, na prática!
-  - Curso de Gestão do Tempo, Organização, Produtividade e GTD
-  - Certificação Amazon AWS Cloud Practitioner (CLF- C01)
-  - ChatGPT para Desenvolvedores: Aprenda e crie soluções com IA
-  - Visual Studio Code: Produtividade Absoluta
-  - Node.js Microservices: NestJS, RabbitMQ and Cloud Services
-  - Curso de Angular 2 (v17+) Typescript do Básico ao Avançado
-  - NodeJs Avançado com Clean Architecture, NestJS e Typescript
-  - AWS Serverless com TypeScript e AWS Cloud Development Kit
-  - Datadog: Performance monitoring tool (from Zero to Hero)
-  - AWS Certified Cloud Practitioner CLF- C01 Exam Questions
-  - Aprendendo a Aprender: Técnicas de estudo
-  - Insomnia Rest para Requisições HTTP
-  - Construindo Aplicações Web Com o Novo Angular (4, 5 e 6)
-  - Testes Unitários com jest
-  - API Restful Javascript com Node.js, Typescript, TypeORM etc
-  - API REST em Node.JS aplicando testes (TDD) desde o princípio
-  - Node.js do Zero a Maestria com diversos Projetos
-  - Curso Completo do Desenvolvedor NodeJS e MongoDB
-  - Aprenda Golang do Zero! Desenvolva uma APLICAÇÃO COMPLETA!
-  - Testes unitários em JAVA: Domine JUnit 4, Mockito e TDD
-  - Git e Github para iniciantes
-  - Curso de Go (Golang)
-  - Docker do zero - introdução a administração de containers
-  - Curso Java Spring Boot: Começando a trabalhar em uma empresa
-  - Como usar Git e Gitflow sem linha de comando com GitKraken
-  - React Native: Desenvolva APPs Nativas para Android e iOS
-  - Aprenda PowerShell do zero
-  - ASP.NET Core: Aprendendo do zero ao avançado (v 1.1 e 2.0)
-  - Camunda BPM
-  - Curso Definitivo de Investimentos para Iniciantes
-  - Aumente a sua produtividade e procrastine sem culpa
-  - Terminal Linux
-  - Microsoft Azure: [Aprenda do Zero]
-  - Github Copilot: Inteligência Artificial para Testes
-  - Padrões de Projeto GoF (Design Patterns)
-  - Aumente sua PRODUTIVIDADE com o EVERNOTE + 5 cursos extras
-  - Java COMPLETO Programação Orientada a Objetos + Projetos
-  - TESTES DE SOFTWARE NA PRÁTICA E AUTOMAÇÃO - CURSO COMPLETO
-  - Aprenda Testes Unitários com Javascript
-  - NEW AWS Certified Solutions Architect - Associate
-  - Jenkins básico para Sysadmins e Developers
-  - Entendendo e documentando REST / RESTful APIs
-  - Introdução ao Splunk
-  - Engenharia de Software
-  - Amazon AWS Certified Solutions Architect Course
-  - Cloud Computing - AWS, Google Cloud e Azure - Dados na nuvem
-  - Introdução à linguagem JavaScript
-  - HTML5 para quem não sabe nada de HTML5
-  - Docker Essencial para o Desenvolvedor
-  - Automação de testes de API com Postman + Projeto de testes
-  - Certificação AWS Solutions Architect 2021 - Associate
-  - Git e Github na Vida Real
-  - Desenvolvimento AWS 2020 com foco em Serverless
-  - Curso completo de Kotlin para Android
-  - Alcance a Fluência em Inglês com Sucesso
-  - Formação Engenharia de Dados: Domine Big Data!
-  - Primeiros Passos no Linux - Conceitos e Principais Comandos
-  - Testes unitários em C# com NUnit e Moq
-
-- **FullCyle:**
-
-  - Fundamentos da arquitetura de software
-  - Comunicacao entre sistemas
-  - Solid Express
-  - Domain Drive Design
-  - DDD: Modelagem Tatica e Partterns
-  - Event Storming na Pratica
-  - Arquitetura Hexagonal
-  - Clean Architecture
-  - Sistemas monoliticos
-  - Arquitetura baseada em microservices
-  - EDA - Event Driven Architecture
-  - RabbitMQ
-  - Apache Kafka
-  - Autenticacao e KeyCloak
-  - Padroes e tecnica avan;adas com Git & Github
-  - Integracao Continua
-  - Kubernets
-  - Api Gateway
-  - Api Gateway com kong
-  - Observabilidade
-  - Introducao A OpenTelemetry
-  - Gitops
-  - Deploy nas Cloud Providers
-
-- **idiomus - Ingles:**
-- Módulo 1: Construindo um Alicerce
-- Módulo 2: Expandindo seu Vocabulário
-- Módulo 3: Listening
-- Módulo 4: Gramática Essencial
-- Módulo 5: Criação do pensamento Monolíngue | Writing
-- Módulo 6: Speaking
-- Módulo 7: Phrasal Verbs e Expressões Idiomáticas
-
-### Certificações
-
-1. **Foundational**
-
-- [AWS Certified Cloud Practitioner](https://aws.amazon.com/certification/certified- Cloud-practitioner/)
-
-2. **Associate**
-
-- [AWS Certified Solutions Architect – Associate](https://aws.amazon.com/certification/certified-solutions- Architect- Associate/)
-- [AWS Certified Developer – Associate](https://aws.amazon.com/certification/certified-developer- Associate/)
-- [AWS Certified SysOps Administrator – Associate](https://aws.amazon.com/certification/certified-sysops- Admin- Associate/)
-
-3. **Professional**
-
-- [AWS Certified Solutions Architect – Professional](https://aws.amazon.com/certification/certified-solutions- Architect-professional/)
-- [AWS Certified DevOps Engineer – Professional](https://aws.amazon.com/certification/certified-devops-engineer-professional/)
-
-4. **Specialty**
-
-- [AWS Certified Advanced Networking – Specialty](https://aws.amazon.com/certification/certified- Advanced-networking-specialty/)
-- [AWS Certified Data Analytics – Specialty](https://aws.amazon.com/certification/certified-data- Analytics-specialty/)
-- [AWS Certified Security – Specialty](https://aws.amazon.com/certification/certified-security-specialty/)
-- [AWS Certified Machine Learning – Specialty](https://aws.amazon.com/certification/certified- Machine-learning-specialty/)
-- [AWS Certified Database – Specialty](https://aws.amazon.com/certification/certified-database-specialty/)
-- [AWS Certified SAP on AWS – Specialty](https://aws.amazon.com/certification/certified-sap-specialty/)
-
-## Plano de Ação
+- [ ] Escola Conquer – Branding Pessoal
+- [ ] Alura – Como manter a motivação no dia a dia da equipe & As estruturas organizacionais
+- [ ] Padrão de Projeto – Composite
+- [ ] FullCycle – SOLID & Design Patterns (finalização)
+- [ ] Livro – Finalizar “Refatoração”
 
 ### Mensal
 
@@ -356,5 +190,30 @@
 
 - **Certificações e Participação:**
 - Concluir uma certificação relevante.
-- Para cada Estudo um link com estudos no Git
+- Para cada Estudo um link com estudos no Git ou no Medium
 - Revisar e refletir sobre os objetivos de carreira e ajustar conforme necessário.
+
+## ⏱️ Rotina de Dedicação aos Estudos
+
+Estou comprometido a investir **1 hora por dia, 4 vezes por semana**, com foco nas trilhas de desenvolvimento descritas neste plano. A divisão semanal pode variar entre:
+
+- Cursos (Alura, Conquer, FullCycle)
+- Leitura técnica (livros e artigos)
+- Prática de padrões de projeto
+- Produção de conteúdo e documentação (README, GitHub, Notion)
+
+Essa rotina será avaliada mensalmente e ajustada conforme a complexidade dos temas e a disponibilidade de tempo. A consistência é priorizada em vez de carga intensiva.
+
+📌 **Meta:** manter uma média de **16 horas de estudo/mês**, com aplicação prática dos conhecimentos em projetos reais ou iniciativas internas.
+
+## 🌐 Redes Profissionais
+
+- [LinkedIn](https://www.linkedin.com/in/paulojeanalvesdasilva/)
+- [GitHub](https://github.com/Milhousepaulojean)
+- [Medium](https://medium.com/@paulojean-alves)
+
+## Status
+
+- [ ] Não iniciado
+- 🟡 Em andamento
+- ✅ Concluído
