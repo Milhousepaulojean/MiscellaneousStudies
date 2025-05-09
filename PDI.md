@@ -209,7 +209,6 @@ Essa rotina será avaliada mensalmente e ajustada conforme a complexidade dos te
 ## 🌐 Redes Profissionais
 
 - [LinkedIn](https://www.linkedin.com/in/paulojeanalvesdasilva/)
-- [GitHub](https://github.com/Milhousepaulojean)
 - [Medium](https://medium.com/@paulojean-alves)
 
 ## Status
