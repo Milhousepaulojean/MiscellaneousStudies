@@ -1,0 +1,10 @@
+publishing-system/.env
+publishing-system/logs/
+publishing-system/outputs/medium/*.md
+publishing-system/outputs/medium/*.json
+publishing-system/outputs/linkedin/*.txt
+publishing-system/outputs/linkedin/*.json
+publishing-system/__pycache__/
+publishing-system/src/__pycache__/
+publishing-system/.venv/
+publishing-system/*.egg-info/

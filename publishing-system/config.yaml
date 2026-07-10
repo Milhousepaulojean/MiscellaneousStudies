@@ -1,0 +1,21 @@
+ai:
+  model: "gpt-4o"
+  temperature: 0.7
+  medium_max_tokens: 4000
+  linkedin_max_tokens: 800
+
+quality:
+  minimum_overall_score: 0.75
+  require_approval_above: 0.90
+  flag_for_review_below: 0.75
+
+output:
+  medium_format: "markdown"
+  linkedin_format: "plain_text"
+  save_locally: true
+  output_dir: "./outputs"
+
+validation:
+  check_hallucinations: true
+  min_word_count: 300
+  max_linkedin_chars: 1300
