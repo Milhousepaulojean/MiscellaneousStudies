@@ -44,7 +44,7 @@ warnings.filterwarnings("ignore")
 
 BASE_DIR = Path(__file__).resolve().parent
 DATA_DIR = BASE_DIR / "database"
-REPORT_DIR = BASE_DIR / "reports"
+REPORT_DIR = BASE_DIR / "relatorios"
 
 REPORT_DIR.mkdir(exist_ok=True)
 
@@ -88,7 +88,7 @@ def formatar_percentual(valor, casas=1):
 
 
 def salvar_grafico(nome):
-    """Salva o gráfico atual na pasta reports."""
+    """Salva o gráfico atual na pasta relatorios."""
     caminho = REPORT_DIR / nome
     plt.tight_layout()
     plt.savefig(caminho, dpi=160, bbox_inches="tight", facecolor="white")
@@ -1051,9 +1051,9 @@ ul {{
 
     <br><br><br>
 
-    <p>JULIA AYUMI SUZUKI</p>
+    <p>Julia Ayumi Suzuki</p>
     <p>Pâmela Cristina da Silva</p>
-    <p>LARISSA NICOLI RODRIGUES</p>
+    <p>Larissa Nicoli Rodrigues</p>
     <p>Matheus Silva de Jesus</p>
     <p>Paulo Jean Alves da Silva</p>
     <p>São Paulo</p>
